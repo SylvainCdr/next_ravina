@@ -1,0 +1,161 @@
+.homeContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #eef0ef;
+
+  .hero {
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.unsplash.com/photo-1702834137742-5d26220954ad?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+      no-repeat center center/cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.5); // Assombrit légèrement l'image
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+      text-align: center;
+      color: white;
+      max-width: 600px;
+      padding: 20px;
+
+      .title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: white;
+        margin-top: 2rem;
+      }
+
+      .description {
+        font-size: 1rem;
+        margin-top: 20px;
+        opacity: 0.9;
+      }
+
+      .ctaButton {
+        margin-top: 30px;
+        padding: 12px 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: var(--col3);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          background-color: #fdd377;
+        }
+      }
+    }
+  }
+
+  .section1 {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+
+    .section1Content {
+      width: 30%;
+      height: 70%;
+      gap: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+      h2 {
+        font-size: 1.8rem;
+        color: var(--col3);
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(240, 248, 255, 0.158);
+      }
+    }
+  }
+
+  .section2 {
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    background-image: url(/assets/centellahand.jpeg);
+    background-size: 120%;
+    background-position: right 100% bottom 30%;
+    margin-bottom: 2rem;
+
+    .section2Left {
+      display: flex;
+      flex-direction: column;
+      width: 37%;
+      background-color: rgba(240, 248, 255, 0.455);
+      align-items: center;
+      justify-content: center;
+   
+
+      h1 {
+        color : white;
+        font-size: 2.5rem;
+        padding: 10px;
+        margin-bottom : 2rem;
+      }
+      h2 {
+        color : var(--col3);
+        font-size: 1.5rem;
+        padding: 10px;
+      }
+    }
+    .section2Right {
+      display: flex;
+      width: 70%;
+      img {
+        object-fit: cover;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .content {
+    .title {
+      font-size: 2.5rem;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    .title {
+      font-size: 2rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    .ctaButton {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+}
