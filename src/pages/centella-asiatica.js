@@ -1,3 +1,3 @@
-import About from "@/templates/CentellaAsiatica/CentellaAsiatica";
+import CentallaAsiatica from "@/templates/CentellaAsiatica/CentellaAsiatica";
 
-export default About;
+export default CentallaAsiatica;
