@@ -46,7 +46,8 @@ export default function Home() {
         <div
           className={styles.section1Content}
           style={{
-            backgroundSize: "cover", backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
             backgroundImage:
               "url(https://images.unsplash.com/photo-1617897903246-719242758050?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29zbWV0aWN8ZW58MHx8MHx8fDI%3D)",
           }}
@@ -54,7 +55,6 @@ export default function Home() {
           {" "}
           <h2>Cosmetics</h2>
         </div>
-  
       </div>
 
       <div className={styles.section2}>
@@ -62,28 +62,37 @@ export default function Home() {
           <h1> Lorem ipsum, dolor sit amet consectetur</h1>
           <h2>
             {" "}
-            Amet repellendus quasi non quisquam iure ipsum dolor sit amet consectex,.
+            Amet repellendus quasi non quisquam iure ipsum dolor sit amet
+            consectex,.
           </h2>
           <h2>
             {" "}
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem animi cupiditate deserunt beatae perspigiat recus.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem animi cupiditate deserunt beatae perspigiat recus.
           </h2>
         </div>
-        <div className={styles.section2Right}>
-        </div>
+        <div className={styles.section2Right}></div>
+      </div>
+      <div className={styles.section4}>
+        <h1> Dolorum omnis ad aspernatur </h1>
+        <h2>
+          Lorem ipsum dolor sit amet consectetur sed possimus adipisicing elit.
+          Quisquam, voluptatem.
+        </h2>
       </div>
       <div className={styles.section3}>
-        <div className={styles.section3Left}>
-        </div>
+        <div className={styles.section3Left}></div>
         <div className={styles.section3Right}>
           <h1> Lorem ipsum, dolor sit amet consectetur</h1>
           <h2>
             {" "}
-            Amet repellendus quasi non quisquam iure ipsum dolor sit amet consectex,.
+            Amet repellendus quasi non quisquam iure ipsum dolor sit amet
+            consectex,.
           </h2>
           <h2>
             {" "}
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem animi cupiditate deserunt beatae perspigiat recus.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem animi cupiditate deserunt beatae perspigiat recus.
           </h2>
         </div>
       </div>
