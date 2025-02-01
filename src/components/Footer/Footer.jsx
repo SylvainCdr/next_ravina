@@ -35,23 +35,17 @@ function Footer() {
       <div className={styles["section-3"]}>
         <h4>Contact</h4>
         <ul>
-          {/* <li>
+          <li>
             <i className="fa-solid fa-envelope"></i>
-            <Link href="mailto:diviniti@diviniti.com">diviniti@diviniti.com</Link>
-          </li> */}
-          <li>
-            <i className="fa-solid fa-phone"></i>(+33) 1 39 60 98 82
+            <Link href="contact@ravina.com">contact@ravina.com</Link>
           </li>
           <li>
-            <i className="fa-solid fa-location-dot"></i> 38 Rue Jean Mermoz,
-            78600 Maisons-Laffitte
+            <i className="fa-solid fa-phone"></i>(+261) XX XX XX XX
           </li>
           <li>
-            <i className="fa-brands fa-linkedin"></i>
-            <Link href="https://www.linkedin.com/company/divinititech/">
-              Linkedin
-            </Link>
+            <i className="fa-solid fa-location-dot"></i> Talatamaty, Antananarivo, Madagascar
           </li>
+          
           <p className={styles.copyright}>
             © 2025 Ravina. Tous droits réservés.
           </p>

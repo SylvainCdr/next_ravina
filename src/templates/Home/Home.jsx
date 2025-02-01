@@ -70,12 +70,21 @@ export default function Home() {
           </h2>
         </div>
         <div className={styles.section2Right}>
-          {/* <Image
-            src="/assets/centellahand.jpeg"
-            alt=""
-            width={700}
-            height={400}
-          /> */}
+        </div>
+      </div>
+      <div className={styles.section3}>
+        <div className={styles.section3Left}>
+        </div>
+        <div className={styles.section3Right}>
+          <h1> Lorem ipsum, dolor sit amet consectetur</h1>
+          <h2>
+            {" "}
+            Amet repellendus quasi non quisquam iure ipsum dolor sit amet consectex,.
+          </h2>
+          <h2>
+            {" "}
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem animi cupiditate deserunt beatae perspigiat recus.
+          </h2>
         </div>
       </div>
     </div>
