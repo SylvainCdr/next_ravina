@@ -1,126 +1,141 @@
-.aboutContainer {
+.centellaContainer {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  background-color: #0e0d0d;
-  background-image: url("https://images.unsplash.com/photo-1676676701271-2215e1aff488?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-position: left;
+  align-items: center;
+  background-color: #eef0ef;
+  color: #333;
+}
+
+// Header
+.hero {
+  margin-bottom: 3rem;
+  height: 60vh;
+  background-image: url("/assets/centelladrops.jpeg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Ajout pour parallax */
-  padding-left: 4%;
-  padding-top: 12rem;
+  width: 100%;
 
-  img {
-    width: 13rem;
-    height: auto;
-    margin-bottom: 20px;
-    animation: pulse infinite;
-    -webkit-animation: pulse 12s infinite;
-    position: absolute;
-    right: 17%;
-    top: 40%;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
-  }
-
-  h1 {
-    font-size: 2.7rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    color: #f0a500;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  }
-
-  .aboutDescription {
+  .heroContent {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    padding-left: 10vh;
+    padding-top: 20vh;
+
+    h1 {
+      font-size: 3rem;
+      color: var(--col1);
+      margin-bottom: 2rem;
+    }
 
     p {
-      color: white;
+      font-size: 1.5rem;
+      // color: #555;
+      color: var(--col5);
+    }
+  }
+}
+
+// Sections
+.section,
+.introduction {
+  max-width: 1400px;
+  margin-bottom: 7rem;
+  background-image: url("/assets/centelladrops.jpeg");
+  align-content: center;
+  padding : 1rem;
+  border-radius: 10px;
+
+  h2 {
+    font-size: 2.5rem;
+    color: var(--col1);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--col2);
+  }
+
+  ul {
+    margin-bottom: 1.5rem;
+
+    li {
       font-size: 1.1rem;
-      margin-bottom: 2rem;
-      line-height: 1.7rem;
-      font-weight: 400;
-    }
-  }
-}
-
-
-
-@media (max-width: 1340px) {
-  .aboutContainer {
-    padding-top: 12rem;
-    padding-left: 4%;
-    padding-right: 4%;
- 
-    img {
-      width: 15rem;
-      right: 10%;
-      top: 40%;
-      
-    }
-  .aboutDescription {
-    width: 65%;
-  }
-} }
-
-
-
-@media (max-width: 1024px) {
-  .aboutContainer {
-    padding-top: 10rem;
-    padding-left: 4%;
-    padding-right: 4%;
-
-    img {
-      width: 10rem;
-      right: 10%;
-      top: 30%;
-      display: none;
-    }
-
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 600;
-    }
-
-    .aboutDescription {
-      width: 80%;
-
-      p {
-        font-size: 1.1rem;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      color: var(--col5);
+      margin-bottom: 0.5rem;
+      i {
+        color: var(--col1);
+        margin-right: 1rem;
       }
     }
   }
 }
 
-@media (max-width: 900px) { 
-  .aboutContainer {
-    padding-top: 10rem;
-    padding-left: 4%;
-    padding-right: 4%;
-    background-position : center;
+// Grid for images
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
 
- 
+  .imagePlaceholder {
+    background-color: #ddd;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #777;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
-    h1 {
-      font-size: 2.1rem;
-      font-weight: 600;
-    }
-
-    .aboutDescription {
+    img {
       width: 100%;
-
-      p {
-        font-size: 1rem;
-      
-      }
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
     }
+  }
+}
+
+// Call to Action
+.ctaSection {
+  text-align: center;
+  margin-top: 3rem;
+
+  h2 {
+    font-size: 2rem;
+    color: #1b5e20;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  .ctaButton {
+    background-color: #388e3c;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: #1b5e20;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 900px) {
+  .imageGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
