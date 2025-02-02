@@ -96,7 +96,7 @@
     background-image: url(/assets/centellahand.jpeg);
     background-size: 120%;
     background-position: right 100% bottom 30%;
-    margin-bottom: 4rem;
+    // margin-bottom: 4rem;
 
     .section2Left {
       display: flex;
@@ -142,7 +142,7 @@
     background-image: url(https://images.unsplash.com/photo-1558437753-21dc69d8ebed?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: 100%;
     background-position: left 120% bottom 80%;
-    margin-bottom: 2rem;
+
 
     .section3Left {
       display: flex;
@@ -180,6 +180,7 @@
   }
 
   .section4 {
+   margin-top: 4rem;
     h1 {
       font-size: 3.5rem;
       color: var(--col4);

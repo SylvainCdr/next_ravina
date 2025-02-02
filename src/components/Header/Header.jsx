@@ -54,7 +54,7 @@ export default function Header2() {
           </li>
           <li>
             <Link href="/about" onClick={toggleMenu}>
-              About
+              About Us
             </Link>
           </li>
           <li>
