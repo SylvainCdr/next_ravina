@@ -10,13 +10,17 @@
 
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
+    color : var(--col4);
+    font-weight: 700;
   }
 
   .subtitle {
-    color: #666;
+    color: var(--col2);
     margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
   }
 }
 
@@ -50,6 +54,7 @@
     label {
       font-weight: bold;
       margin-bottom: 5px;
+      color: var(--col2);
     }
 
     input,
@@ -62,7 +67,7 @@
   }
 
   .submitButton {
-    background: #0070f3;
+    background: var(--col4);
     color: white;
     padding: 10px;
     font-size: 1rem;
@@ -91,9 +96,12 @@
   h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
+    color : var(--col4);
+    font-weight: 700;
   }
 
   p {
     margin: 5px 0;
+    color: var(--col2);
   }
 }

@@ -1,6 +1,6 @@
-import { imageConfigDefault } from "next/dist/shared/lib/image-config";
 import styles from "./style.module.scss";
 import Image from "next/image";
+import CustomersSlider from "@/components/customersSlider/customersSlider";
 
 export default function Home() {
   return (
@@ -96,6 +96,7 @@ export default function Home() {
           </h2>
         </div>
       </div>
+          <CustomersSlider />
     </div>
   );
 }
