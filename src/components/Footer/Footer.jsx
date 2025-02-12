@@ -1,21 +1,20 @@
 import styles from "./style.module.scss";
 import Link from "next/link";
-import Image from "next/image";
+
 
 function Footer() {
   return (
     <div className={styles["footer-container"]}>
       <div className={styles["section-1"]}>
-        <Image
+        <img
           src="/assets/ravina.png"
-          alt="Logo Diviniti"
-          width={180}
-          height={180}
+          alt="Logo Ravina"
+         
         />
       </div>
 
       <div className={styles["section-2"]}>
-        <h4>Plan de site </h4>
+        <h4>Sitemap </h4>
         <ul>
           <Link href="/">
             <li>Home</li>
@@ -47,7 +46,7 @@ function Footer() {
           </li>
           
           <p className={styles.copyright}>
-            © 2025 Ravina. Tous droits réservés.
+            © 2025 Ravina. All rights reserved.
           </p>
         </ul>
       </div>
