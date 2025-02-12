@@ -87,15 +87,15 @@
   }
 
   .section2 {
-    height: 60vh;
+
     display: flex;
     margin: auto;
     justify-content: space-around;
     width: 100%;
-    position: relative;
     background-image: url(/assets/centellahand.jpeg);
-    background-size: 120%;
-    background-position: right 100% bottom 30%;
+    background-size: cover;
+    background-position: left;
+
     // margin-bottom: 4rem;
 
     .section2Left {
@@ -105,6 +105,7 @@
       background-color: rgba(240, 248, 255, 0.315);
       align-items: center;
       justify-content: center;
+      padding : 3rem 0rem;
 
       h1 {
         font-size: 2.5rem;
@@ -133,23 +134,26 @@
     }
   }
   .section3 {
-    height: 80vh;
+    object-fit: cover;
     display: flex;
     margin: auto;
     justify-content: space-around;
     width: 100%;
-    position: relative;
+    object-fit: cover;
     background-image: url(https://images.unsplash.com/photo-1558437753-21dc69d8ebed?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: 100%;
-    background-position: left 120% bottom 80%;
+    background-size: cover;
+    background-position: left;
 
 
     .section3Left {
       display: flex;
       width: 70%;
       background-color: rgba(240, 248, 255, 0.038);
+      object-fit: cover;
       img {
+
         object-fit: cover;
+
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -164,6 +168,7 @@
       background-color: rgba(240, 255, 251, 0.236);
       align-items: center;
       justify-content: center;
+      padding : 4rem 0rem;
 
       h1 {
         font-size: 2.5rem;
@@ -192,33 +197,6 @@
       color: #333;
       text-align: center;
       margin-bottom: 4rem;
-    }
-  }
-}
-
-// Responsive
-@media (max-width: 768px) {
-  .content {
-    .title {
-      font-size: 2.5rem;
-    }
-    .subtitle {
-      font-size: 1.2rem;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .content {
-    .title {
-      font-size: 2rem;
-    }
-    .subtitle {
-      font-size: 1rem;
-    }
-    .ctaButton {
-      padding: 10px 20px;
-      font-size: 0.9rem;
     }
   }
 }

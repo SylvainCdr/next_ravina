@@ -1,46 +1,99 @@
-.actualitesContainer {
-  min-height: 90vh;
-  background-image: url("https://images.unsplash.com/photo-1708898816130-0f5020a0f639?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  // background-image: url("https://images.unsplash.com/photo-1698434294643-d8df3073a4a3?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  padding-top: 7rem;
-  margin: 0 auto;
-  background-repeat: no-repeat;
+.contactContainer {
+  min-height : 100vh;
+  // margin: 0 auto;
+  padding: 40px;
+  // text-align: center;
+  background-image: url("/assets/centella2.jpeg");
   background-size: cover;
-  background-position: top;
-  overflow-x: hidden; // Empêche les débordements horizontaux
-   background-attachment: fixed; /* Ajout pour parallax */
+  background-repeat: no-repeat;
+  background-position: center;
+
 
   h1 {
-    margin-top: 2.7rem;
-    font-size: 2.7rem;
-    margin-bottom: 2rem;
-    font-weight: 700;
-    color: #f0a500;
-    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
   }
 
-  .newsList {
-    text-align: center;
+  .subtitle {
+    color: #666;
+    margin-bottom: 30px;
+  }
+}
 
-    iframe {
-      width: 100%;
-      max-height: 100%;
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Formulaire */
+.contactForm {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 20px;
+  background: #f8f8f8c9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
     }
   }
 
+  .submitButton {
+    background: #0070f3;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
 
-@media screen and (max-width: 1200px) {
-
-  h1 {
-    font-size: 2.1rem;
-  }
-  .newsList {
-    
-  iframe {
-    max-width: 100%;
-    max-height:  100%;
+    &:hover {
+      background: #005bb5;
+    }
   }
 }
-}
 
+/* Informations de contact */
+.contactInfo {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+  background: #ffffffc1;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin: 5px 0;
+  }
 }
