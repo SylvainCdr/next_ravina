@@ -16,7 +16,7 @@ const images = [
 export default function CustomersSlider() {
   return (
     <div className={styles.slider}>
-      <h1>Ils nous font confiance</h1>
+      <h1>They trust us (example)</h1>
       <div className={styles.slide_track}>
         {images.map((image, index) => (
           <div className={styles.slide} key={index}>
