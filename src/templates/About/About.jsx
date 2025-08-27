@@ -67,7 +67,7 @@ export default function About() {
                 alt="Lova Tiana Randrianarivelo"
                 className={styles.memberImage}
               />
-              <h3>Lova Tiana Randrianarivelo</h3>
+              <h3>Key Team Member</h3>
               <p>CEO & Founder</p>
             </div>
             <div className={styles.member}>
@@ -76,7 +76,7 @@ export default function About() {
                 alt="Benjamina Randrianarivelo"
                 className={styles.memberImage}
               />
-              <h3>Benjamina Randrianarivelo</h3>
+              <h3>Key Team Member</h3>
               <p>Operations Manager</p>
             </div>
             <div className={styles.member}>
