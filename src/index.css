@@ -140,15 +140,34 @@ body {
 margin: auto;
 color: black;
 width: 100%;
-font-family: 'Quicksand', sans-serif;
+font-family: 'Quicksand', sans-serif; 
+/* font-family: 'Poppins', sans-serif; */
+
 
 }
   
   :root {
-    --col1: #648863;
-    --col2: #2E294E;
-    --col3: #f2efc7;
-    --col4: #c16e70;
-    --col5: #8a716a;
-    --col6: #ffffff;
+    --col1: #21504b;
+    --col2: #f7f2e4;
+    /* --col3: #14bf71; */
+    --col4: #a2c0d5;
+    --col5: #e9f0fb;
+    --col6: #def0ff;
+    --col7: #fff;
+    --col8: #6D454C;
+    --col9: #a53f2b;
+    --col10: #ab2346;
+    --col11: #823038;
+    --col12: #533b4d;
+    --col13: #0f0326;
+    --col3: #813405;
+    --col15: #542344;
+    --col16: #B1740F ;
+
+    
+    
+    
+
+    
+
   }

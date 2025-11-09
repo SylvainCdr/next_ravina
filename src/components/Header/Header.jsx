@@ -31,7 +31,7 @@ export default function Header2() {
       <div className={styles.headerLogo}>
         <Link href="/">
           <Image
-            src="/assets/ravina.png"
+            src="/assets/ravin2.avif"
             alt="Diviniti logo"
             width={200}
             height={200}
@@ -46,6 +46,7 @@ export default function Header2() {
         animate={isOpen ? { x: 0 } : isMobile ? { x: "100%" } : { x: 0 }}
         transition={{ type: "keyframes", stiffness: 100, damping: 10 }}
       >
+        {/* Home | About | Products | Sustainability | Partnership | Contact */}
         <ul>
           <li>
             <Link href="/centella-asiatica" onClick={toggleMenu}>
@@ -54,7 +55,23 @@ export default function Header2() {
           </li>
           <li>
             <Link href="/about" onClick={toggleMenu}>
-              About Us
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/" onClick={toggleMenu}>
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link href="/" onClick={toggleMenu}>
+              Sustainability
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/" onClick={toggleMenu}>
+              Partnership
             </Link>
           </li>
           <li>
@@ -62,7 +79,6 @@ export default function Header2() {
               Contact
             </Link>
           </li>
-          
         </ul>
       </motion.nav>
 
