@@ -24,7 +24,7 @@
     h1 {
       text-align: center;
       font-size: 6rem;
-      color: var(--col3);
+      color: var(--col7);
       font-weight: 600;
     }
   }
@@ -47,16 +47,28 @@
       width: 60%;
 
       h2 {
-        font-size: 4rem;
-        color: var(--col1);
-        margin-bottom: 10px;
+        font-size: 2.6rem;
         font-weight: 700;
+        color: var(--col3);
+        position: relative;
+        margin-bottom: 1.2rem;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -0.4rem;
+          left: 0;
+          width: 60px;
+          height: 4px;
+          background-color: var(--col1);
+          border-radius: 2px;
+        }
       }
 
       p {
         font-size: 1.3rem;
-        color: var(--col2);
-       
+        color: var(--col1);
+
         line-height: 1.3;
       }
 
@@ -69,17 +81,28 @@
     .values {
       padding-top: 5rem;
       width: 60%;
-
       h2 {
-        font-size: 4rem;
-        color: var(--col1);
-        margin-bottom: 10px;
+        font-size: 2.6rem;
         font-weight: 700;
+        color: var(--col3);
+        position: relative;
+        margin-bottom: 1.2rem;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -0.4rem;
+          left: 0;
+          width: 60px;
+          height: 4px;
+          background-color: var(--col4);
+          border-radius: 2px;
+        }
       }
 
       p {
         font-size: 1.3rem;
-        color: var(--col2);
+        color: var(--col1);
         line-height: 1.3;
       }
     }
@@ -103,18 +126,160 @@
       -o-border-radius: 10px;
     }
   }
+  /* ---------------- CERTIFICATIONS & STANDARDS ---------------- */
+  .certifications {
+    background: linear-gradient(135deg, var(--col3) 0%, var(--col6) 100%);
+    padding: 6rem 2rem;
+    text-align: center;
+    color: var(--col2);
+    position: relative;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--col1);
+      margin-bottom: 1.5rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: var(--col4);
+        margin: 0.8rem auto 2rem auto;
+        border-radius: 2px;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 0 auto 3rem auto;
+      color: var(--col2);
+      strong {
+        color: var(--col5);
+      }
+    }
+
+    .certLogos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+
+      img {
+        width: 150px;
+        height: auto;
+        filter: grayscale(100%);
+        opacity: 0.8;
+        transition: all 0.3s ease;
+        &:hover {
+          filter: grayscale(0%);
+          opacity: 1;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  /* ---------------- LOCATION (MADAGASCAR) ---------------- */
+  .location {
+    background: var(--col6);
+    padding: 6rem 2rem;
+    text-align: center;
+    color: var(--col2);
+    position: relative;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--col1);
+      margin-bottom: 1.5rem;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: var(--col4);
+        margin: 0.8rem auto 2rem auto;
+        border-radius: 2px;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      max-width: 850px;
+      margin: 0 auto 3rem auto;
+      color: var(--col5);
+    }
+
+    img {
+      width: 50%;
+      max-width: 500px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.15));
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  /* ---------------- RESPONSIVE ---------------- */
+  @media (max-width: 900px) {
+    .certifications,
+    .location {
+      padding: 4rem 1.5rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.05rem;
+      }
+
+      .certLogos img {
+        width: 120px;
+      }
+
+      .location img {
+        width: 80%;
+      }
+    }
+  }
 
   .team {
     margin-top: 8rem;
     padding-left: 3rem;
     margin-bottom: 4rem;
     h2 {
-      font-size: 4rem;
-      color: var(--col1);
-      margin-bottom: 30px;
-      width: 70%;
+      font-size: 2.6rem;
       font-weight: 700;
+      color: var(--col1);
+      position: relative;
+      margin-bottom: 1.2rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -0.4rem;
+        left: 0;
+        width: 60px;
+        height: 4px;
+        background-color: var(--col4);
+        border-radius: 2px;
+      }
     }
+
     .teamMembers {
       display: flex;
       justify-content: space-around;
@@ -164,7 +329,6 @@
   }
 }
 
-
 @media screen and (max-width: 900px) {
   .aboutContainer {
     .content {
@@ -188,7 +352,7 @@
     .content {
       background-size: 50%;
       // background-position: top right -15%;
-      background-position: top 16rem  center;
+      background-position: top 16rem center;
       background-repeat: no-repeat;
 
       .history {
@@ -202,4 +366,3 @@
     }
   }
 }
-

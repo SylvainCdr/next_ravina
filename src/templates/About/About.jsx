@@ -57,6 +57,32 @@ export default function About() {
           />
         </section>
 
+        <section className={styles.certifications}>
+          <h2>Certifications & Standards</h2>
+          <p>
+            RAVINA Medicinals is a proud member of the{" "}
+            <strong>UEBT (Union for Ethical BioTrade)</strong>
+            and operates under strict compliance with{" "}
+            <strong>international traceability and quality standards</strong>.
+            Our operations are audited regularly to ensure transparency and
+            ethical sourcing.
+          </p>
+          <div className={styles.certLogos}>
+            <img src="/assets/uebt-logo.png" alt="UEBT certification" />
+            <img src="/assets/farmforce.png" alt="FarmForce traceability" />
+          </div>
+        </section>
+
+        <section className={styles.location}>
+          <h2>Based in Madagascar</h2>
+          <p>
+            Our head office and processing facilities are located near
+            Antananarivo, giving us direct access to Madagascar’s rich
+            biodiversity regions such as Alaotra-Mangoro and Atsimo-Atsinanana.
+          </p>
+          <img src="/assets/madagascar-map.svg" alt="Map of Madagascar" />
+        </section>
+
         {/* Meet the Team */}
         <section className={styles.team}>
           <h2>Meet the Team</h2>
