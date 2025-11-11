@@ -8,6 +8,12 @@ export default function Home() {
       {/* HERO SECTION */}
 
       <div className={styles.hero1}>
+        {/* // video hero background */}
+        <video autoPlay loop muted className={styles.videoBackground}>
+          <source src="/assets/gotu2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
         <div className={styles.hero}>
           <div className={styles.overlay} />
           <div className={styles.content}>
@@ -31,7 +37,7 @@ export default function Home() {
             </p>
             <button className={styles.ctaButton}>Discover More</button>
             <div className={styles.heroImage}> 
-            <img src="assets/cent4.png" alt="" />
+            <img src="assets/mg2.png" alt="" />
             </div>
           </div>
         </div>
@@ -46,7 +52,7 @@ export default function Home() {
                 "url(https://images.unsplash.com/photo-1482100199117-a4a38a64e7e3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1738)",
             }}
           >
-            <h2>Wellness & Healthcare</h2>
+            <h2>Skincare & Cosmetics</h2>
           </div>
           <div
             className={styles.section1Content}
@@ -55,7 +61,7 @@ export default function Home() {
                 "url(https://images.unsplash.com/photo-1532092367580-3bd5bc78dd9d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbnQlMjBtZWRpY2luZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=800)",
             }}
           >
-            <h2>Medicinal Plants</h2>
+            <h2>Pharmaceuticals</h2>
           </div>
           <div
             className={styles.section1Content}
@@ -64,7 +70,7 @@ export default function Home() {
                 "url(https://images.unsplash.com/photo-1617897903246-719242758050?w=1200&auto=format&fit=crop&q=80)",
             }}
           >
-            <h2>Natural Cosmetics</h2>
+            <h2>Nutraceuticals</h2>
           </div>
         </section>
       </div>

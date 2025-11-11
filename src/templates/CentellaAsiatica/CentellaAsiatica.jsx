@@ -28,6 +28,7 @@ export default function CentellaAsiatica() {
 
         {/* INTRODUCTION */}
         <section className={styles.introduction}>
+          <div className={styles.introductionContent}>
           <div className={styles.text}>
             <h2>About the Plant</h2>
             <p>
@@ -49,7 +50,7 @@ export default function CentellaAsiatica() {
           <div className={styles.imageGrid}>
             <div className={styles.imagePlaceholder}>
               <Image
-                src="/assets/image3.png"
+                src="/assets/image33.png"
                 alt="Centella Asiatica plant"
                 width={500}
                 height={350}
@@ -57,12 +58,13 @@ export default function CentellaAsiatica() {
             </div>
             <div className={styles.imagePlaceholder}>
               <Image
-                src="/assets/image4.png"
+                src="/assets/image44.png"
                 alt="Centella leaves"
                 width={500}
                 height={350}
               />
             </div>
+          </div>
           </div>
         </section>
 
