@@ -35,7 +35,7 @@ export default function Home() {
               spices, our operations are rooted in ethical and sustainable
               sourcing, empowering communities while protecting biodiversity.
             </p>
-            <button className={styles.ctaButton}>Discover More</button>
+            <button className={styles.ctaButton} onClick={() => router.push("/centella-asiatica")}>Discover More</button>
             <div className={styles.heroImage}> 
             <img src="assets/mg2.png" alt="" />
             </div>
@@ -49,7 +49,7 @@ export default function Home() {
             className={styles.section1Content}
             style={{
               backgroundImage:
-                "url(https://images.unsplash.com/photo-1482100199117-a4a38a64e7e3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1738)",
+                "url(https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvc21ldGljfGVufDB8fDB8fHww)",
             }}
           >
             <h2>Skincare & Cosmetics</h2>
@@ -61,7 +61,7 @@ export default function Home() {
                 "url(https://images.unsplash.com/photo-1532092367580-3bd5bc78dd9d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbnQlMjBtZWRpY2luZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=800)",
             }}
           >
-            <h2>Pharmaceuticals</h2>
+            <h2>Pharmaceutical Ingredients</h2>
           </div>
           <div
             className={styles.section1Content}
@@ -70,13 +70,15 @@ export default function Home() {
                 "url(https://images.unsplash.com/photo-1617897903246-719242758050?w=1200&auto=format&fit=crop&q=80)",
             }}
           >
-            <h2>Nutraceuticals</h2>
+            <h2>Nutraceutical Ingredients</h2>
           </div>
         </section>
       </div>
       <section className={styles.ctaBanner}>
   <p>Looking for a reliable supplier of ethical botanicals?</p>
-  <button>Contact Us</button>
+  <button onClick={() => router.push("/contact")}>
+    Contact us
+  </button> 
 </section>
 
     {/* MISSION & VISION */}
@@ -100,6 +102,13 @@ export default function Home() {
         To be a trusted international partner in ethical wild plant sourcing —
         known for our commitment to quality, sustainability, and inclusive
         growth.
+      </p>
+    </div>
+    <div className={styles.card}>
+      <div className={styles.icon}>🧪</div>
+      <h1>Our Expertise</h1>
+      <p>
+        Over 10 years of experience in botanical sourcing, community engagement, and international exports.
       </p>
     </div>
   </div>
@@ -167,6 +176,38 @@ export default function Home() {
     <button className={styles.partnerButton}>Become a Partner</button>
   </div>
 </section>
+
+<section className={styles.capacitySection}>
+  <h1>Production Capacity</h1>
+  <p className={styles.capacityIntro}>
+    With a deeply integrated supply chain and a strong network of trained pickers,
+    RAVINA Medicinals ensures reliable, high-volume and high-quality production — 
+    tailored for global skincare, nutraceutical, and pharmaceutical industries.
+  </p>
+
+  <div className={styles.capacityGrid}>
+    <div className={styles.capacityCard}>
+      <h2>50+ Tons / Year</h2>
+      <p>Premium dried Centella Asiatica leaves processed and exported annually.</p>
+    </div>
+
+    <div className={styles.capacityCard}>
+      <h2>4,500+ Pickers</h2>
+      <p>Fully trained harvesting network across multiple regions of Madagascar.</p>
+    </div>
+
+    <div className={styles.capacityCard}>
+      <h2>3 Certified Regions</h2>
+      <p>Sustainably managed sourcing zones audited under UEBT standards.</p>
+    </div>
+
+    <div className={styles.capacityCard}>
+      <h2>In-House Laboratory</h2>
+      <p>HPLC analysis and strict quality control for every export batch.</p>
+    </div>
+  </div>
+</section>
+
 
 
       {/* IMPACT */}
