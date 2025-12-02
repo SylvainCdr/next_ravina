@@ -90,7 +90,7 @@ export default function About() {
             <img src="/assets/madagascar-map.svg" alt="Map of Madagascar" />
           </div>
         </section>
-
+{/* OUR IMPACT SECTION */}
         <section className={styles.impact}>
           <h2>Our Impact in Numbers</h2>
           <div className={styles.statsGrid}>

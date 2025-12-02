@@ -54,26 +54,26 @@ export default function Header2() {
             </Link>
           </li>
           <li>
-            <Link href="/about" onClick={toggleMenu}>
-              About
+            <Link href="/our-products" onClick={toggleMenu}>
+              Our Products
             </Link>
           </li>
           <li>
-            <Link href="/" onClick={toggleMenu}>
-              Products
+            <Link href="/about-ravina-medicinals" onClick={toggleMenu}>
+              About Us
             </Link>
           </li>
           <li>
-            <Link href="/" onClick={toggleMenu}>
-              Sustainability
+            <Link href="/quality-sustainability" onClick={toggleMenu}>
+              Quality & Sustainability
             </Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link href="/" onClick={toggleMenu}>
               Partnership
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/contact" onClick={toggleMenu}>
               Contact
