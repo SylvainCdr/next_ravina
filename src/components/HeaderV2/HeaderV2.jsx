@@ -1,0 +1,202 @@
+import styles from "./style.module.scss";
+import Link from "next/link";
+import Image from "next/image";
+import { useState, useEffect, useRef } from "react";
+
+export default function HeaderV2() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [hoveredMenuItem, setHoveredMenuItem] = useState(null);
+  const menuOverlayRef = useRef(null);
+  const pageContentRef = useRef(null);
+
+  // Menu items with corresponding background images
+  const menuItems = [
+    {
+      name: "HOME",
+      href: "/",
+      bgImage:
+        "https://images.unsplash.com/photo-1558437753-21dc69d8ebed?q=80&w=2940&auto=format&fit=crop",
+    },
+    {
+      name: "CENTELLA ASIATICA",
+      href: "/centella-asiatica",
+      bgImage:
+        "https://cdn.pixabay.com/photo/2018/07/05/12/09/centella-3518194_1280.jpg",
+    },
+    {
+      name: "OUR PRODUCTS",
+      href: "/our-products",
+      bgImage:
+        "https://images.unsplash.com/photo-1605040056130-38d9faad3534?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "ABOUT US",
+      href: "/about-ravina-medicinals",
+      bgImage:
+        "https://images.unsplash.com/photo-1699622595987-9974344baed5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "QUALITY & SUSTAINABILITY",
+      href: "/quality-sustainability",
+      bgImage:
+        "https://images.unsplash.com/photo-1558694440-03ade9215d7b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "CONTACT US",
+      href: "/contact",
+      bgImage:
+        "https://images.unsplash.com/photo-1517519610343-021766b185c1?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+  ];
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleMenuItemHover = (index) => {
+    setHoveredMenuItem(index);
+  };
+
+  const handleMenuItemLeave = () => {
+    setHoveredMenuItem(null);
+  };
+
+  const handleMenuItemClick = () => {
+    setIsMenuOpen(false);
+    setHoveredMenuItem(null);
+  };
+
+  return (
+    <div className={styles.container}>
+      {/* Menu Overlay */}
+      <div
+        className={`${styles.menuOverlay} ${isMenuOpen ? styles.menuOpen : ""}`}
+      >
+        {/* Background Images Container */}
+        <div className={styles.menuBgContainer}>
+          {/* Default background */}
+          <div
+            className={`${styles.menuBgImg} ${
+              hoveredMenuItem === null ? styles.active : ""
+            }`}
+          >
+            <img
+              src="https://images.unsplash.com/photo-1574263867128-a3d5c1b1dee6?w=1200&auto=format&fit=crop&q=60"
+              alt="RAVINA Madagascar"
+            />
+          </div>
+
+          {/* Menu item backgrounds */}
+          {menuItems.map((item, index) => (
+            <div
+              key={`bg-${index}`}
+              className={`${styles.menuBgImg} ${
+                hoveredMenuItem === index ? styles.active : ""
+              }`}
+            >
+              <img src={item.bgImage} alt={item.name} />
+            </div>
+          ))}
+        </div>
+
+        {/* Menu Content */}
+        <div className={styles.menuContent}>
+          <div className={styles.menuLinks}>
+            {/* Main Menu */}
+            <div className={styles.menuMain}>
+              <ul>
+                {menuItems.map((item, index) => (
+                  <li
+                    key={item.name}
+                    onMouseEnter={() => handleMenuItemHover(index)}
+                    onMouseLeave={handleMenuItemLeave}
+                  >
+                    <Link
+                      href={item.href}
+                      onClick={handleMenuItemClick}
+                      data-text-anim
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Social Links */}
+            <div className={styles.menuSocials}>
+              <p>Follow RAVINA Medicinals</p>
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    Facebook
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Header */}
+      <header className={styles.navbar}>
+        <nav className={styles.wrapper}>
+          <div className={styles.menuBar}>
+            {/* Logo */}
+            <div className={styles.logoWrapper}>
+              <Link href="/">
+                <Image
+                  src="/assets/ravin2.avif"
+                  alt="RAVINA Medicinals - Premium Centella Asiatica from Madagascar"
+                  width={160}
+                  height={80}
+                />
+              </Link>
+            </div>
+
+            {/* Menu Toggle Button */}
+            <div
+              className={`${styles.menuToggle} ${
+                isMenuOpen ? styles.open : ""
+              }`}
+              onClick={toggleMenu}
+              id="menu-toggle"
+            >
+              <span className={styles.toggleLineTop}></span>
+              <span className={styles.toggleLineBottom}></span>
+            </div>
+
+            {/* CTA Button */}
+            <Link
+              href="/contact"
+              className={`${styles.navbarBtn} ${styles.btn}`}
+            >
+              <span className={styles.btnTxt}>CONTACT US</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="14"
+                fill="none"
+              >
+                <path
+                  fill="currentColor"
+                  d="m17.76 6.857-5.727-5.688a.821.821 0 0 0-1.147.01.81.81 0 0 0-.01 1.139l4.33 4.3H.819a.821.821 0 0 0-.578.238.81.81 0 0 0 .578 1.388h14.389l-4.33 4.3a.813.813 0 0 0-.19.892.813.813 0 0 0 .765.505.824.824 0 0 0 .581-.248l5.727-5.688a.81.81 0 0 0 0-1.148Z"
+                />
+              </svg>
+            </Link>
+          </div>
+        </nav>
+      </header>
+    </div>
+  );
+}

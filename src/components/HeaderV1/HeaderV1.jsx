@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-export default function Header2() {
+export default function HeaderV1() {
   const [isOpen, setIsOpen] = useState(false); // État pour le menu burger
   const [isMobile, setIsMobile] = useState(false); // État pour la détection de l'écran mobile
 
