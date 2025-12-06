@@ -3,7 +3,7 @@
   margin: 0 auto;
   overflow-x: hidden; // Empêche les débordements horizontaux
   background-color: #eef0ef;
-  padding-top: 4rem;
+  // padding-top: 4rem;
 
   .hero {
     display: flex;
@@ -12,9 +12,14 @@
     flex-direction: column;
     height: 60vh;
     background-attachment: fixed; /* Ajout pour parallax */
-    background-color: rgba(81, 81, 81, 0.257);
+
     background-blend-mode: overlay;
-    background-image: url("/assets/test.jpeg");
+    background-image: url("/assets/test.jpeg"),
+      linear-gradient(
+        135deg,
+        rgba(74, 74, 74, 0.8) 0%,
+        rgba(67, 67, 67, 0.7) 100%
+      );
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;

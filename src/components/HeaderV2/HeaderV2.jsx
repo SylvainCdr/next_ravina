@@ -80,10 +80,14 @@ export default function HeaderV2() {
               hoveredMenuItem === null ? styles.active : ""
             }`}
           >
-            <img
-              src="https://images.unsplash.com/photo-1574263867128-a3d5c1b1dee6?w=1200&auto=format&fit=crop&q=60"
+            {/* <img
+              src="https://images.unsplash.com/photo-1558437753-21dc69d8ebed?q=80&w=2940&auto=format&fit=crop"
               alt="RAVINA Madagascar"
-            />
+            /> */}
+            <video autoPlay loop muted className={styles.videoBackground}>
+          <source src="/assets/gotu3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
           </div>
 
           {/* Menu item backgrounds */}
@@ -123,7 +127,7 @@ export default function HeaderV2() {
               </ul>
             </div>
 
-            {/* Social Links */}
+            {/* Social Links
             <div className={styles.menuSocials}>
               <p>Follow RAVINA Medicinals</p>
               <ul>
@@ -143,7 +147,7 @@ export default function HeaderV2() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
