@@ -10,7 +10,7 @@ export default function Home() {
       <div className={styles.hero1}>
         {/* // video hero background */}
         <video autoPlay loop muted className={styles.videoBackground}>
-          <source src="/assets/gotu2.mp4" type="video/mp4" />
+          <source src="/assets/gotuVid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

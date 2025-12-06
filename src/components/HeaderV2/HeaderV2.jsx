@@ -85,7 +85,7 @@ export default function HeaderV2() {
               alt="RAVINA Madagascar"
             /> */}
             <video autoPlay loop muted className={styles.videoBackground}>
-          <source src="/assets/gotu3.mp4" type="video/mp4" />
+          <source src="/assets/gotuMenu.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
           </div>
