@@ -29,87 +29,85 @@ export default function CentellaAsiatica() {
         {/* INTRODUCTION */}
         <section className={styles.introduction}>
           <div className={styles.introductionContent}>
-          <div className={styles.text}>
-            <h2>About the Plant</h2>
-            <p>
-              Also known as <strong>Gotu Kola</strong> or{" "}
-              <strong>Tiger Grass</strong>, Centella Asiatica is a remarkable
-              medicinal herb widely used in the pharmaceutical, cosmetic, and
-              wellness industries. RAVINA Medicinals sources wild Centella
-              Asiatica ethically from the <strong>Alaotra-Mangoro</strong> and{" "}
-              <strong>Atsimo-Atsinanana</strong> regions of Madagascar — areas
-              renowned for their natural biodiversity.
-            </p>
-            <p>
-              Our Centella is available in <strong>dried leaves</strong> and{" "}
-              <strong>powder form</strong>, harvested and processed following
-              strict UEBT standards to ensure consistent quality and
-              sustainability.
-            </p>
-          </div>
-          <div className={styles.imageGrid}>
-            <div className={styles.imagePlaceholder}>
-              <Image
-                src="/assets/image33.png"
-                alt="Centella Asiatica plant"
-                width={500}
-                height={350}
-              />
+            <div className={styles.text}>
+              <h2>About the Plant</h2>
+              <p>
+                Also known as <strong>Gotu Kola</strong> or{" "}
+                <strong>Tiger Grass</strong>, Centella Asiatica is a remarkable
+                medicinal herb widely used in the pharmaceutical, cosmetic, and
+                wellness industries. RAVINA Medicinals sources wild Centella
+                Asiatica ethically from the <strong>Alaotra-Mangoro</strong> and{" "}
+                <strong>Atsimo-Atsinanana</strong> regions of Madagascar — areas
+                renowned for their natural biodiversity.
+              </p>
+              <p>
+                Our Centella is available in <strong>dried leaves</strong> and{" "}
+                <strong>powder form</strong>, harvested and processed following
+                strict UEBT standards to ensure consistent quality and
+                sustainability.
+              </p>
             </div>
-            <div className={styles.imagePlaceholder}>
-              <Image
-                src="/assets/image44.png"
-                alt="Centella leaves"
-                width={500}
-                height={350}
-              />
+            <div className={styles.imageGrid}>
+              <div className={styles.imagePlaceholder}>
+                <Image
+                  src="/assets/image33.png"
+                  alt="Centella Asiatica plant"
+                  width={500}
+                  height={350}
+                />
+              </div>
+              <div className={styles.imagePlaceholder}>
+                <Image
+                  src="/assets/image44.png"
+                  alt="Centella leaves"
+                  width={500}
+                  height={350}
+                />
+              </div>
             </div>
-          </div>
           </div>
         </section>
 
         <section className={styles.applications}>
-  <h2>Key Applications</h2>
-  <div className={styles.appGrid}>
-    <div>
-      <h3>💧 Skincare & Cosmetics</h3>
-      <p>
-        Used in creams, serums, and masks for its soothing, anti-aging, and
-        wound-healing properties.
-      </p>
-    </div>
-    <div>
-      <h3>💊 Pharmaceuticals</h3>
-      <p>
-        Centella extract supports circulation, cognitive function, and scar
-        recovery in therapeutic formulations.
-      </p>
-    </div>
-    <div>
-      <h3>🌿 Nutraceuticals</h3>
-      <p>
-        Incorporated into dietary supplements promoting memory, stress relief,
-        and overall well-being.
-      </p>
-    </div>
-  </div>
-</section>
+          <h2>Key Applications</h2>
+          <div className={styles.appGrid}>
+            <div>
+              <h3>💧 Skincare & Cosmetics</h3>
+              <p>
+                Used in creams, serums, and masks for its soothing, anti-aging,
+                and wound-healing properties.
+              </p>
+            </div>
+            <div>
+              <h3>💊 Pharmaceuticals</h3>
+              <p>
+                Centella extract supports circulation, cognitive function, and
+                scar recovery in therapeutic formulations.
+              </p>
+            </div>
+            <div>
+              <h3>🌿 Nutraceuticals</h3>
+              <p>
+                Incorporated into dietary supplements promoting memory, stress
+                relief, and overall well-being.
+              </p>
+            </div>
+          </div>
+        </section>
 
-<section className={styles.composition}>
-  <h2>Key Active Molecules</h2>
-  <ul>
-    <li>Asiaticoside</li>
-    <li>Madecassoside</li>
-    <li>Asiatic Acid</li>
-    <li>Madecassic Acid</li>
-  </ul>
-  <p>
-    These bioactive compounds are responsible for Centella’s regenerative,
-    antioxidant, and anti-inflammatory effects.
-  </p>
-</section>
-
-
+        <section className={styles.composition}>
+          <h2>Key Active Molecules</h2>
+          <ul>
+            <li>Asiaticoside</li>
+            <li>Madecassoside</li>
+            <li>Asiatic Acid</li>
+            <li>Madecassic Acid</li>
+          </ul>
+          <p>
+            These bioactive compounds are responsible for Centella’s
+            regenerative, antioxidant, and anti-inflammatory effects.
+          </p>
+        </section>
 
         {/* SUPPLY CHAIN */}
         <section className={styles.valueChain}>
@@ -153,26 +151,17 @@ export default function CentellaAsiatica() {
               protection, and community well-being.
             </p>
           </div>
-          <div className={styles.imagePlaceholder}>
-            {/* <Image
-              src="https://images.unsplash.com/photo-1602052577122-f73b9710adba?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740"
-              alt="Quality control laboratory"
-              width={600}
-              height={400}
-            /> */}
-          </div>
         </section>
 
         <section className={styles.sustainability}>
-  <h2>Sustainability & Impact</h2>
-  <p>
-    Every kilogram of Centella exported supports sustainable harvesting and the
-    livelihoods of over <strong>4,500 local pickers</strong>. Through education,
-    nutrition, and biodiversity programs, we ensure positive environmental and
-    social impact across Madagascar.
-  </p>
-</section>
-
+          <h2>Sustainability & Impact</h2>
+          <p>
+            Every kilogram of Centella exported supports sustainable harvesting
+            and the livelihoods of over <strong>4,500 local pickers</strong>.
+            Through education, nutrition, and biodiversity programs, we ensure
+            positive environmental and social impact across Madagascar.
+          </p>
+        </section>
 
         {/* CTA */}
         <section className={styles.ctaSection}>

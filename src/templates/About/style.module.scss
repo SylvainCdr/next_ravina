@@ -35,25 +35,32 @@
   }
 
   .intro {
-    background-image: url("/assets/mg.svg");
-    background-size: 40%;
-    background-position: top -1% right 5%;
-    background-repeat: no-repeat;
-
+    
     .introContent {
-      max-width: 1400px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 0rem 0rem;
       display: flex;
       flex-direction: column;
-
       gap: 3rem;
+      width: 100%;
+
 
       .history {
         display: flex;
-        flex-direction: column;
-        width: 50%;
-        padding-left: 15%;
+        width: 100%;
+        margin : 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+      
+
+        .history1 {
+          display: flex;
+          flex-direction: column;
+          width: 60%;
+          margin: 0 auto;
+       
 
         h2 {
           font-size: 2.6rem;
@@ -81,16 +88,30 @@
           line-height: 1.3;
         }
 
-        img {
-          width: 40%;
-          height: 40%;
-          object-fit: cover;
-        }
+       
+
+         }
+          .history2  {
+            width: 40%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: right;
+
+
+     
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+             
+            }
+      }
+
       }
       .values {
-        padding-top: 5rem;
-        width: 50%;
-        padding-left: 15%;
+        padding-top: 0rem;
+        width: 100%;
+
         h2 {
           font-size: 2.6rem;
           font-weight: 700;
@@ -98,14 +119,14 @@
           position: relative;
           margin-bottom: 1.2rem;
 
-          &::after {
+        &::after {
             content: "";
             position: absolute;
             bottom: -0.4rem;
             left: 0;
             width: 60px;
             height: 4px;
-            background-color: var(--col4);
+            background-color: var(--col1);
             border-radius: 2px;
           }
         }
@@ -160,7 +181,7 @@
       padding: 4rem 2rem;
 
       h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 700;
         color: var(--col3);
         margin-bottom: 1.5rem;
@@ -222,7 +243,7 @@
       position: relative;
 
       h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 700;
         color: var(--col3);
         margin-bottom: 1.5rem;
@@ -287,7 +308,7 @@
   }
 
   .impact {
-    background: linear-gradient(135deg, var(--col2) 0%, var(--col5) 100%);
+    background: linear-gradient(135deg, var(--col1) 0%, var(--col1) 100%);
     padding: 8rem 2rem;
     text-align: center;
     position: relative;
@@ -328,7 +349,7 @@
 
     h2 {
       font-size: 3rem;
-      color: var(--col1);
+      color: var(--col5);
       margin-bottom: 1rem;
       position: relative;
       z-index: 3;
@@ -340,7 +361,7 @@
         display: block;
         width: 100px;
         height: 5px;
-        background: linear-gradient(90deg, var(--col3), var(--col4));
+        background: linear-gradient(90deg, var(--col3), var(--col3));
         margin: 2rem auto 4rem auto;
         border-radius: 3px;
       }
@@ -377,8 +398,8 @@
         background: linear-gradient(
           90deg,
           var(--col3),
-          var(--col4),
-          var(--col1)
+          var(--col3),
+          var(--col3)
         );
         border-radius: 24px 24px 0 0;
       }
@@ -474,12 +495,12 @@
       left: 0;
       width: 100%;
       height: 2px;
-      background: linear-gradient(90deg, transparent, var(--col4), transparent);
+      background: linear-gradient(90deg, transparent, var(--col1), transparent);
     }
 
     h2 {
       font-size: 3rem;
-      color: var(--col1);
+      color: var(--col3);
       margin-bottom: 1.5rem;
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -489,7 +510,7 @@
         display: block;
         width: 100px;
         height: 5px;
-        background: linear-gradient(90deg, var(--col3), var(--col4));
+        background: linear-gradient(90deg, var(--col1), var(--col1));
         margin: 2rem auto 3rem auto;
         border-radius: 3px;
       }

@@ -19,25 +19,10 @@ export default function Contact() {
         {/* Hero Section */}
         <section className={styles.hero}>
           <div className={styles.heroContent}>
-            <h1>Contact RAVINA Medicinals</h1>
+            <h1>Contact RAVINA</h1>
             <p className={styles.heroSubtitle}>
-              Partner with Madagascar's leading UEBT-certified supplier of
-              premium Centella Asiatica and natural extracts
+              Get premium Centella Asiatica and natural extracts from Madagascar
             </p>
-            <div className={styles.heroStats}>
-              <div className={styles.heroStat}>
-                <span>🌿</span>
-                <p>UEBT Certified</p>
-              </div>
-              <div className={styles.heroStat}>
-                <span>🔬</span>
-                <p>HPLC Laboratory</p>
-              </div>
-              <div className={styles.heroStat}>
-                <span>🤝</span>
-                <p>Trusted Partner</p>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -56,17 +41,12 @@ export default function Contact() {
               <form className={styles.contactForm}>
                 <div className={styles.formRow}>
                   <div className={styles.formGroup}>
-                    <label htmlFor="firstName">First Name *</label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      required
-                    />
+                    <label htmlFor="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required />
                   </div>
                   <div className={styles.formGroup}>
-                    <label htmlFor="lastName">Last Name *</label>
-                    <input type="text" id="lastName" name="lastName" required />
+                    <label htmlFor="email">Email *</label>
+                    <input type="email" id="email" name="email" required />
                   </div>
                 </div>
 
@@ -76,39 +56,19 @@ export default function Contact() {
                     <input type="text" id="company" name="company" required />
                   </div>
                   <div className={styles.formGroup}>
-                    <label htmlFor="position">Position</label>
-                    <input type="text" id="position" name="position" />
+                    <label htmlFor="country">Country *</label>
+                    <input type="text" id="country" name="country" required />
                   </div>
-                </div>
-
-                <div className={styles.formRow}>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="email">Email *</label>
-                    <input type="email" id="email" name="email" required />
-                  </div>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" />
-                  </div>
-                </div>
-
-                <div className={styles.formGroup}>
-                  <label htmlFor="country">Country *</label>
-                  <input type="text" id="country" name="country" required />
                 </div>
 
                 <div className={styles.formGroup}>
                   <label htmlFor="interest">Products of Interest</label>
                   <select id="interest" name="interest">
                     <option value="">Select a product category</option>
-                    <option value="centella">
-                      Centella Asiatica (Fresh/Dried)
-                    </option>
+                    <option value="centella">Centella Asiatica</option>
                     <option value="essential-oils">Essential Oils</option>
                     <option value="spices">Spices & Aromatics</option>
-                    <option value="extracts">Natural Extracts</option>
                     <option value="multiple">Multiple Products</option>
-                    <option value="other">Other</option>
                   </select>
                 </div>
 
@@ -117,8 +77,8 @@ export default function Contact() {
                   <textarea
                     id="message"
                     name="message"
-                    rows="5"
-                    placeholder="Please describe your requirements, quantities needed, and any specific certifications required..."
+                    rows="4"
+                    placeholder="Describe your requirements, quantities needed, certifications..."
                     required
                   ></textarea>
                 </div>
@@ -201,47 +161,6 @@ export default function Contact() {
                     We typically respond within 24 hours during business days
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose RAVINA Section */}
-        <section className={styles.whySection}>
-          <div className={styles.whyContent}>
-            <h2>Why Partner with RAVINA?</h2>
-            <div className={styles.advantagesGrid}>
-              <div className={styles.advantage}>
-                <div className={styles.advantageIcon}>🌿</div>
-                <h4>UEBT Certification</h4>
-                <p>
-                  Ethical sourcing with full supply chain traceability and
-                  community development programs
-                </p>
-              </div>
-              <div className={styles.advantage}>
-                <div className={styles.advantageIcon}>🔬</div>
-                <h4>HPLC Laboratory</h4>
-                <p>
-                  In-house quality control with detailed certificates of
-                  analysis for every batch
-                </p>
-              </div>
-              <div className={styles.advantage}>
-                <div className={styles.advantageIcon}>🚚</div>
-                <h4>Reliable Supply</h4>
-                <p>
-                  Direct sourcing from 1,630+ trained pickers across
-                  Madagascar's premium growing regions
-                </p>
-              </div>
-              <div className={styles.advantage}>
-                <div className={styles.advantageIcon}>🤝</div>
-                <h4>Partnership Focus</h4>
-                <p>
-                  Long-term relationships with personalized service and custom
-                  product development
-                </p>
               </div>
             </div>
           </div>

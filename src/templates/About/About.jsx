@@ -10,7 +10,9 @@ export default function About() {
       <div className={styles.intro}>
       <div className={styles.introContent}>
         {/* Company History */}
+        
         <section className={styles.history}>
+          <div className={styles.history1}>
           <h2>Our History</h2>
           <p>
             Founded in Madagascar, <strong>Ravina</strong> is a leading exporter
@@ -21,7 +23,10 @@ export default function About() {
             across Madagascar, ensuring sustainable and ethical harvesting
             practices while preserving the natural ecosystem.
           </p>
-      
+      </div>
+          <div className={styles.history2}>
+            <img src="/assets/mg.svg" alt="" />
+          </div>
         </section>
 
         {/* Values & Commitments */}

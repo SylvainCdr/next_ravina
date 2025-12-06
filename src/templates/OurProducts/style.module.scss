@@ -12,12 +12,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 80vh;
     background-attachment: fixed;
     background-image: linear-gradient(
         135deg,
-        rgba(78, 78, 78, 0.405) 0%,
-        rgba(76, 76, 76, 0.249) 100%
+        rgba(19, 19, 19, 0.634) 0%,
+        rgba(37, 37, 37, 0.432) 100%
       ),
       url("https://images.unsplash.com/photo-1699622595987-9974344baed5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
@@ -26,46 +26,28 @@
     margin-bottom: 0;
     overflow: hidden;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(
-        circle at 30% 20%,
-        rgba(162, 192, 213, 0.1) 0%,
-        transparent 50%
-      );
-      pointer-events: none;
-    }
-
     .heroContent {
       text-align: center;
       z-index: 2;
-      max-width: 1200px;
+      max-width: 1080px;
       padding: 0 2rem;
 
       h1 {
         font-size: 3rem;
-        color: var(--col7);
-        font-weight: 700;
+        color: var(--col5);
+        font-weight: 800;
         margin-bottom: 1.5rem;
-        text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
-        letter-spacing: -0.02em;
-        line-height: 1.1;
       }
 
       .heroSubtitle {
         font-size: 1.3rem;
-        color: var(--col2);
+        color: var(--col6);
         font-weight: 300;
         margin-bottom: 3rem;
         max-width: 900px;
         margin-left: auto;
         margin-right: auto;
-        line-height: 1.4;
+        line-height: 1.6;
       }
 
       .heroStats {
@@ -121,7 +103,7 @@
       margin: 0 auto;
 
       h2 {
-        font-size: clamp(2.5rem, 6vw, 4rem);
+        font-size: 3rem;
         color: var(--col1);
         margin-bottom: 2rem;
         font-weight: 700;
@@ -153,8 +135,8 @@
 
   /* ============ FLAGSHIP SECTION ============ */
   .flagship {
-    background: linear-gradient(135deg, var(--col2) 0%, var(--col5) 100%);
-    padding: 8rem 2rem;
+    background: linear-gradient(135deg, var(--col2) 0%, var(--col2) 100%);
+    padding: 5rem 2rem;
     position: relative;
     overflow: hidden;
 
@@ -174,10 +156,10 @@
     }
 
     .flagshipContent {
-      max-width: 1400px;
+      max-width: 1200px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 2fr 1fr;
       gap: 6rem;
       align-items: center;
       position: relative;
@@ -186,7 +168,7 @@
       .flagshipText {
         .badge {
           display: inline-block;
-          background: linear-gradient(90deg, var(--col3), var(--col4));
+          background: linear-gradient(90deg, var(--col3), var(--col3));
           color: white;
           padding: 0.5rem 1rem;
           border-radius: 20px;
@@ -196,7 +178,7 @@
         }
 
         h2 {
-          font-size: clamp(2.5rem, 5vw, 3.5rem);
+          font-size: 3rem;
           color: var(--col1);
           margin-bottom: 1rem;
           font-weight: 700;
@@ -287,7 +269,7 @@
 
         .productButton {
           display: inline-block;
-          background: linear-gradient(135deg, var(--col3), var(--col4));
+          background: linear-gradient(135deg, var(--col3), var(--col3));
           color: white;
           padding: 1rem 2rem;
           border-radius: 30px;
@@ -306,22 +288,27 @@
 
       .flagshipVisual {
         position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
 
         .productShowcase {
           position: relative;
           border-radius: 20px;
           overflow: hidden;
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+          // box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
           transition: transform 0.4s ease;
-
+          width: 100%;
           &:hover {
             transform: scale(1.02);
           }
 
           .showcaseImage {
             width: 100%;
-            height: auto;
+            height: 100%;
             border-radius: 20px;
+             object-fit: cover;
+            
           }
 
           .productLabel {
@@ -329,7 +316,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            // background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
             padding: 3rem 2rem 2rem;
             color: white;
 
@@ -353,17 +340,17 @@
 
   /* ============ OTHER PRODUCTS ============ */
   .otherProducts {
-    background: var(--col7);
+    background: var(--col1);
     padding: 8rem 2rem;
 
     .sectionHeader {
       text-align: center;
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto 5rem auto;
 
       h2 {
-        font-size: clamp(2.5rem, 6vw, 4rem);
-        color: var(--col1);
+        font-size: 3rem;
+        color: var(--col6);
         margin-bottom: 1.5rem;
         font-weight: 700;
         letter-spacing: -0.02em;
@@ -381,7 +368,7 @@
 
       p {
         font-size: 1.3rem;
-        color: var(--col1);
+        color: var(--col2);
         line-height: 1.6;
       }
     }
@@ -461,7 +448,7 @@
           gap: 0.5rem;
 
           span {
-            background: var(--col5);
+            background: var(--col7);
             color: var(--col3);
             padding: 0.3rem 0.8rem;
             border-radius: 12px;
@@ -485,7 +472,7 @@
       text-align: center;
 
       h2 {
-        font-size: clamp(2.5rem, 6vw, 4rem);
+        font-size: 3rem;
         color: var(--col1);
         margin-bottom: 1.5rem;
         font-weight: 700;
@@ -513,7 +500,7 @@
 
       .qualityFeatures {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 2.5rem;
       }
 
@@ -569,7 +556,7 @@
       text-align: center;
 
       h2 {
-        font-size: clamp(2.5rem, 6vw, 4rem);
+        font-size: 3rem;
         color: var(--col1);
         margin-bottom: 1.5rem;
         font-weight: 700;
@@ -583,6 +570,7 @@
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
+        line-height: 1.6;
       }
 
       .partnershipSteps {
@@ -600,7 +588,7 @@
             display: inline-block;
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, var(--col3), var(--col4));
+            background: linear-gradient(135deg, var(--col3), var(--col3));
             color: white;
             border-radius: 50%;
             font-size: 1.5rem;
@@ -632,7 +620,7 @@
         flex-wrap: wrap;
 
         .primaryButton {
-          background: linear-gradient(135deg, var(--col3), var(--col4));
+          background: linear-gradient(135deg, var(--col3), var(--col3));
           color: white;
           padding: 1rem 2.5rem;
           border-radius: 30px;
