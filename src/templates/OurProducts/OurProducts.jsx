@@ -127,7 +127,7 @@ export default function Products() {
             <div className={styles.flagshipVisual}>
               <div className={styles.productShowcase}>
                 <Image
-                  src="/assets/centellahand.jpeg"
+                  src="/assets/gotu-hands.jpeg"
                   alt="Centella Asiatica dried leaves"
                   width={800}
                   height={600}

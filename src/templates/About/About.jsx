@@ -25,7 +25,7 @@ export default function About() {
           </p>
       </div>
           <div className={styles.history2}>
-            <img src="/assets/mg.svg" alt="" />
+            <img src="/assets/mg-map.svg" alt="" />
           </div>
         </section>
 

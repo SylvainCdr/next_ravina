@@ -7,7 +7,7 @@ function Footer() {
     <div className={styles["footer-container"]}>
       <div className={styles["section-1"]}>
         <img
-          src="/assets/ravin2.avif"
+          src="/assets/ravina-logo.png"
           alt="Logo Ravina"
          
         />

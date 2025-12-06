@@ -160,7 +160,7 @@ export default function HeaderV2() {
             <div className={styles.logoWrapper}>
               <Link href="/">
                 <Image
-                  src="/assets/ravin2.avif"
+                  src="/assets/ravina-logo.png"
                   alt="RAVINA Medicinals - Premium Centella Asiatica from Madagascar"
                   width={160}
                   height={80}
