@@ -45,7 +45,7 @@ export default function HeaderV2() {
       name: "CONTACT US",
       href: "/contact",
       bgImage:
-        "https://images.unsplash.com/photo-1517519610343-021766b185c1?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1596648435727-738393ce8e1c?q=80&w=1748&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
@@ -85,9 +85,9 @@ export default function HeaderV2() {
               alt="RAVINA Madagascar"
             /> */}
             <video autoPlay loop muted className={styles.videoBackground}>
-          <source src="/assets/gotuMenu.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+              <source src="/assets/gotuMenu.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           {/* Menu item backgrounds */}

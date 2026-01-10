@@ -17,31 +17,29 @@ export default function Home() {
         <div className={styles.hero}>
           <div className={styles.overlay} />
           <div className={styles.content}>
-             <div className={styles.contentLeft}>
-        
-            <h1 className={styles.title}>
-              Premium Wild Botanicals — Where Nature, People, and Business
-              Thrive
-            </h1>
-            <p className={styles.description}>
-              RAVINA Medicinals is a Malagasy company specializing in the
-              collection, processing, packaging, and export of natural products.
-              From <strong>Centella Asiatica</strong> to essential oils and
-              spices, our operations are rooted in ethical and sustainable
-              sourcing, empowering communities while protecting biodiversity.
-            </p>
-            <button
-              className={styles.ctaButton}
-              onClick={() => router.push("/centella-asiatica")}
-            >
-              Discover More
-            </button>
+            <div className={styles.contentLeft}>
+              <h1 className={styles.title}>
+                Premium Wild Botanicals — Where Nature, People, and Business
+                Thrive
+              </h1>
+              <p className={styles.description}>
+                RAVINA Medicinals is a Malagasy company specializing in the
+                collection, processing, packaging, and export of natural
+                products. From <strong>Centella Asiatica</strong> to essential
+                oils and spices, our operations are rooted in ethical and
+                sustainable sourcing, empowering communities while protecting
+                biodiversity.
+              </p>
+              <button
+                className={styles.ctaButton}
+                onClick={() => router.push("/centella-asiatica")}
+              >
+                Discover More
+              </button>
             </div>
-              <div className={styles.contentRight}>
-            
+            <div className={styles.contentRight}>
               <img src="assets/mg2.png" alt="" />
             </div>
-
           </div>
         </div>
 
@@ -84,8 +82,6 @@ export default function Home() {
       {/* MISSION & VISION */}
       <section className={styles.section2}>
         <div className={styles.section2Content}>
-        
-
           <div className={styles.card}>
             <div className={styles.icon}>🌍</div>
             <h1>Our Vision</h1>
@@ -95,7 +91,7 @@ export default function Home() {
               and inclusive growth.
             </p>
           </div>
-            <div className={styles.card}>
+          <div className={styles.card}>
             <div className={styles.icon}>🌿</div>
             <h1>Our Mission</h1>
             <p>

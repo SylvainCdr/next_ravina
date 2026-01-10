@@ -173,10 +173,10 @@ export default function QualitySustainability() {
             <div className={styles.visualContent}>
               <div className={styles.mapContainer}>
                 <Image
-                  src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&auto=format&fit=crop&q=60"
+                  src="https://images.unsplash.com/photo-1699622595982-42fb5bb9ad22?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Madagascar map showing operation regions"
                   width={500}
-                  height={400}
+                  height={700}
                   className={styles.mapImage}
                 />
                 <div className={styles.mapOverlay}>

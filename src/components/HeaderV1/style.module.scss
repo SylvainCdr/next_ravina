@@ -7,7 +7,7 @@
   width: 100%;
   z-index: 1000;
   height: 4rem;
-  position : fixed;
+  position: fixed;
 
   .headerLogo {
     padding-left: 1rem;
@@ -35,7 +35,6 @@
     height: 35px;
     cursor: pointer;
     z-index: 1100;
-  
 
     .line {
       width: 35px;
@@ -60,7 +59,7 @@
         align-items: center;
         a {
           text-decoration: none;
-          
+
           color: var(--col2);
           width: 12rem;
           text-align: center;
@@ -73,10 +72,9 @@
 
           &:hover {
             text-decoration: underline;
-            scale : 1.02;
+            scale: 1.02;
           }
         }
-       
       }
     }
   }
