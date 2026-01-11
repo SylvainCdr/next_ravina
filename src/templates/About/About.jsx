@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.hero}>
-        <h1>About Ravina</h1>
+        <h1>About Ravina Medicinals</h1>
       </div>
 
       <div className={styles.intro}>
@@ -15,7 +15,7 @@ export default function About() {
             <div className={styles.history1}>
               <h2>Our History</h2>
               <p>
-                Founded in Madagascar, <strong>Ravina</strong> is a leading
+                Founded in Madagascar, <strong>Ravina Medicinals</strong> is a leading
                 exporter of medicinal plants, specializing in{" "}
                 <strong>Centella Asiatica</strong>. Our mission is to provide
                 the highest quality Centella Asiatica, rich in bioactive
@@ -34,7 +34,7 @@ export default function About() {
           <section className={styles.values}>
             <h2>Our Values & Commitments</h2>
             <p>
-              At <strong>Ravina</strong>, we believe in excellence,
+              At <strong>Ravina Medicinals</strong>, we believe in excellence,
               sustainability, and community empowerment. Our commitment extends
               beyond delivering premium Centella Asiatica — we actively support
               the local economy by collaborating with hundreds of harvesters
@@ -173,7 +173,7 @@ export default function About() {
             {/* Start circle */}
             <div className={styles.timelineStart}>
               <span>
-                Ravina
+                Ravina Medicinals
                 <br />
                 Milestones
               </span>

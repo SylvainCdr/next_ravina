@@ -1,6 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import styles from "./style.module.scss";
+
+// Dynamic import to avoid SSR issues with window
+const PlantAnimation = dynamic(
+  () => import("@/components/PlantAnimation/PlantAnimation"),
+  { ssr: false }
+);
 
 export default function Products() {
   return (
@@ -41,6 +48,7 @@ export default function Products() {
 
         {/* INTRO SECTION */}
         <section className={styles.intro}>
+          <PlantAnimation plantCount={5} className={styles.plantBg} />
           <div className={styles.introContent}>
             <h2>Natural Excellence from Madagascar</h2>
             <p>

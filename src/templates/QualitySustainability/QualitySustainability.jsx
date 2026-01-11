@@ -373,7 +373,7 @@ export default function QualitySustainability() {
         {/* WHY CHOOSE RAVINA */}
         <section className={styles.whySection}>
           <div className={styles.whyContent}>
-            <h2>Why Partner With RAVINA?</h2>
+            <h2>Why Partner With RAVINA MEDICINALS ?</h2>
             <p>
               More than a supplier - a partner committed to quality,
               sustainability, and positive impact
@@ -437,7 +437,7 @@ export default function QualitySustainability() {
             <div className={styles.ctaSection}>
               <h3>Ready to Build a Sustainable Partnership?</h3>
               <p>
-                Join international brands who trust RAVINA for ethical,
+                Join international brands who trust RAVINA MEDICINALS for ethical,
                 high-quality natural ingredients
               </p>
               <div className={styles.ctaButtons}>
