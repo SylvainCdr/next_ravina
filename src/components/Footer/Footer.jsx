@@ -26,8 +26,14 @@ function Footer() {
           <Link href="/centella-asiatica">
             <li>Centella Asiatica</li>
           </Link>
+          <Link href="/our-products">
+            <li>Our Products</li>
+          </Link>
           <Link href="/about">
             <li>About us</li>
+          </Link>
+          <Link href="/sustainability">
+            <li>Sustainability</li>
           </Link>
           <Link href="/contact">
             <li>Contact</li>

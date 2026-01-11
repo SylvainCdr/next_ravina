@@ -322,7 +322,14 @@ export default function QualitySustainability() {
 
               <div className={styles.partnerCard}>
                 <div className={styles.partnerLogo}>
-                  <span className={styles.logoPlaceholder}>L'ORÉAL</span>
+                  <span className={styles.logoPlaceholder}>
+                       <Image 
+                      src="/assets/loreal.png"
+                      alt="L'Oréal Group"
+                      width={120}
+                      height={80}
+                    />
+                  </span>
                 </div>
                 <h4>L'Oréal Group</h4>
                 <p>Trusted supplier for premium cosmetic brands since 2016</p>
@@ -330,7 +337,14 @@ export default function QualitySustainability() {
 
               <div className={styles.partnerCard}>
                 <div className={styles.partnerLogo}>
-                  <span className={styles.logoPlaceholder}>🏛️</span>
+                  <span className={styles.logoPlaceholder}>
+                    <Image 
+                      src="/assets/government.png"
+                      alt="government icon"
+                      width={120}
+                      height={80}
+                    />
+                  </span>
                 </div>
                 <h4>Regional Government</h4>
                 <p>
@@ -340,7 +354,14 @@ export default function QualitySustainability() {
 
               <div className={styles.partnerCard}>
                 <div className={styles.partnerLogo}>
-                  <span className={styles.logoPlaceholder}>SAF FJKM</span>
+                  <span className={styles.logoPlaceholder}>
+                       <Image 
+                      src="/assets/fjkm.png"
+                      alt="government icon"
+                      width={120}
+                      height={80}
+                    />
+                  </span>
                 </div>
                 <h4>NGO SAF FJKM</h4>
                 <p>Partnership for drinking water infrastructure projects</p>

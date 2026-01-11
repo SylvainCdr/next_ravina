@@ -187,7 +187,7 @@ export default function Home() {
 
         <div className={styles.capacityGrid}>
           <div className={styles.capacityCard}>
-            <h2>50+ Tons / Year</h2>
+            <h2>200+ Tons / Year</h2>
             <p>
               Premium dried Centella Asiatica leaves processed and exported
               annually.
