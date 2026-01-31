@@ -1,8 +1,11 @@
 import styles from "./style.module.scss";
-import Image from "next/image";
 import CustomersSlider from "@/components/customersSlider/customersSlider";
+import { useRouter } from "next/router";
+
 
 export default function Home() {
+
+  const router = useRouter();
   return (
     <div className={styles.homeContainer}>
       {/* HERO SECTION */}
@@ -19,22 +22,16 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.contentLeft}>
               <h1 className={styles.title}>
-                Premium Wild Botanicals — Where Nature, People, and Business
-                Thrive
+                Supplier of Centella asiatica & Medicinal Plants from Madagascar
               </h1>
               <p className={styles.description}>
-                RAVINA Medicinals is a Malagasy company specializing in the
-                collection, processing, packaging, and export of natural
-                products. From <strong>Centella Asiatica</strong> to essential
-                oils and spices, our operations are rooted in ethical and
-                sustainable sourcing, empowering communities while protecting
-                biodiversity.
+                Ravina Medicinals is one of the leading suppliers and exporters of raw botanicals and natural ingredients from Madagascar. We provide responsibly sourced Centella asiatica and medicinal plants for the cosmetics, pharmaceutical, and nutraceutical industries.
               </p>
               <button
                 className={styles.ctaButton}
                 onClick={() => router.push("/centella-asiatica")}
               >
-                Discover More
+                Discover Our Supply Chains
               </button>
             </div>
             <div className={styles.contentRight}>
@@ -49,28 +46,28 @@ export default function Home() {
             className={styles.section1Content}
             style={{
               backgroundImage:
-                "url(https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvc21ldGljfGVufDB8fDB8fHww)",
+                "url(https://as1.ftcdn.net/v2/jpg/12/34/06/14/1000_F_1234061430_XbFEjb6B9ETDQat8ab7mjxk81U6cMmBA.jpg)",
             }}
           >
-            <h2>Skincare & Cosmetics</h2>
+            <h2>Harvest & Sourcing</h2>
           </div>
           <div
             className={styles.section1Content}
             style={{
               backgroundImage:
-                "url(https://images.unsplash.com/photo-1532092367580-3bd5bc78dd9d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbnQlMjBtZWRpY2luZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=800)",
+                "url(https://as1.ftcdn.net/v2/jpg/03/36/48/88/1000_F_336488872_GIoXi9yCmZbUfAsMyVtYjn8THOG2Vhcc.jpg)",
             }}
           >
-            <h2>Pharmaceutical Ingredients</h2>
+            <h2>Processing & Quality</h2>
           </div>
           <div
             className={styles.section1Content}
             style={{
               backgroundImage:
-                "url(https://images.unsplash.com/photo-1617897903246-719242758050?w=1200&auto=format&fit=crop&q=80)",
+                "url(https://as1.ftcdn.net/v2/jpg/16/73/45/06/1000_F_1673450627_4ApEUkBmwEmZzJNgJwEyRFCaxDp6dVbR.jpg)",
             }}
           >
-            <h2>Nutraceutical Ingredients</h2>
+            <h2>Logistics & Export</h2>
           </div>
         </section>
       </div>
@@ -229,7 +226,7 @@ export default function Home() {
       </section>
 
       {/* PARTNERS */}
-      <CustomersSlider />
+      {/* <CustomersSlider /> */}
     </div>
   );
 }

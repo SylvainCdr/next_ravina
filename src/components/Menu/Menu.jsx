@@ -24,8 +24,8 @@ export default function Menu() {
         "https://cdn.pixabay.com/photo/2018/07/05/12/09/centella-3518194_1280.jpg",
     },
     {
-      name: "OUR PRODUCTS",
-      href: "/our-products",
+      name: "WHAT WE PROVIDE",
+      href: "/what-we-provide",
       bgImage:
         "https://images.unsplash.com/photo-1605040056130-38d9faad3534?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },

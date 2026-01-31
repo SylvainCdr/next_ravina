@@ -9,11 +9,11 @@ const PlantAnimation = dynamic(
   { ssr: false }
 );
 
-export default function Products() {
+export default function WhatWeProvide() {
   return (
     <>
       <Head>
-        <title>Our Products | RAVINA Medicinals Madagascar</title>
+        <title>What We Provide | RAVINA Medicinals Madagascar</title>
         <meta
           name="description"
           content="Premium natural products from Madagascar: Centella Asiatica (dried leaves & powder), essential oils, and spices. Ethically sourced with full traceability and UEBT certification."
@@ -24,7 +24,7 @@ export default function Products() {
         {/* HERO SECTION */}
         <section className={styles.hero}>
           <div className={styles.heroContent}>
-            <h1>Our Products</h1>
+            <h1>What We Provide</h1>
             <p className={styles.heroSubtitle}>
               Premium natural ingredients from Madagascar's biodiversity,
               ethically sourced with complete traceability
