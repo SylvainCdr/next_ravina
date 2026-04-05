@@ -1,116 +1,152 @@
 ﻿import styles from "./style.module.scss";
-import Image from "next/image";
-import router from "next/router";
+import { useRouter } from "next/router";
 
 export default function About() {
+  const router = useRouter();
   return (
     <div className={styles.aboutContainer}>
+      {/* HERO */}
       <div className={styles.hero}>
-          <h1>About Ravina Medicinals</h1>
+        <h1>About Gasikara Medicinal Plants</h1>
+        <p>A Malagasy company. One product. An uncompromising standard.</p>
       </div>
 
       <div className={styles.intro}>
         <div className={styles.introContent}>
-          {/* Company History */}
-
+          {/* WHO WE ARE */}
           <section className={styles.history}>
             <div className={styles.history1}>
-              <h2>Our History</h2>
+              <h2>Who We Are</h2>
               <p>
-                  Founded in Madagascar, <strong>Ravina Medicinals</strong> is a leading
-                  exporter of medicinal plants, specializing in{" "}
-                  <strong>Centella Asiatica</strong>. Our mission is to provide
-                  the highest quality Centella Asiatica, rich in bioactive
-                  molecules, to customers worldwide. We source our plants from
-                  diverse regions across Madagascar, ensuring sustainable and
-                  ethical harvesting practices while preserving the natural
-                  ecosystem.
+                Madagascar is home to some of the world's most bioactive{" "}
+                <strong>Centella asiatica</strong> — and we have built our
+                entire business around bringing it to you at its best.
+              </p>
+              <p>
+                We are a Malagasy company exporting 100% wild-harvested, dried
+                Centella asiatica leaves to international markets. Everything we
+                do is oriented around a single conviction: that{" "}
+                <strong>
+                  raw material quality is the foundation of every great
+                  formulation
+                </strong>
+                . That conviction shapes how we source, how we train our people,
+                how we process, and how we deliver.
+              </p>
+              <p>
+                We do not compete on volume. We compete on biochemical
+                excellence — and we back it with data.
               </p>
             </div>
             <div className={styles.history2}>
-              <img src="/assets/mg-map.svg" alt="" />
+              <img src="/assets/mg-map.svg" alt="Madagascar sourcing regions" />
             </div>
           </section>
 
-          {/* Values & Commitments */}
+          {/* WHY MADAGASCAR — inside introContent to match SCSS */}
           <section className={styles.values}>
-            <h2>Our Values & Commitments</h2>
+            <h2>Why Madagascar. Why Us.</h2>
             <p>
-              At <strong>Ravina Medicinals</strong>, we believe in excellence,
-              sustainability, and community empowerment. Our commitment extends
-              beyond delivering premium Centella Asiatica — we actively support
-              the local economy by collaborating with hundreds of harvesters
-              across Madagascar. By promoting fair trade and ethical sourcing,
-              we contribute to economic growth and environmental preservation.
+              Madagascar's Centella asiatica is globally recognized for its
+              superior phytochemical profile. The island's unique biodiversity
+              and growing conditions produce leaves with triterpene
+              concentrations that consistently outperform cultivated
+              alternatives.
             </p>
             <p>
-              We take pride in our rigorous quality control, ensuring that every
-              batch of Centella Asiatica meets the highest international
-              standards. Our passion for natural health solutions drives us to
-              maintain transparency and integrity in every step of our process.
+              We are one of the few exporters combining this natural advantage
+              with <strong>rigorous, documented quality control</strong> from
+              harvest to delivery — making us a reliable partner for buyers who
+              cannot afford to compromise on raw material integrity.
             </p>
-          </section>
-
-          <section className={styles.illustrations}>
-            <img
-              src="https://images.unsplash.com/photo-1592997572749-3f3e7e9bf05b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fG1hZGFnYXNjYXJ8ZW58MHwwfDB8fHwy"
-              alt=""
-            />
-            <img
-              src="https://images.unsplash.com/photo-1504598578017-40d9b776f1bc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-            <img
-              src="https://images.unsplash.com/photo-1649187642101-6317f194bc1d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
           </section>
         </div>
-        {/* CERTIFICATIONS & STANDARDS */}
 
-        <section className={styles.certifications}>
-          <div className={styles.certificationsContent}>
-            <h2>Certifications & Standards</h2>
-            <p>
-              RAVINA Medicinals is a proud member of the{" "}
-              <strong>UEBT (Union for Ethical BioTrade)</strong>
-              and operates under strict compliance with{" "}
-              <strong>international traceability and quality standards</strong>.
-              Our operations are audited regularly to ensure transparency and
-              ethical sourcing.
-            </p>
-            <div className={styles.certLogos}>
-              <img src="/assets/UEBT1.png" alt="UEBT certification" />
+        {/* ILLUSTRATIONS — outside introContent, direct child of intro */}
+        <section className={styles.illustrations}>
+          <img
+            src="https://images.unsplash.com/photo-1592997572749-3f3e7e9bf05b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fG1hZGFnYXNjYXJ8ZW58MHwwfDB8fHwy"
+            alt="Madagascar landscape"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1504598578017-40d9b776f1bc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Centella asiatica harvesting"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1649187642101-6317f194bc1d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Madagascar biodiversity"
+          />
+        </section>
+
+        {/* OUR SOURCING MODEL */}
+        <section className={styles.operations}>
+          <h2>Our Sourcing Model</h2>
+          <p>
+            At the heart of our operation is a dense, well-structured network of
+            trained pickers — predominantly women from the rural communities
+            where we work. These pickers are not occasional contractors. They
+            are the backbone of our supply chain, selected, trained, and
+            supervised over many years by our field teams to uphold strict
+            quality and operational standards.
+          </p>
+
+          <div className={styles.opsGrid}>
+            <div className={styles.opCard}>
+              <span>🌿</span>
+              <h3>Field Collection</h3>
+              <p>
+                Wild-harvested leaves across Madagascar's Alaotra-Mangoro and
+                Atsimo-Atsinanana regions. Pickers are continuously trained on
+                harvesting and handling standards.
+              </p>
+            </div>
+
+            <div className={styles.opCard}>
+              <span>🌞</span>
+              <h3>Drying & Processing</h3>
+              <p>
+                Semi-dried at collection point, then transported to regional
+                warehouses for controlled drying. Final pressing and packing at
+                our central facility.
+              </p>
+            </div>
+
+            <div className={styles.opCard}>
+              <span>🔬</span>
+              <h3>Laboratory Verification</h3>
+              <p>
+                HPLC analysis confirming Total Triterpene content at every
+                critical stage. Every batch is delivered with full analytical
+                documentation.
+              </p>
+            </div>
+
+            <div className={styles.opCard}>
+              <span>📍</span>
+              <h3>Full Traceability</h3>
+              <p>
+                Digital picker registration and plot tracing powered by
+                FarmForce — complete transparency from field to export.
+              </p>
             </div>
           </div>
         </section>
 
-        <section className={styles.location}>
-          <div className={styles.locationContent}>
-            <h2>Based in Madagascar</h2>
-            <p>
-              Our head office and processing facilities are located near
-              Antananarivo, giving us direct access to Madagascar’s rich
-              biodiversity regions such as Alaotra-Mangoro and
-              Atsimo-Atsinanana.
-            </p>
-          </div>
-        </section>
-        {/* OUR IMPACT SECTION */}
+        {/* IMPACT NUMBERS */}
         <section className={styles.impact}>
-          <h2>Our Impact in Numbers</h2>
+          <h2>In Numbers</h2>
           <div className={styles.statsGrid}>
             <div className={styles.stat}>
               <h3>4,500+</h3>
-              <p>Local pickers empowered</p>
+              <p>Trained pickers in our network</p>
             </div>
             <div className={styles.stat}>
-              <h3>3</h3>
-              <p>Annual UEBT audits</p>
+              <h3>200+ T</h3>
+              <p>Exported annually</p>
             </div>
             <div className={styles.stat}>
-              <h3>2</h3>
-              <p>Major biodiversity regions involved</p>
+              <h3>UEBT</h3>
+              <p>Ethical BioTrade compliance</p>
             </div>
             <div className={styles.stat}>
               <h3>100%</h3>
@@ -119,209 +155,38 @@ export default function About() {
           </div>
         </section>
 
-        {/* OPERATIONS SECTION */}
-        <section className={styles.operations}>
-          <h2>Our Operations</h2>
-          <p>
-            Ravina’s strength lies in a fully integrated supply chain — from
-            wild collection to export. Each step is monitored to ensure quality,
-            safety, and traceability for our international partners.
-          </p>
-
-          <div className={styles.opsGrid}>
-            <div className={styles.opCard}>
-              <span>🏭</span>
-              <h3>Processing Center</h3>
-              <p>
-                Equipped for cleaning, shredding, grading and safe storage of
-                wild botanicals, guaranteeing consistent quality year-round.
-              </p>
-            </div>
-
-            <div className={styles.opCard}>
-              <span>🌞</span>
-              <h3>Drying Facilities</h3>
-              <p>
-                Solar-powered and controlled drying units ensuring optimal
-                moisture levels and preservation of active molecules.
-              </p>
-            </div>
-
-            <div className={styles.opCard}>
-              <span>🔬</span>
-              <h3>In-house Laboratory</h3>
-              <p>
-                HPLC-capable laboratory for asiaticoside / madecassoside
-                verification and strict microbiological checks.
-              </p>
-            </div>
-
-            <div className={styles.opCard}>
-              <span>📍</span>
-              <h3>Field Operations & Traceability</h3>
-              <p>
-                Digital picker registration and plot tracing powered by
-                FarmForce — full transparency from field to export.
-              </p>
+        {/* CERTIFICATIONS */}
+        <section className={styles.certifications}>
+          <div className={styles.certificationsContent}>
+            <h2>Certifications & Standards</h2>
+            <p>
+              Gasikara Medicinal Plants operates under strict compliance with
+              the <strong>UEBT (Union for Ethical BioTrade)</strong> standards.
+              Our operations are audited regularly to ensure transparency,
+              traceability, and ethical sourcing at every level of the supply
+              chain.
+            </p>
+            <div className={styles.certLogos}>
+              <img src="/assets/UEBT1.png" alt="UEBT certification" />
             </div>
           </div>
         </section>
 
-        {/* TIMELINE */}
-        <section className={styles.timeline}>
-          <h2>Company Milestones</h2>
-
-          <div className={styles.timelineContainer}>
-            {/* Start circle */}
-            <div className={styles.timelineStart}>
-              <span>
-                Ravina Medicinals
-                <br />
-                Milestones
-              </span>
-            </div>
-
-            {/* Timeline line with chevrons */}
-            <div className={styles.timelineLine}>
-              <div className={styles.chevrons}>
-                {[...Array(20)].map((_, i) => (
-                  <div key={i} className={styles.chevron}></div>
-                ))}
-              </div>
-            </div>
-
-            {/* End circle */}
-            <div className={styles.timelineEnd}>
-              <span>present</span>
-            </div>
-
-            {/* Milestones */}
-            <div className={styles.milestones}>
-              <div
-                className={`${styles.milestone} ${styles.above}`}
-                style={{ "--index": 0 }}
-              >
-                <div className={styles.milestoneContent}>
-                  <h4>2009</h4>
-                  <p className={styles.subtitle}>Established</p>
-                  <p className={styles.description}>
-                    Company founded in Ambatondrazaka
-                  </p>
-                </div>
-                <div className={styles.milestoneLine}></div>
-                <div className={styles.milestoneDot}></div>
-              </div>
-
-              <div
-                className={`${styles.milestone} ${styles.below}`}
-                style={{ "--index": 1 }}
-              >
-                <div className={styles.milestoneDot}></div>
-                <div className={styles.milestoneLine}></div>
-                <div className={styles.milestoneContent}>
-                  <h4>2011</h4>
-                  <p className={styles.subtitle}>First Export</p>
-                  <p className={styles.description}>1st shipment to India</p>
-                </div>
-              </div>
-
-              <div
-                className={`${styles.milestone} ${styles.above}`}
-                style={{ "--index": 2 }}
-              >
-                <div className={styles.milestoneContent}>
-                  <h4>2013</h4>
-                  <p className={styles.subtitle}>Infrastructure</p>
-                  <p className={styles.description}>
-                    Lab equipment & warehouse extension
-                  </p>
-                </div>
-                <div className={styles.milestoneLine}></div>
-                <div className={styles.milestoneDot}></div>
-              </div>
-
-              <div
-                className={`${styles.milestone} ${styles.below}`}
-                style={{ "--index": 3 }}
-              >
-                <div className={styles.milestoneDot}></div>
-                <div className={styles.milestoneLine}></div>
-                <div className={styles.milestoneContent}>
-                  <h4>2017</h4>
-                  <p className={styles.subtitle}>UEBT Compliance</p>
-                  <p className={styles.description}>
-                    Ethical BioTrade certification
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className={`${styles.milestone} ${styles.above}`}
-                style={{ "--index": 4 }}
-              >
-                <div className={styles.milestoneContent}>
-                  <h4>2024</h4>
-                  <p className={styles.subtitle}>RAVINA Medicinals</p>
-                  <p className={styles.description}>
-                    Rebrand & expansion to South-East
-                  </p>
-                </div>
-                <div className={styles.milestoneLine}></div>
-                <div className={styles.milestoneDot}></div>
-              </div>
-
-              <div
-                className={`${styles.milestone} ${styles.below}`}
-                style={{ "--index": 5 }}
-              >
-                <div className={styles.milestoneDot}></div>
-                <div className={styles.milestoneLine}></div>
-                <div className={styles.milestoneContent}>
-                  <h4>2025</h4>
-                  <p className={styles.subtitle}>Growth</p>
-                  <p className={styles.description}>
-                    New warehouses & unified vision
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Meet the Team */}
-        <section className={styles.team}>
-          <span className={styles.teamSubtitle}>meet our</span>
-          <h2>Team</h2>
-          <p className={styles.teamIntro}>
-            Our dedicated team combines environmental expertise, operational
-            excellence, and deep field experience - working together to deliver
-            the highest quality botanicals from Madagascar to the world.
-          </p>
-          <span className={styles.bgWatermark}>team</span>
-
-          <div className={styles.teamCards}>
-            <div className={styles.teamCard}>
-              <img src="/assets/team1.png" alt="Ravina leadership team" />
-              <div className={styles.teamCardContent}>
-                <h3>Leadership</h3>
-                <p>Guiding our vision forward</p>
-              </div>
-            </div>
-
-            <div className={styles.teamCard}>
-              <img src="/assets/team4.jpg" alt="Ravina team working together" />
-              <div className={styles.teamCardContent}>
-                <h3>Field Operations</h3>
-                <p>Working with local communities</p>
-              </div>
-            </div>
-            <div className={styles.teamCard}>
-              <img src="/assets/team3.jpg" alt="Ravina quality control team" />
-              <div className={styles.teamCardContent}>
-                <h3>Quality Control</h3>
-                <p>Ensuring excellence at every step</p>
-              </div>
-            </div>
+        {/* LOCATION */}
+        <section className={styles.location}>
+          <div className={styles.locationContent}>
+            <h2>Based in Madagascar</h2>
+            <p>
+              Our head office and processing facilities are located near
+              Antananarivo, giving us direct access to Madagascar's rich
+              biodiversity regions — Alaotra-Mangoro and Atsimo-Atsinanana.
+            </p>
+            <button
+              className={styles.contactButton}
+              onClick={() => router.push("/contact")}
+            >
+              Get in Touch
+            </button>
           </div>
         </section>
       </div>

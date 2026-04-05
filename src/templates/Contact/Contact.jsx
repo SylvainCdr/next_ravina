@@ -6,12 +6,11 @@ export default function Contact() {
     <>
       <Head>
         <title>
-          Contact RAVINA Medicinals - Premium Centella Asiatica Supplier
-          Madagascar
+          Contact Us | Gasikara Medicinal Plants — Centella Asiatica Madagascar
         </title>
         <meta
           name="description"
-          content="Contact RAVINA Medicinals for premium Centella Asiatica, essential oils and spices from Madagascar. UEBT certified supplier with HPLC laboratory analysis."
+          content="Contact Gasikara Medicinal Plants to request samples or discuss Centella asiatica sourcing. Wild-harvested, HPLC verified, UEBT compliant — Madagascar."
         />
       </Head>
 
@@ -21,7 +20,7 @@ export default function Contact() {
           <img
             className={styles.logo}
             src="/assets/logo-white.png"
-            alt="RAVINA Medicinals"
+            alt="Gasikara Medicinal Plants"
           />
         </div>
 
@@ -115,8 +114,8 @@ export default function Contact() {
               <div className={styles.contactItem}>
                 <div className={styles.contactLabel}>Email</div>
                 <div className={styles.contactValue}>
-                  <a href="mailto:contact@ravina-medicinals.com">
-                    contact@ravina-medicinals.com
+                  <a href="mailto:contact@gasikara-medicinals.com">
+                    contact@gasikara-medicinals.com
                   </a>
                 </div>
               </div>

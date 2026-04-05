@@ -23,15 +23,15 @@ export default function Menu() {
       bgImage:
         "https://cdn.pixabay.com/photo/2018/07/05/12/09/centella-3518194_1280.jpg",
     },
-    {
-      name: "WHAT WE PROVIDE",
-      href: "/what-we-provide",
-      bgImage:
-        "https://images.unsplash.com/photo-1605040056130-38d9faad3534?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+    // {
+    //   name: "WHAT WE PROVIDE",
+    //   href: "/what-we-provide",
+    //   bgImage:
+    //     "https://images.unsplash.com/photo-1605040056130-38d9faad3534?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    // },
     {
       name: "ABOUT US",
-      href: "/about-ravina-medicinals",
+      href: "/about-gasikara-medicinals",
       bgImage:
         "https://images.unsplash.com/photo-1699622595987-9974344baed5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -82,7 +82,7 @@ export default function Menu() {
           >
             {/* <img
               src="https://images.unsplash.com/photo-1558437753-21dc69d8ebed?q=80&w=2940&auto=format&fit=crop"
-              alt="RAVINA Madagascar"
+              alt="Gasikara Medicinal Plants Madagascar"
             /> */}
             <video autoPlay loop muted className={styles.videoBackground}>
               <source src="/assets/gotuMenu.mp4" type="video/mp4" />
@@ -160,10 +160,10 @@ export default function Menu() {
             <div className={styles.logoWrapper}>
               <Link href="/">
                 <Image
-                  src="/assets/ravina-logo.png"
-                  alt="RAVINA Medicinals - Premium Centella Asiatica from Madagascar"
-                  width={160}
-                  height={80}
+                  src="/assets/gasikara.png"
+                  alt="Gasikara Medicinal Plants - Premium Centella Asiatica from Madagascar"
+                  width={100}
+                  height={70}
                 />
               </Link>
             </div>
@@ -176,8 +176,7 @@ export default function Menu() {
               onClick={toggleMenu}
               id="menu-toggle"
             >
-              <span className={styles.toggleLineTop}></span>
-              <span className={styles.toggleLineBottom}></span>
+              <span className={styles.toggleLabel}>MENU</span>
             </div>
 
             {/* CTA Button */}

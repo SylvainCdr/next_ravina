@@ -1,17 +1,13 @@
-import styles from "./style.module.scss";
-import CustomersSlider from "@/components/customersSlider/customersSlider";
+﻿import styles from "./style.module.scss";
 import { useRouter } from "next/router";
 
-
 export default function Home() {
-
   const router = useRouter();
   return (
     <div className={styles.homeContainer}>
-      {/* HERO SECTION */}
 
+      {/* HERO SECTION */}
       <div className={styles.hero1}>
-        {/* // video hero background */}
         <video autoPlay loop muted className={styles.videoBackground}>
           <source src="/assets/gotuVid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -22,16 +18,16 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.contentLeft}>
               <h1 className={styles.title}>
-                Supplier of Centella asiatica & Medicinal Plants from Madagascar
+                Wild-Harvested Centella Asiatica from Madagascar — Verified by Science
               </h1>
               <p className={styles.description}>
-                Ravina Medicinals is one of the leading suppliers and exporters of raw botanicals and natural ingredients from Madagascar. We provide responsibly sourced Centella asiatica and medicinal plants for the cosmetics, pharmaceutical, and nutraceutical industries.
+                Gasikara Medicinal Plants exports 100% wild-harvested, dried Centella asiatica leaves with consistently high Total Triterpene content — backed by HPLC analysis and full supply chain traceability.
               </p>
               <button
                 className={styles.ctaButton}
                 onClick={() => router.push("/centella-asiatica")}
               >
-                Discover Our Supply Chains
+                Our Product
               </button>
             </div>
             <div className={styles.contentRight}>
@@ -40,7 +36,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* SECTORS */}
+        {/* PILLARS */}
         <section className={styles.section1}>
           <div
             className={styles.section1Content}
@@ -49,7 +45,7 @@ export default function Home() {
                 "url(https://as1.ftcdn.net/v2/jpg/12/34/06/14/1000_F_1234061430_XbFEjb6B9ETDQat8ab7mjxk81U6cMmBA.jpg)",
             }}
           >
-            <h2>Harvest & Sourcing</h2>
+            <h2>Wild Harvest & Sourcing</h2>
           </div>
           <div
             className={styles.section1Content}
@@ -58,7 +54,7 @@ export default function Home() {
                 "url(https://as1.ftcdn.net/v2/jpg/03/36/48/88/1000_F_336488872_GIoXi9yCmZbUfAsMyVtYjn8THOG2Vhcc.jpg)",
             }}
           >
-            <h2>Processing & Quality</h2>
+            <h2>Processing & HPLC Quality</h2>
           </div>
           <div
             className={styles.section1Content}
@@ -67,166 +63,103 @@ export default function Home() {
                 "url(https://as1.ftcdn.net/v2/jpg/16/73/45/06/1000_F_1673450627_4ApEUkBmwEmZzJNgJwEyRFCaxDp6dVbR.jpg)",
             }}
           >
-            <h2>Logistics & Export</h2>
+            <h2>Export by Sea Freight</h2>
           </div>
         </section>
       </div>
+
+      {/* CTA BANNER */}
       <section className={styles.ctaBanner}>
-        <p>Looking for a reliable supplier of ethical botanicals?</p>
+        <p>Looking for a reliable Centella asiatica supplier from Madagascar?</p>
         <button onClick={() => router.push("/contact")}>Contact us</button>
       </section>
 
-      {/* MISSION & VISION */}
-      <section className={styles.section2}>
-        <div className={styles.section2Content}>
-          <div className={styles.card}>
-            <div className={styles.icon}>🌍</div>
-            <h1>Our Vision</h1>
-            <p>
-              To be a trusted international partner in ethical wild plant
-              sourcing — known for our commitment to quality, sustainability,
-              and inclusive growth.
-            </p>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.icon}>🌿</div>
-            <h1>Our Mission</h1>
-            <p>
-              We source wild plants ethically and sustainably, prioritizing
-              quality at every step. By empowering local communities and
-              partnering with clients, we create shared value — driving
-              environmental stewardship, inclusive growth, and measurable
-              impact.
-            </p>
-          </div>
-          <div className={styles.card}>
-            <div className={styles.icon}>🧪</div>
-            <h1>Our Expertise</h1>
-            <p>
-              Over 10 years of experience in botanical sourcing, community
-              engagement, and international exports.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* VALUES */}
-      <section className={styles.section3}>
-        <div className={styles.section3Content}>
-          <h1>Our Core Values</h1>
-          <ul>
-            <li>🌿 Ethical & Sustainable Sourcing</li>
-            <li>💎 Uncompromising Quality</li>
-            <li>🤝 Community Empowerment</li>
-            <li>💡 Impact Through Partnership</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* WHY PARTNER WITH US */}
+      {/* WHY US */}
       <section className={styles.partnerSection}>
         <div className={styles.partnerContent}>
-          <h1>Why Partner With Us</h1>
+          <h1>Why Gasikara Medicinal Plants</h1>
           <p>
-            Choosing <strong>RAVINA Medicinals</strong> means choosing an
-            experienced and ethical partner from Madagascar. We offer a reliable
-            supply of premium natural ingredients, backed by full traceability
-            and a strong social and environmental commitment.
+            Madagascar's wild Centella asiatica is globally recognized for its superior phytochemical profile. We combine this natural advantage with rigorous, documented quality control — from harvest to delivery.
           </p>
 
           <div className={styles.partnerGrid}>
             <div className={styles.partnerCard}>
-              <span>🌱</span>
-              <h2>Ethical Sourcing</h2>
-              <p>
-                Certified supply chains following UEBT standards — every step is
-                traceable from picker to export.
-              </p>
-            </div>
-            <div className={styles.partnerCard}>
               <span>🔬</span>
-              <h2>Quality Assurance</h2>
+              <h2>High TTT Content</h2>
               <p>
-                In-house laboratory equipped for HPLC analysis and strict
-                quality control.
+                Consistently high Total Triterpene content — asiaticoside and madecassoside — verified by in-house HPLC analysis on every batch.
               </p>
             </div>
             <div className={styles.partnerCard}>
-              <span>🌍</span>
-              <h2>Community Impact</h2>
+              <span>🌿</span>
+              <h2>100% Wild-Harvested</h2>
               <p>
-                Over 4,500 trained pickers empowered through education,
-                nutrition, and environmental initiatives.
+                Sourced exclusively from Madagascar's wild flora. The island's unique soils and climate deliver naturally potent leaves, shipment after shipment.
               </p>
             </div>
             <div className={styles.partnerCard}>
-              <span>🚚</span>
-              <h2>Reliable Logistics</h2>
+              <span>📍</span>
+              <h2>Full Traceability</h2>
               <p>
-                Owned logistics fleet and efficient processing facilities ensure
-                consistent quality and timely exports.
+                Digital picker registration and plot tracing from field to export. Every batch is documented and delivered with full analytical support.
+              </p>
+            </div>
+            <div className={styles.partnerCard}>
+              <span>🤝</span>
+              <h2>Ethical Supply Chain</h2>
+              <p>
+                A dense network of trained pickers — predominantly women from rural communities — selected and supervised by our field teams over many years.
               </p>
             </div>
           </div>
 
-          <button className={styles.partnerButton}>Become a Partner</button>
+          <button
+            className={styles.partnerButton}
+            onClick={() => router.push("/contact")}
+          >
+            Request Samples
+          </button>
         </div>
       </section>
 
+      {/* KEY NUMBERS */}
       <section className={styles.capacitySection}>
-        <h1>Production Capacity</h1>
-        <p className={styles.capacityIntro}>
-          With a deeply integrated supply chain and a strong network of trained
-          pickers, RAVINA Medicinals ensures reliable, high-volume and
-          high-quality production — tailored for global skincare, nutraceutical,
-          and pharmaceutical industries.
-        </p>
-
+        <h1>Our Scale</h1>
         <div className={styles.capacityGrid}>
           <div className={styles.capacityCard}>
             <h2>200+ Tons / Year</h2>
-            <p>
-              Premium dried Centella Asiatica leaves processed and exported
-              annually.
-            </p>
+            <p>Dried Centella asiatica leaves exported annually.</p>
           </div>
-
           <div className={styles.capacityCard}>
             <h2>4,500+ Pickers</h2>
-            <p>
-              Fully trained harvesting network across multiple regions of
-              Madagascar.
-            </p>
+            <p>Trained harvesting network across Madagascar's sourcing regions.</p>
           </div>
-
           <div className={styles.capacityCard}>
-            <h2>3 Certified Regions</h2>
-            <p>
-              Sustainably managed sourcing zones audited under UEBT standards.
-            </p>
+            <h2>50 kg Bales</h2>
+            <p>Export-ready polypropylene bales, optimized for sea freight.</p>
           </div>
-
           <div className={styles.capacityCard}>
-            <h2>In-House Laboratory</h2>
-            <p>
-              HPLC analysis and strict quality control for every export batch.
-            </p>
+            <h2>HPLC Verified</h2>
+            <p>In-house laboratory analysis at every critical stage of production.</p>
           </div>
         </div>
       </section>
 
-      {/* IMPACT */}
+      {/* FINAL CTA */}
       <section className={styles.section4}>
-        <h1>Together, Let’s Create What’s Next</h1>
+        <h1>One Product. Uncompromised Quality.</h1>
         <h2>
-          RAVINA Medicinals supports over <strong>4,500 pickers</strong> across
-          Madagascar — promoting livelihoods, education, and biodiversity
-          conservation.
+          We do not compete on volume. We compete on biochemical excellence —
+          and we back it with data.
         </h2>
+        <button
+          className={styles.ctaButton}
+          onClick={() => router.push("/contact")}
+        >
+          Get in Touch
+        </button>
       </section>
 
-      {/* PARTNERS */}
-      {/* <CustomersSlider /> */}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-/* Styles modernes pour le Header RAVINA Medicinals */
+/* Styles modernes pour le Header GASIKARA Medicinal Plants */
 .container {
   position: relative;
 }
@@ -6,9 +6,15 @@
 /* ============ NAVBAR ============ */
 .navbar {
   position: fixed;
-  top: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 9999;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
 .wrapper {
@@ -21,12 +27,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.134);
-  backdrop-filter: blur(20px);
-  border-radius: 16px;
+  padding-block: 0.5rem;
   padding-right: 1rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .logoWrapper img {
@@ -40,18 +42,16 @@
 
 /* ============ MENU TOGGLE ============ */
 .menuToggle {
-  width: 44px;
-  height: 44px;
-  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 7px;
   align-items: center;
   justify-content: center;
-  background: var(--col2);
+  background: var(--col7);
   border-radius: 10px;
+  padding: 10px 16px;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: 1px solid var(--col1);
+ 
 }
 
 .menuToggle:hover {
@@ -59,22 +59,12 @@
   border: 1px solid var(--col3);
 }
 
-.toggleLineTop,
-.toggleLineBottom {
-  width: 29px;
-  height: 2px;
-  background: var(--col1);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transform-origin: center;
-  display: block;
-}
-
-.menuToggle.open .toggleLineTop {
-  transform: translateY(4.5px) rotate(45deg) scaleX(0.8);
-}
-
-.menuToggle.open .toggleLineBottom {
-  transform: translateY(-4.5px) rotate(-45deg) scaleX(0.8);
+.toggleLabel {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--col1);
+  transition: opacity 0.2s ease;
 }
 
 /* ============ CTA BUTTON ============ */

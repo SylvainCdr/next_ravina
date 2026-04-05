@@ -6,10 +6,12 @@ export default function QualitySustainability() {
   return (
     <>
       <Head>
-        <title>Quality & Sustainability | RAVINA Medicinals Madagascar</title>
+        <title>
+          Quality & Sustainability | Gasikara Medicinal Plants Madagascar
+        </title>
         <meta
           name="description"
-          content="UEBT certified quality, HPLC laboratory, sustainable sourcing, and community development. RAVINA Medicinals' commitment to excellence and positive impact in Madagascar."
+          content="UEBT certified, HPLC-verified Centella asiatica sourcing from Madagascar. Gasikara Medicinal Plants — rigorous quality control and ethical supply chain from field to export."
         />
       </Head>
 
@@ -29,15 +31,15 @@ export default function QualitySustainability() {
               </div>
               <div className={styles.heroStat}>
                 <span>4,500+</span>
-                <p>Lives Impacted</p>
+                <p>Trained Pickers</p>
               </div>
               <div className={styles.heroStat}>
                 <span>100%</span>
                 <p>Traceable Supply</p>
               </div>
               <div className={styles.heroStat}>
-                <span>L'Oréal</span>
-                <p>Trusted Since 2016</p>
+                <span>HPLC</span>
+                <p>Verified Every Batch</p>
               </div>
             </div>
           </div>
@@ -96,15 +98,15 @@ export default function QualitySustainability() {
               </div>
 
               <div className={styles.qualityCard}>
-                <div className={styles.cardIcon}>🌍</div>
-                <h3>L'Oréal Partnership</h3>
+                <div className={styles.cardIcon}>📦</div>
+                <h3>Specification-Grade Consistency</h3>
                 <p>
-                  <strong>Trusted supplier since 2016</strong> for L'Oréal
-                  brands including La Roche-Posay, Kiehl's, and L'Oréal Paris.
-                  International recognition of our quality standards.
+                  Every shipment meets defined TTT specifications — not just
+                  once, but <strong>reliably, batch after batch</strong>. Full
+                  analytical documentation included with every export.
                 </p>
                 <div className={styles.cardHighlight}>
-                  <span>Since 2016</span>
+                  <span>Batch Documentation</span>
                 </div>
               </div>
             </div>
@@ -323,22 +325,7 @@ export default function QualitySustainability() {
               <div className={styles.partnerCard}>
                 <div className={styles.partnerLogo}>
                   <span className={styles.logoPlaceholder}>
-                       <Image 
-                      src="/assets/loreal.png"
-                      alt="L'Oréal Group"
-                      width={120}
-                      height={80}
-                    />
-                  </span>
-                </div>
-                <h4>L'Oréal Group</h4>
-                <p>Trusted supplier for premium cosmetic brands since 2016</p>
-              </div>
-
-              <div className={styles.partnerCard}>
-                <div className={styles.partnerLogo}>
-                  <span className={styles.logoPlaceholder}>
-                    <Image 
+                    <Image
                       src="/assets/government.png"
                       alt="government icon"
                       width={120}
@@ -355,7 +342,7 @@ export default function QualitySustainability() {
               <div className={styles.partnerCard}>
                 <div className={styles.partnerLogo}>
                   <span className={styles.logoPlaceholder}>
-                       <Image 
+                    <Image
                       src="/assets/fjkm.png"
                       alt="government icon"
                       width={120}
@@ -373,10 +360,10 @@ export default function QualitySustainability() {
         {/* WHY CHOOSE RAVINA */}
         <section className={styles.whySection}>
           <div className={styles.whyContent}>
-            <h2>Why Partner With RAVINA MEDICINALS ?</h2>
+            <h2>Why Gasikara Medicinal Plants</h2>
             <p>
-              More than a supplier - a partner committed to quality,
-              sustainability, and positive impact
+              A focused supplier — one product, documented quality, and a supply
+              chain built on people, not just process
             </p>
 
             <div className={styles.advantagesGrid}>
@@ -400,10 +387,10 @@ export default function QualitySustainability() {
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>✅</div>
-                <h4>Trusted Quality</h4>
+                <h4>UEBT Certified</h4>
                 <p>
-                  L'Oréal partnership since 2016 and UEBT certification with 3
-                  annual audits
+                  Compliant with Union for Ethical BioTrade standards, assessed
+                  through 3 annual audits
                 </p>
               </div>
 
@@ -435,17 +422,17 @@ export default function QualitySustainability() {
             </div>
 
             <div className={styles.ctaSection}>
-              <h3>Ready to Build a Sustainable Partnership?</h3>
+              <h3>Ready to Source with Gasikara?</h3>
               <p>
-                Join international brands who trust RAVINA MEDICINALS for ethical,
-                high-quality natural ingredients
+                Request samples or discuss your specifications — we respond with
+                full analytical data and transparent commercial terms.
               </p>
               <div className={styles.ctaButtons}>
                 <a href="/contact" className={styles.primaryButton}>
-                  Start Partnership Discussion
+                  Contact Us
                 </a>
-                <a href="/our-products" className={styles.secondaryButton}>
-                  Explore Our Products
+                <a href="/centella-asiatica" className={styles.secondaryButton}>
+                  Our Product
                 </a>
               </div>
             </div>

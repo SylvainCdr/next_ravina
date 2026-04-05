@@ -7,21 +7,30 @@ export default function Document() {
       <Head>
         {/* Meta Tags for SEO */}
 
-        <meta name="description" content="Ravina" />
+        <meta
+          name="description"
+          content="Gasikara Medicinal Plants — Wild-harvested Centella asiatica dried leaves from Madagascar. High Total Triterpene content, HPLC verified, UEBT compliant."
+        />
         <meta
           name="keywords"
-          content="Ravinea, centella asiatica, herbal supplier, madagascar"
+          content="Centella asiatica Madagascar supplier, wild-harvested Centella asiatica dried leaves, high triterpene Centella asiatica bulk, asiaticoside madecassoside raw material, ethical botanical sourcing Madagascar"
         />
-        <meta name="author" content="Ravina" />
+        <meta name="author" content="Gasikara Medicinal Plants" />
         <meta name="robots" content="index, follow" />
 
-        <meta property="og:title" content="Ravina - Centella Asiatica" />
-        <meta property="og:description" content="Ravina - Centella Asiatica" />
-        {/* <meta property="og:url" content="https://www.diviniti.tech" /> */}
+        <meta
+          property="og:title"
+          content="Gasikara Medicinal Plants — Centella Asiatica from Madagascar"
+        />
+        <meta
+          property="og:description"
+          content="100% wild-harvested Centella asiatica dried leaves — high TTT content, HPLC verified, traceable from field to export."
+        />
+        {/* <meta property="og:url" content="https://www.gasikara-medicinals.com" /> */}
         <meta property="og:type" content="website" />
         <meta property="og:image" content="" />
-        <meta property="og:locale" content="fr_FR" />
-        <meta property="og:site_name" content="Ravina" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Gasikara Medicinal Plants" />
 
         {/* Favicon */}
         <link rel="icon" href="" />

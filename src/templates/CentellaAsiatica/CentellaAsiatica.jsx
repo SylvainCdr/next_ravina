@@ -72,7 +72,7 @@ export default function CentellaAsiatica() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     if (sectionRef.current) {
@@ -85,10 +85,12 @@ export default function CentellaAsiatica() {
   return (
     <>
       <Head>
-        <title>Centella Asiatica | RAVINA Medicinals Madagascar</title>
+        <title>
+          Centella Asiatica Madagascar Supplier | Gasikara Medicinal Plants
+        </title>
         <meta
           name="description"
-          content="RAVINA Medicinals ethically sources and exports premium Centella Asiatica from Madagascar — ensuring purity, traceability, and sustainability."
+          content="Gasikara Medicinal Plants exports 100% wild-harvested Centella asiatica dried leaves from Madagascar — high Total Triterpene content, HPLC verified, full traceability."
         />
       </Head>
 
@@ -99,8 +101,8 @@ export default function CentellaAsiatica() {
           <div className={styles.heroContent}>
             <h1>Centella Asiatica</h1>
             <p>
-              Our flagship product — ethically sourced from Madagascar’s rich
-              ecosystems and trusted worldwide for its purity and effectiveness.
+              100% wild-harvested from Madagascar's most bioactive regions. High
+              Total Triterpene content — verified by HPLC on every batch.
             </p>
           </div>
         </section>
@@ -112,24 +114,26 @@ export default function CentellaAsiatica() {
               <h2>About the Plant</h2>
               <p>
                 Also known as <strong>Gotu Kola</strong> or{" "}
-                <strong>Tiger Grass</strong>, Centella Asiatica is a remarkable
-                medicinal herb widely used in the pharmaceutical, cosmetic, and
-                wellness industries. RAVINA Medicinals sources wild Centella
-                Asiatica ethically from the <strong>Alaotra-Mangoro</strong> and{" "}
-                <strong>Atsimo-Atsinanana</strong> regions of Madagascar — areas
-                renowned for their natural biodiversity.
+                <strong>Tiger Grass</strong>, Centella asiatica is a medicinal
+                plant widely used in the pharmaceutical, cosmetic, and
+                nutraceutical industries for its exceptional bioactive profile.
+                Gasikara Medicinal Plants wild-harvests it exclusively from the{" "}
+                <strong>Alaotra-Mangoro</strong> and{" "}
+                <strong>Atsimo-Atsinanana</strong> regions of Madagascar — where
+                unique soils and climate conditions consistently produce leaves
+                with superior triterpene concentrations.
               </p>
               <p>
-                Our Centella is available in <strong>dried leaves</strong> and{" "}
-                <strong>powder form</strong>, harvested and processed following
-                strict UEBT standards to ensure consistent quality and
-                sustainability.
+                We supply <strong>dried leaves</strong> packed in{" "}
+                <strong>50 kg polypropylene bales</strong>, export-ready for sea
+                freight, with HPLC analysis documentation included with every
+                shipment.
               </p>
             </div>
             <div className={styles.imageGrid}>
               <div className={styles.imagePlaceholder}>
                 <Image
-                  src="/assets/image33.png"
+                  src="/assets/RM0.jpg"
                   alt="Centella Asiatica plant"
                   width={500}
                   height={350}
@@ -137,10 +141,80 @@ export default function CentellaAsiatica() {
               </div>
               <div className={styles.imagePlaceholder}>
                 <Image
-                  src="/assets/image44.png"
+                  src="/assets/Image33.png"
                   alt="Centella leaves"
                   width={500}
                   height={350}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* OUR PRODUCT */}
+        <section className={styles.flagship}>
+          <div className={styles.flagshipContent}>
+            <div className={styles.flagshipText}>
+              <span className={styles.badge}>Our Product</span>
+              <h2>Premium Dried Centella Leaves</h2>
+              <p className={styles.subtitle}>
+                Wild-harvested from Madagascar's most bioactive regions —
+                verified by HPLC at every stage
+              </p>
+
+              <div className={styles.formats}>
+                <div className={styles.format}>
+                  <div className={styles.formatIcon}>🌿</div>
+                  <div>
+                    <h4>Dried Leaves — 50 kg Bales</h4>
+                    <p>
+                      Pressed and packed in polypropylene bales, export-ready
+                      for sea freight. Each batch documented with full lot
+                      traceability.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.format}>
+                  <div className={styles.formatIcon}>🔬</div>
+                  <div>
+                    <h4>HPLC-Verified Quality</h4>
+                    <p>
+                      High Total Triterpene content — asiaticoside and
+                      madecassoside — confirmed by in-house laboratory analysis
+                      on every batch.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.benefits}>
+                <h4>Suited for:</h4>
+                <ul>
+                  <li>
+                    <strong>Pharmaceutical</strong> ingredient sourcing
+                  </li>
+                  <li>
+                    <strong>Cosmetic & personal care</strong> formulations
+                  </li>
+                  <li>
+                    <strong>Botanical extract</strong> manufacturing
+                  </li>
+                </ul>
+              </div>
+
+              <a href="/contact" className={styles.productButton}>
+                Request Samples
+              </a>
+            </div>
+
+            <div className={styles.flagshipVisual}>
+              <div className={styles.productShowcase}>
+                <Image
+                  src="/assets/dried2.jpeg"
+                  alt="Centella Asiatica dried leaves"
+                  width={800}
+                  height={600}
+                  className={styles.showcaseImage}
                 />
               </div>
             </div>
@@ -313,10 +387,10 @@ export default function CentellaAsiatica() {
           <div className={styles.qualityText}>
             <h2>Quality & Traceability</h2>
             <p>
-              RAVINA Medicinals’ reputation is built on excellence. Our in-house
-              laboratory is equipped with{" "}
-              <strong>HPLC testing equipment</strong> to analyze the quality of
-              Centella Asiatica throughout each collection campaign.
+              Quality is not a stage in our process — it is the process. Our
+              in-house laboratory is equipped with{" "}
+              <strong>HPLC testing equipment</strong> to verify Total Triterpene
+              content at every critical stage of each collection campaign.
             </p>
             <p>
               With <strong>three annual audits</strong> under UEBT supervision,
@@ -338,11 +412,10 @@ export default function CentellaAsiatica() {
 
         {/* CTA */}
         <section className={styles.ctaSection}>
-          <h2>Partner with RAVINA Medicinals</h2>
+          <h2>Ready to Source with Gasikara?</h2>
           <p>
-            Choose Madagascar’s trusted source for ethical and sustainable
-            Centella Asiatica. Contact our team to request samples or discuss
-            your sourcing needs.
+            Request samples or discuss your specifications — we respond with
+            full analytical data and transparent commercial terms.
           </p>
           <a href="/contact" className={styles.ctaButton}>
             Contact Us
