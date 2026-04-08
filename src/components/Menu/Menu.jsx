@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 
 export default function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +18,12 @@ export default function Menu() {
         "https://images.unsplash.com/photo-1558437753-21dc69d8ebed?q=80&w=2940&auto=format&fit=crop",
     },
     {
+      name: "ABOUT US",
+      href: "/about-gasikara-medicinal-plants",
+      bgImage:
+        "https://images.unsplash.com/photo-1699622595987-9974344baed5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
       name: "CENTELLA ASIATICA",
       href: "/centella-asiatica",
       bgImage:
@@ -29,12 +35,6 @@ export default function Menu() {
     //   bgImage:
     //     "https://images.unsplash.com/photo-1605040056130-38d9faad3534?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     // },
-    {
-      name: "ABOUT US",
-      href: "/about-gasikara-medicinals",
-      bgImage:
-        "https://images.unsplash.com/photo-1699622595987-9974344baed5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
     {
       name: "QUALITY & SUSTAINABILITY",
       href: "/quality-sustainability",
@@ -160,10 +160,10 @@ export default function Menu() {
             <div className={styles.logoWrapper}>
               <Link href="/">
                 <Image
-                  src="/assets/gasikara.png"
+                  src="/assets/gmp-logo.jpg"
                   alt="Gasikara Medicinal Plants - Premium Centella Asiatica from Madagascar"
-                  width={100}
-                  height={70}
+                  width={70}
+                  height={75}
                 />
               </Link>
             </div>

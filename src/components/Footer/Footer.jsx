@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className={styles["footer-container"]}>
       <div className={styles["section-1"]}>
-        <img src="/assets/gasikara.png" alt="Gasikara Medicinal Plants" />
+        <img src="/assets/gmp-logo.jpg" alt="Gasikara Medicinal Plants" />
         <p className={styles.slogan}>
           Wild-Harvested Centella Asiatica from Madagascar — Verified by
           Science.
@@ -21,10 +21,7 @@ function Footer() {
           <Link href="/centella-asiatica">
             <li>Centella Asiatica</li>
           </Link>
-          <Link href="/centella-asiatica">
-            <li>Centella Asiatica</li>
-          </Link>
-          <Link href="/about-gasikara-medicinals">
+          <Link href="/about-gasikara-medicinal-plants">
             <li>About Us</li>
           </Link>
           <Link href="/quality-sustainability">
@@ -54,7 +51,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className={styles["section-4"]}>
+      {/* <div className={styles["section-4"]}>
         <h4>Certifications</h4>
         <ul>
           <li>UEBT Member</li>
@@ -64,7 +61,7 @@ function Footer() {
             © 2026 Gasikara Medicinal Plants | All rights reserved
           </p>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

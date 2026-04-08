@@ -11,14 +11,14 @@
   right: 0;
   width: 100%;
   z-index: 9999;
-  background: rgba(255, 255, 255, 0.92);
+  background: #fefefe;
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
 .wrapper {
-  max-width: 1440px;
+  // max-width: 1440px;
   padding-inline: 2rem;
   margin-inline: auto;
 }
@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 0.5rem;
+  padding-block: 0.3rem;
   padding-right: 1rem;
 }
 
@@ -51,7 +51,6 @@
   cursor: pointer;
   transition: all 0.3s ease;
   border: 1px solid var(--col1);
- 
 }
 
 .menuToggle:hover {

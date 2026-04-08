@@ -133,7 +133,7 @@ export default function CentellaAsiatica() {
             <div className={styles.imageGrid}>
               <div className={styles.imagePlaceholder}>
                 <Image
-                  src="/assets/RM0.jpg"
+                  src="/assets/rm0.JPG"
                   alt="Centella Asiatica plant"
                   width={500}
                   height={350}
@@ -141,7 +141,7 @@ export default function CentellaAsiatica() {
               </div>
               <div className={styles.imagePlaceholder}>
                 <Image
-                  src="/assets/Image33.png"
+                  src="/assets/image33.png"
                   alt="Centella leaves"
                   width={500}
                   height={350}
