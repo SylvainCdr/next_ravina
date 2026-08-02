@@ -1069,9 +1069,177 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .introduction,
+  .centellaContainer {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    height: 50vh;
+    background-attachment: scroll;
+    background-size: cover;
+
+    .heroContent {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      max-width: 100%;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.05rem;
+      }
+    }
+  }
+
+  .introduction {
+    padding: 3rem 1rem;
+
+    .introductionContent {
+      flex-direction: column;
+      padding: 1rem;
+
+      .text {
+        flex: 1 1 100%;
+      }
+
+      .imageGrid {
+        flex: 1 1 100%;
+        padding-right: 0;
+        gap: 1rem;
+
+        .imagePlaceholder {
+          height: 14rem;
+        }
+      }
+    }
+  }
+
+  .flagship {
+    padding: 3rem 1rem;
+
+    .flagshipContent {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .flagshipText h2 {
+      font-size: 2.2rem;
+    }
+
+    .flagshipText .format:hover {
+      transform: none;
+    }
+  }
+
+  .applications {
+    padding: 3rem 1.2rem;
+
+    .appGrid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  .composition {
+    padding: 3rem 1rem;
+
+    ul {
+      gap: 1.5rem;
+
+      li {
+        width: 6rem;
+        height: 7rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .plantAnatomy {
+    padding: 3rem 1rem;
+
+    .anatomyHeader h2 {
+      font-size: 1.8rem;
+    }
+
+    .plantImage img {
+      min-height: 280px;
+    }
+
+    .hoverHint {
+      font-size: 0.9rem;
+      padding: 0.7rem 1.2rem;
+    }
+  }
+
   .quality {
     flex-direction: column;
     align-items: center;
+    padding: 3rem 1.2rem;
+    padding-left: 1.2rem;
+
+    .qualityText {
+      max-width: 100%;
+    }
+  }
+
+  .sustainability {
+    padding: 4rem 1.2rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .operations {
+    padding: 4rem 1.2rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .opsGrid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .opCard {
+      padding: 2rem 1.2rem;
+    }
+  }
+
+  .timeline {
+    padding: 3rem 1rem;
+
+    .timelineContainer {
+      height: auto;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    .timelineStart,
+    .timelineEnd {
+      position: static;
+      transform: none;
+      width: 80px;
+      height: 80px;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 40vh;
+
+    .heroContent h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  .operations .opsGrid {
+    grid-template-columns: 1fr;
   }
 }

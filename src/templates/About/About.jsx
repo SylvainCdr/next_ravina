@@ -64,18 +64,9 @@ export default function About() {
 
         {/* ILLUSTRATIONS — outside introContent, direct child of intro */}
         <section className={styles.illustrations}>
-          <img
-            src="https://images.unsplash.com/photo-1592997572749-3f3e7e9bf05b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fG1hZGFnYXNjYXJ8ZW58MHwwfDB8fHwy"
-            alt="Madagascar landscape"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1504598578017-40d9b776f1bc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Centella asiatica harvesting"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1649187642101-6317f194bc1d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Madagascar biodiversity"
-          />
+          <img src="/assets/new/image2.jpg" />
+          <img src="/assets/new/image5.jpg" />
+          <img src="/assets/new/image11.jpg" />
         </section>
 
         {/* OUR SOURCING MODEL */}
@@ -144,10 +135,7 @@ export default function About() {
               <h3>200+ T</h3>
               <p>Exported annually</p>
             </div>
-            <div className={styles.stat}>
-              <h3>UEBT</h3>
-              <p>Ethical BioTrade compliance</p>
-            </div>
+
             <div className={styles.stat}>
               <h3>100%</h3>
               <p>Traceability from field to export</p>
@@ -156,13 +144,13 @@ export default function About() {
         </section>
 
         {/* CERTIFICATIONS */}
-        <section className={styles.certifications}>
+        {/* <section className={styles.certifications}>
           <div className={styles.certificationsContent}>
             <h2>Certifications & Standards</h2>
             <p>
               Gasikara Medicinal Plants operates under strict compliance with
               the <strong>UEBT (Union for Ethical BioTrade)</strong> standards.
-              Our operations are audited regularly to ensure transparency,
+              Our operations are reviewed regularly to ensure transparency,
               traceability, and ethical sourcing at every level of the supply
               chain.
             </p>
@@ -170,7 +158,7 @@ export default function About() {
               <img src="/assets/UEBT1.png" alt="UEBT certification" />
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* LOCATION */}
         <section className={styles.location}>

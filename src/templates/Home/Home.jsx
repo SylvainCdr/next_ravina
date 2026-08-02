@@ -42,7 +42,7 @@ export default function Home() {
             className={styles.section1Content}
             style={{
               backgroundImage:
-                "url(https://as1.ftcdn.net/v2/jpg/12/34/06/14/1000_F_1234061430_XbFEjb6B9ETDQat8ab7mjxk81U6cMmBA.jpg)",
+                "url(assets/new/image10.jpg)",
             }}
           >
             <h2>Wild Harvest & Sourcing</h2>

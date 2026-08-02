@@ -14,7 +14,8 @@
     flex-direction: column;
     min-height: 90vh;
     background-attachment: fixed;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         135deg,
         rgba(33, 80, 75, 0.486) 0%,
         rgba(129, 53, 5, 0.312) 100%
@@ -630,7 +631,7 @@
 
   /* ============ WHY SECTION ============ */
   .whySection {
-    background: var(--col7);
+    background: var(--col2);
     padding: 8rem 2rem;
 
     .whyContent {
@@ -797,28 +798,37 @@
 
   @media screen and (max-width: 768px) {
     .qualityContainer {
-      padding-top: 2rem;
+      padding-top: 0;
     }
 
     .hero {
-      min-height: 70vh;
-      padding: 2rem 1rem;
+      min-height: 60vh;
+      padding: 5rem 1rem 3rem;
+      background-attachment: scroll;
 
-      .heroContent {
-        h1 {
-          font-size: 3.5rem;
-        }
+      .heroContent h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+      }
 
-        .heroSubtitle {
-          font-size: 1.2rem;
-        }
+      .heroContent .heroSubtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
 
-        .heroStats {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 1.5rem;
+      .heroContent .heroStats {
+        gap: 1rem;
 
-          .heroStat {
-            min-width: auto;
+        .heroStat {
+          min-width: 110px;
+          padding: 1.2rem 1rem;
+
+          span {
+            font-size: 1.3rem;
+          }
+
+          p {
+            font-size: 0.8rem;
           }
         }
       }
@@ -831,26 +841,66 @@
       padding: 4rem 1rem;
     }
 
+    .qualitySection .sectionHeader h2,
+    .communitySection .sectionHeader h2,
+    .whySection .whyContent h2 {
+      font-size: 2rem;
+    }
+
+    .qualitySection .qualityGrid {
+      grid-template-columns: 1fr;
+    }
+
     .traceabilitySection {
       padding: 4rem 1rem;
 
+      .traceabilityContent .textContent h2 {
+        font-size: 2rem;
+      }
+
       .traceabilityContent .textContent .supplyStats {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+
+        .supplyStat {
+          flex: 1 1 calc(33% - 0.8rem);
+          min-width: 90px;
+          padding: 1rem 0.5rem;
+        }
       }
     }
 
-    .whyContent {
-      .advantagesGrid {
-        grid-template-columns: 1fr;
+    .communitySection .impactAreas {
+      grid-template-columns: 1fr;
+    }
+
+    .communitySection .impactArea {
+      padding: 2rem 1.5rem;
+    }
+
+    .whyContent .advantagesGrid {
+      grid-template-columns: 1fr;
+    }
+
+    .whyContent .ctaSection {
+      padding: 2.5rem 1.5rem;
+
+      h3 {
+        font-size: 1.8rem;
       }
 
-      .ctaSection {
-        padding: 3rem 2rem;
+      .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
 
-        .ctaButtons {
-          flex-direction: column;
-          align-items: center;
+        .primaryButton,
+        .secondaryButton {
+          width: 100%;
+          max-width: 280px;
+          text-align: center;
+          padding: 1rem 1.5rem;
         }
       }
     }

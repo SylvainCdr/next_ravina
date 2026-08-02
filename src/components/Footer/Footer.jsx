@@ -43,11 +43,10 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <i className="fa-solid fa-phone"></i>(+261) XX XX XX XX
+            <i className="fa-brands fa-whatsapp"></i> WhatsApp: +261 38 070 7809
           </li>
           <li>
-            <i className="fa-solid fa-location-dot"></i> Talatamaty,
-            Antananarivo, Madagascar
+            <i className="fa-solid fa-location-dot"></i> Antananarivo, Madagascar
           </li>
         </ul>
       </div>

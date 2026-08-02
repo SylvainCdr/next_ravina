@@ -6,7 +6,7 @@ import styles from "./style.module.scss";
 // Dynamic import to avoid SSR issues with window
 const PlantAnimation = dynamic(
   () => import("@/components/PlantAnimation/PlantAnimation"),
-  { ssr: false }
+  { ssr: false },
 );
 
 export default function WhatWeProvide() {
@@ -16,7 +16,7 @@ export default function WhatWeProvide() {
         <title>What We Provide | RAVINA Medicinals Madagascar</title>
         <meta
           name="description"
-          content="Premium natural products from Madagascar: Centella Asiatica (dried leaves & powder), essential oils, and spices. Ethically sourced with full traceability and UEBT certification."
+          content="Premium natural products from Madagascar: Centella Asiatica (dried leaves & powder), essential oils, and spices. Ethically sourced with full traceability."
         />
       </Head>
 
@@ -33,10 +33,6 @@ export default function WhatWeProvide() {
               <div className={styles.heroStat}>
                 <span>16+</span>
                 <p>Years Experience</p>
-              </div>
-              <div className={styles.heroStat}>
-                <span>UEBT</span>
-                <p>Certified</p>
               </div>
               <div className={styles.heroStat}>
                 <span>100%</span>
@@ -65,8 +61,7 @@ export default function WhatWeProvide() {
               Our products are sourced from the <strong>Alaotra-Mangoro</strong>{" "}
               and
               <strong> Atsimo-Atsinanana</strong> regions, ensuring the highest
-              quality through our <strong>HPLC-equipped laboratory</strong> and{" "}
-              <strong>UEBT certification</strong>.
+              quality through our <strong>HPLC-equipped laboratory</strong>.
             </p>
           </div>
         </section>
@@ -237,15 +232,6 @@ export default function WhatWeProvide() {
                 <p>
                   In-house HPLC testing equipment for asiaticoside/madecassoside
                   verification and microbiological checks
-                </p>
-              </div>
-
-              <div className={styles.qualityFeature}>
-                <div className={styles.featureIcon}>🏆</div>
-                <h4>UEBT Standards</h4>
-                <p>
-                  Strict compliance with Union for Ethical BioTrade standards,
-                  assessed during 3 annual audits
                 </p>
               </div>
 

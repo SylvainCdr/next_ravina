@@ -11,7 +11,7 @@ export default function QualitySustainability() {
         </title>
         <meta
           name="description"
-          content="UEBT certified, HPLC-verified Centella asiatica sourcing from Madagascar. Gasikara Medicinal Plants — rigorous quality control and ethical supply chain from field to export."
+          content="HPLC-verified Centella asiatica sourcing from Madagascar. Gasikara Medicinal Plants — rigorous quality control and ethical supply chain from field to export."
         />
       </Head>
 
@@ -25,10 +25,6 @@ export default function QualitySustainability() {
               empowering communities and preserving Madagascar's biodiversity
             </p>
             <div className={styles.heroStats}>
-              <div className={styles.heroStat}>
-                <span>UEBT</span>
-                <p>Certified Partner</p>
-              </div>
               <div className={styles.heroStat}>
                 <span>4,500+</span>
                 <p>Trained Pickers</p>
@@ -57,20 +53,6 @@ export default function QualitySustainability() {
             </div>
 
             <div className={styles.qualityGrid}>
-              <div className={styles.qualityCard}>
-                <div className={styles.cardIcon}>🏆</div>
-                <h3>UEBT Certification</h3>
-                <p>
-                  Proud member of the{" "}
-                  <strong>Union for Ethical BioTrade</strong>, operating under
-                  strict compliance with international traceability and quality
-                  standards.
-                </p>
-                <div className={styles.cardHighlight}>
-                  <span>3 Annual Audits</span>
-                </div>
-              </div>
-
               <div className={styles.qualityCard}>
                 <div className={styles.cardIcon}>🔬</div>
                 <h3>HPLC Laboratory</h3>
@@ -175,7 +157,8 @@ export default function QualitySustainability() {
             <div className={styles.visualContent}>
               <div className={styles.mapContainer}>
                 <Image
-                  src="https://images.unsplash.com/photo-1699622595982-42fb5bb9ad22?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  // src="https://images.unsplash.com/photo-1699622595982-42fb5bb9ad22?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="/assets/new/image3.jpg"
                   alt="Madagascar map showing operation regions"
                   width={500}
                   height={700}
@@ -211,20 +194,20 @@ export default function QualitySustainability() {
             <div className={styles.impactAreas}>
               <div className={styles.impactArea}>
                 <div className={styles.areaIcon}>💼</div>
-                <h3>Income-Generating Activities</h3>
+                <h3>Local Livelihood Support</h3>
                 <div className={styles.areaStats}>
                   <div className={styles.stat}>
-                    <span>1,630</span>
+                    <span>Ongoing</span>
                     <p>
-                      Pickers from 11 associations trained in agricultural
-                      skills
+                      Supporting harvesters with practical training and
+                      agricultural guidance
                     </p>
                   </div>
                   <div className={styles.stat}>
-                    <span>✓</span>
+                    <span>Practical</span>
                     <p>
-                      Donated seeds and farming tools with Regional Directorate
-                      support
+                      Providing tools and seed support to strengthen rural
+                      income sources
                     </p>
                   </div>
                 </div>
@@ -232,36 +215,37 @@ export default function QualitySustainability() {
 
               <div className={styles.impactArea}>
                 <div className={styles.areaIcon}>🎓</div>
-                <h3>Education Support</h3>
+                <h3>Education and Wellness</h3>
                 <div className={styles.areaStats}>
                   <div className={styles.stat}>
-                    <span>1,250+</span>
-                    <p>Schoolchildren fed through canteen programs</p>
+                    <span>Available</span>
+                    <p>
+                      Community programs that support local schools and youth
+                    </p>
                   </div>
                   <div className={styles.stat}>
-                    <span>3,000</span>
-                    <p>School kits donated in 2024/2025 (doubled from 1,500)</p>
-                  </div>
-                  <div className={styles.stat}>
-                    <span>120</span>
-                    <p>Teachers trained in pedagogical methods</p>
+                    <span>Resource</span>
+                    <p>
+                      Learning materials and guidance for educators and families
+                    </p>
                   </div>
                 </div>
               </div>
 
               <div className={styles.impactArea}>
                 <div className={styles.areaIcon}>🏗️</div>
-                <h3>Infrastructure Development</h3>
+                <h3>Community Infrastructure</h3>
                 <div className={styles.areaStats}>
                   <div className={styles.stat}>
-                    <span>10</span>
-                    <p>Schools rehabilitated (9 in Fierenana, 1 in Didy)</p>
+                    <span>Improving</span>
+                    <p>
+                      Investing in shared facilities and water access projects
+                    </p>
                   </div>
                   <div className={styles.stat}>
-                    <span>6</span>
+                    <span>Practical</span>
                     <p>
-                      Drinking water fountains installed (4 operational, 2 under
-                      construction)
+                      Creating safer, more resilient support for local villages
                     </p>
                   </div>
                 </div>
@@ -269,25 +253,18 @@ export default function QualitySustainability() {
 
               <div className={styles.impactArea}>
                 <div className={styles.areaIcon}>🌿</div>
-                <h3>Biodiversity Conservation</h3>
+                <h3>Sustainable Practices</h3>
                 <div className={styles.areaStats}>
                   <div className={styles.stat}>
-                    <span>4,500+</span>
+                    <span>Guided</span>
                     <p>
-                      Pickers trained in effective Centella collection practices
+                      Supporting responsible harvesting and natural regeneration
                     </p>
                   </div>
                   <div className={styles.stat}>
-                    <span>✓</span>
+                    <span>Ongoing</span>
                     <p>
-                      Regular reforestation activities to restore degraded areas
-                    </p>
-                  </div>
-                  <div className={styles.stat}>
-                    <span>🎓</span>
-                    <p>
-                      University of Antananarivo collaboration for regeneration
-                      studies
+                      Engaging in local conservation and restoration activities
                     </p>
                   </div>
                 </div>
@@ -297,7 +274,7 @@ export default function QualitySustainability() {
         </section>
 
         {/* PARTNERSHIPS */}
-        <section className={styles.partnershipsSection}>
+        {/* <section className={styles.partnershipsSection}>
           <div className={styles.partnershipsContent}>
             <h2>Strategic Partnerships for Impact</h2>
             <p>
@@ -306,22 +283,6 @@ export default function QualitySustainability() {
             </p>
 
             <div className={styles.partnerGrid}>
-              <div className={styles.partnerCard}>
-                <div className={styles.partnerLogo}>
-                  <Image
-                    src="/assets/UEBT1.png"
-                    alt="UEBT - Union for Ethical BioTrade"
-                    width={120}
-                    height={80}
-                  />
-                </div>
-                <h4>Union for Ethical BioTrade (UEBT)</h4>
-                <p>
-                  International certification ensuring ethical sourcing and fair
-                  compensation
-                </p>
-              </div>
-
               <div className={styles.partnerCard}>
                 <div className={styles.partnerLogo}>
                   <span className={styles.logoPlaceholder}>
@@ -355,7 +316,7 @@ export default function QualitySustainability() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* WHY CHOOSE RAVINA */}
         <section className={styles.whySection}>
@@ -387,10 +348,10 @@ export default function QualitySustainability() {
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>✅</div>
-                <h4>UEBT Certified</h4>
+                <h4>Ethically Sourced</h4>
                 <p>
-                  Compliant with Union for Ethical BioTrade standards, assessed
-                  through 3 annual audits
+                  Full compliance with international ethical sourcing standards,
+                  verified through ongoing quality reviews
                 </p>
               </div>
 

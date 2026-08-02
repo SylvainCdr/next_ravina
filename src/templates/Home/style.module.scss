@@ -454,8 +454,7 @@
     text-align: center;
     background:
       linear-gradient(rgba(58, 59, 58, 0.579), rgba(34, 56, 34, 0.9)),
-      url("https://images.unsplash.com/photo-1699622595982-42fb5bb9ad22?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740")
-        center/cover no-repeat;
+      url("/assets/new/image11.jpg") center/cover no-repeat;
 
     h1 {
       font-size: 2.8rem;
@@ -488,6 +487,149 @@
         background-color: var(--col7);
         color: var(--col3);
       }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .hero1 {
+      height: auto;
+      min-height: 100svh;
+      padding-top: 5.5rem;
+      padding-bottom: 3rem;
+    }
+
+    .hero {
+      height: auto;
+    }
+
+    .hero .content {
+      flex-direction: column;
+      margin-top: 0;
+      padding: 0 1.2rem;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .hero .contentLeft {
+      width: 100%;
+    }
+
+    .hero1 .hero .content .contentLeft .title {
+      font-size: 1.8rem;
+      line-height: 1.25;
+      margin-top: 0.5rem;
+    }
+
+    .hero .contentLeft .description {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .hero .contentLeft .ctaButton {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      font-size: 1rem;
+    }
+
+    .hero .contentRight {
+      display: none;
+    }
+
+    .section1 {
+      width: 90%;
+      gap: 1.2rem;
+      margin: 3rem auto;
+      grid-template-columns: 1fr;
+    }
+
+    .section1Content {
+      height: 200px;
+    }
+
+    .ctaBanner {
+      flex-direction: column;
+      gap: 0.8rem;
+      padding: 1.2rem 1rem;
+      font-size: 0.95rem;
+
+      button {
+        width: 100%;
+        max-width: 280px;
+      }
+    }
+
+    .partnerSection {
+      padding: 4rem 1.2rem;
+    }
+
+    .partnerContent h1 {
+      font-size: 2rem;
+    }
+
+    .partnerContent > p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .partnerGrid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .partnerCard {
+      padding: 1.8rem 1.5rem;
+    }
+
+    .partnerButton {
+      width: 100%;
+      max-width: 300px;
+      padding: 0.9rem 1rem;
+      font-size: 1rem;
+    }
+
+    .capacitySection {
+      padding: 4rem 1.2rem;
+    }
+
+    .capacitySection h1 {
+      font-size: 1.9rem;
+    }
+
+    .capacityGrid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .capacityCard {
+      padding: 1.5rem 1rem;
+    }
+
+    .capacityCard h2 {
+      font-size: 1.4rem;
+    }
+
+    .section4 {
+      padding: 5rem 1.2rem;
+    }
+
+    .section4 h1 {
+      font-size: 2rem;
+    }
+
+    .section4 h2 {
+      font-size: 1rem;
+    }
+
+    .section4 .ctaButton {
+      width: 100%;
+      max-width: 280px;
+      padding: 0.9rem 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .capacityGrid {
+      grid-template-columns: 1fr;
     }
   }
 }

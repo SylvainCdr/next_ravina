@@ -10,7 +10,7 @@ export default function Contact() {
         </title>
         <meta
           name="description"
-          content="Contact Gasikara Medicinal Plants to request samples or discuss Centella asiatica sourcing. Wild-harvested, HPLC verified, UEBT compliant — Madagascar."
+          content="Contact Gasikara Medicinal Plants to request samples or discuss Centella asiatica sourcing. Wild-harvested, HPLC verified — Madagascar."
         />
       </Head>
 
@@ -122,7 +122,10 @@ export default function Contact() {
 
               <div className={styles.contactItem}>
                 <div className={styles.contactLabel}>Phone</div>
-                <div className={styles.contactValue}>+261 34 XX XX XX XX</div>
+                <div className={styles.contactValue}>
+                  <i className="fa-brands fa-whatsapp"></i> WhatsApp: +261 38
+                  070 7809
+                </div>
               </div>
 
               <div className={styles.contactItem}>

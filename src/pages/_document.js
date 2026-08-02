@@ -9,7 +9,7 @@ export default function Document() {
 
         <meta
           name="description"
-          content="Gasikara Medicinal Plants — Wild-harvested Centella asiatica dried leaves from Madagascar. High Total Triterpene content, HPLC verified, UEBT compliant."
+          content="Gasikara Medicinal Plants — Wild-harvested Centella asiatica dried leaves from Madagascar. High Total Triterpene content, HPLC verified."
         />
         <meta
           name="keywords"

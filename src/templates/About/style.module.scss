@@ -301,6 +301,62 @@
 
   /* ---------------- RESPONSIVE ---------------- */
   @media (max-width: 900px) {
+    .hero {
+      height: 45vh;
+      padding: 0 1rem;
+      background-attachment: scroll;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .intro .introContent {
+      padding: 0 1.2rem;
+
+      .history {
+        flex-direction: column;
+
+        .history1 {
+          width: 100%;
+
+          h2 {
+            font-size: 2rem;
+          }
+
+          p {
+            font-size: 1.1rem;
+          }
+        }
+
+        .history2 {
+          width: 100%;
+          margin: 1rem auto;
+          justify-content: center;
+        }
+      }
+
+      .values h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .intro .illustrations {
+      gap: 1.5rem;
+      padding: 0 1rem;
+
+      img {
+        width: 100%;
+        max-width: 280px;
+        height: 260px;
+        margin-bottom: 0;
+      }
+    }
+
     .certifications,
     .location {
       padding: 4rem 1.5rem;
@@ -316,10 +372,54 @@
       .certLogos img {
         width: 120px;
       }
+    }
 
-      .location img {
-        width: 80%;
+    .location .locationContent img {
+      width: 80%;
+    }
+
+    .impact {
+      padding: 5rem 1.2rem;
+
+      h2 {
+        font-size: 2.2rem;
       }
+
+      .statsGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    .operations {
+      padding: 5rem 1.2rem;
+
+      h2 {
+        font-size: 2.2rem;
+      }
+
+      .opsGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+
+      .opCard {
+        padding: 2rem 1.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .impact .statsGrid {
+      grid-template-columns: 1fr;
+    }
+
+    .operations .opsGrid {
+      grid-template-columns: 1fr;
     }
   }
 

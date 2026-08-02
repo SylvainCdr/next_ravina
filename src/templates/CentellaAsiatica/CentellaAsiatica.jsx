@@ -376,9 +376,8 @@ export default function CentellaAsiatica() {
 
           <p className={styles.bottomNote}>
             Activities are monitored through <strong>FarmForce</strong>{" "}
-            traceability software and assessed via regular{" "}
-            <strong>UEBT audits</strong>, ensuring ethical sourcing and
-            transparency from picker to port.
+            traceability software and regular quality reviews, ensuring ethical
+            sourcing and transparency from picker to port.
           </p>
         </section>
 
@@ -393,9 +392,9 @@ export default function CentellaAsiatica() {
               content at every critical stage of each collection campaign.
             </p>
             <p>
-              With <strong>three annual audits</strong> under UEBT supervision,
-              we maintain rigorous standards for ethical sourcing, biodiversity
-              protection, and community well-being.
+              Regular quality assessments help us maintain rigorous standards
+              for ethical sourcing, biodiversity protection, and community
+              well-being.
             </p>
           </div>
         </section>
