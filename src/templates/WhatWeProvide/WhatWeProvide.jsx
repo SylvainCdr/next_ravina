@@ -13,7 +13,7 @@ export default function WhatWeProvide() {
   return (
     <>
       <Head>
-        <title>What We Provide | RAVINA Medicinals Madagascar</title>
+        <title>What We Provide | Gasikara Medicinal Plants Madagascar</title>
         <meta
           name="description"
           content="Premium natural products from Madagascar: Centella Asiatica (dried leaves & powder), essential oils, and spices. Ethically sourced with full traceability."
@@ -50,7 +50,7 @@ export default function WhatWeProvide() {
             <p>
               As a national private company specializing in the{" "}
               <strong>collection, processing, packaging, and export</strong> of
-              natural products, RAVINA Medicinals serves
+              natural products, Gasikara Medicinal Plants serves
               <strong>
                 {" "}
                 cosmetic, pharmaceutical, nutraceutical, and food industries
@@ -137,7 +137,7 @@ export default function WhatWeProvide() {
                   className={styles.showcaseImage}
                 />
                 {/* <div className={styles.productLabel}>
-                  <span>RAVINA Medicinals</span>
+                  <span>Gasikara Medicinal Plants</span>
                   <p>Lot: 142 C - Origin: Madagascar</p>
                 </div> */}
               </div>
@@ -261,8 +261,8 @@ export default function WhatWeProvide() {
           <div className={styles.partnershipContent}>
             <h2>Ready to Partner With Us?</h2>
             <p>
-              Join leading international brands who trust RAVINA Medicinals for
-              premium natural ingredients
+              Join leading international brands who trust Gasikara Medicinal
+              Plants for premium natural ingredients
             </p>
 
             <div className={styles.partnershipSteps}>

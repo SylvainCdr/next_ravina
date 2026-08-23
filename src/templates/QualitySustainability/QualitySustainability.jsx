@@ -280,7 +280,7 @@ export default function QualitySustainability() {
           </div>
         </section> */}
 
-        {/* WHY CHOOSE RAVINA */}
+        {/* WHY CHOOSE GASIKARA */}
         <section className={styles.whySection}>
           <div className={styles.whyContent}>
             <h2>Why Gasikara Medicinal Plants</h2>
