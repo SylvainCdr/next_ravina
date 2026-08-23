@@ -111,15 +111,6 @@ export default function About() {
                 documentation.
               </p>
             </div>
-
-            <div className={styles.opCard}>
-              <span>📍</span>
-              <h3>Full Traceability</h3>
-              <p>
-                Digital picker registration and plot tracing powered by
-                FarmForce — complete transparency from field to export.
-              </p>
-            </div>
           </div>
         </section>
 
@@ -138,7 +129,7 @@ export default function About() {
 
             <div className={styles.stat}>
               <h3>100%</h3>
-              <p>Traceability from field to export</p>
+              <p>Quality</p>
             </div>
           </div>
         </section>

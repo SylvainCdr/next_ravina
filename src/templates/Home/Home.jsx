@@ -5,7 +5,6 @@ export default function Home() {
   const router = useRouter();
   return (
     <div className={styles.homeContainer}>
-
       {/* HERO SECTION */}
       <div className={styles.hero1}>
         <video autoPlay loop muted className={styles.videoBackground}>
@@ -18,10 +17,13 @@ export default function Home() {
           <div className={styles.content}>
             <div className={styles.contentLeft}>
               <h1 className={styles.title}>
-                Wild-Harvested Centella Asiatica from Madagascar — Verified by Science
+                Wild-Harvested Centella Asiatica from Madagascar — Verified by
+                Science
               </h1>
               <p className={styles.description}>
-                Gasikara Medicinal Plants exports 100% wild-harvested, dried Centella asiatica leaves with consistently high Total Triterpene content — backed by HPLC analysis and full supply chain traceability.
+                Gasikara Medicinal Plants exports 100% wild-harvested, dried
+                Centella asiatica leaves with consistently high Total Triterpene
+                content — backed by HPLC analysis and a reliable supply chain.
               </p>
               <button
                 className={styles.ctaButton}
@@ -41,8 +43,7 @@ export default function Home() {
           <div
             className={styles.section1Content}
             style={{
-              backgroundImage:
-                "url(assets/new/image10.jpg)",
+              backgroundImage: "url(assets/new/cent101.jpeg)",
             }}
           >
             <h2>Wild Harvest & Sourcing</h2>
@@ -70,7 +71,9 @@ export default function Home() {
 
       {/* CTA BANNER */}
       <section className={styles.ctaBanner}>
-        <p>Looking for a reliable Centella asiatica supplier from Madagascar?</p>
+        <p>
+          Looking for a reliable Centella asiatica supplier from Madagascar?
+        </p>
         <button onClick={() => router.push("/contact")}>Contact us</button>
       </section>
 
@@ -79,7 +82,10 @@ export default function Home() {
         <div className={styles.partnerContent}>
           <h1>Why Gasikara Medicinal Plants</h1>
           <p>
-            Madagascar's wild Centella asiatica is globally recognized for its superior phytochemical profile. We combine this natural advantage with rigorous, documented quality control — from harvest to delivery.
+            Madagascar's wild Centella asiatica is globally recognized for its
+            superior phytochemical profile. We combine this natural advantage
+            with rigorous, documented quality control — from harvest to
+            delivery.
           </p>
 
           <div className={styles.partnerGrid}>
@@ -87,28 +93,27 @@ export default function Home() {
               <span>🔬</span>
               <h2>High TTT Content</h2>
               <p>
-                Consistently high Total Triterpene content — asiaticoside and madecassoside — verified by in-house HPLC analysis on every batch.
+                Consistently high Total Triterpene content — asiaticoside and
+                madecassoside — verified by in-house HPLC analysis on every
+                batch.
               </p>
             </div>
             <div className={styles.partnerCard}>
               <span>🌿</span>
               <h2>100% Wild-Harvested</h2>
               <p>
-                Sourced exclusively from Madagascar's wild flora. The island's unique soils and climate deliver naturally potent leaves, shipment after shipment.
-              </p>
-            </div>
-            <div className={styles.partnerCard}>
-              <span>📍</span>
-              <h2>Full Traceability</h2>
-              <p>
-                Digital picker registration and plot tracing from field to export. Every batch is documented and delivered with full analytical support.
+                Sourced exclusively from Madagascar's wild flora. The island's
+                unique soils and climate deliver naturally potent leaves,
+                shipment after shipment.
               </p>
             </div>
             <div className={styles.partnerCard}>
               <span>🤝</span>
               <h2>Ethical Supply Chain</h2>
               <p>
-                A dense network of trained pickers — predominantly women from rural communities — selected and supervised by our field teams over many years.
+                A dense network of trained pickers — predominantly women from
+                rural communities — selected and supervised by our field teams
+                over many years.
               </p>
             </div>
           </div>
@@ -132,7 +137,9 @@ export default function Home() {
           </div>
           <div className={styles.capacityCard}>
             <h2>4,500+ Pickers</h2>
-            <p>Trained harvesting network across Madagascar's sourcing regions.</p>
+            <p>
+              Trained harvesting network across Madagascar's sourcing regions.
+            </p>
           </div>
           <div className={styles.capacityCard}>
             <h2>50 kg Bales</h2>
@@ -140,7 +147,45 @@ export default function Home() {
           </div>
           <div className={styles.capacityCard}>
             <h2>HPLC Verified</h2>
-            <p>In-house laboratory analysis at every critical stage of production.</p>
+            <p>
+              In-house laboratory analysis at every critical stage of
+              production.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CENTELLA ASIATICA SUPPLIER */}
+      <section className={styles.centellaSection}>
+        <div className={styles.centellaContent}>
+          <div className={styles.centellaText}>
+            <span className={styles.badge}>Our Expertise</span>
+            <h1>Your Trusted Centella Asiatica Supplier</h1>
+            <p>
+              From wild plant to export-ready dried leaves, we control every
+              step of the Centella asiatica supply chain in Madagascar. We ship
+              our HPLC-verified product to clients worldwide, supporting
+              pharmaceutical, cosmetic, and nutraceutical industries across the
+              globe.
+            </p>
+          </div>
+
+          <div className={styles.centellaGallery}>
+            <img
+              src="/assets/new/Image9.jpg"
+              alt="Wild Centella asiatica plant"
+              className={styles.imgLarge}
+            />
+            <img
+              src="/assets/RM1.jpg"
+              alt="Dried Centella asiatica leaves"
+              className={styles.imgSmall}
+            />
+            <img
+              src="/assets/image33.png"
+              alt="Centella asiatica dried leaves bales"
+              className={styles.imgSmall}
+            />
           </div>
         </div>
       </section>
@@ -159,7 +204,6 @@ export default function Home() {
           Get in Touch
         </button>
       </section>
-
     </div>
   );
 }

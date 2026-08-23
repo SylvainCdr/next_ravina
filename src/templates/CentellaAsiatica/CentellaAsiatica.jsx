@@ -90,7 +90,7 @@ export default function CentellaAsiatica() {
         </title>
         <meta
           name="description"
-          content="Gasikara Medicinal Plants exports 100% wild-harvested Centella asiatica dried leaves from Madagascar — high Total Triterpene content, HPLC verified, full traceability."
+          content="Gasikara Medicinal Plants exports 100% wild-harvested Centella asiatica dried leaves from Madagascar — high Total Triterpene content, HPLC verified."
         />
       </Head>
 
@@ -169,8 +169,8 @@ export default function CentellaAsiatica() {
                     <h4>Dried Leaves — 50 kg Bales</h4>
                     <p>
                       Pressed and packed in polypropylene bales, export-ready
-                      for sea freight. Each batch documented with full lot
-                      traceability.
+                      for sea freight. Each batch documented with detailed lot
+                      records.
                     </p>
                   </div>
                 </div>
@@ -210,7 +210,7 @@ export default function CentellaAsiatica() {
             <div className={styles.flagshipVisual}>
               <div className={styles.productShowcase}>
                 <Image
-                  src="/assets/dried2.jpeg"
+                  src="/assets/new/cent102.jpeg"
                   alt="Centella Asiatica dried leaves"
                   width={800}
                   height={600}
@@ -293,7 +293,7 @@ export default function CentellaAsiatica() {
           <div className={styles.anatomyContainer}>
             <div className={styles.plantImage}>
               <img
-                src="/assets/centella-interactive.jpeg"
+                src="/assets/new/cent103.jpeg"
                 alt="Centella Asiatica in Madagascar"
               />
 
@@ -361,9 +361,9 @@ export default function CentellaAsiatica() {
           <h2>Our Centella Supply Chain</h2>
           <p>
             From field collection to export, our integrated value chain ensures
-            full traceability and top quality. Each step is managed under strict
-            procedures, with over <strong>4,500 trained pickers</strong> and a
-            network of dedicated supervisors and collectors.
+            top quality. Each step is managed under strict procedures, with over
+            <strong>4,500 trained pickers</strong> and a network of dedicated
+            supervisors and collectors.
           </p>
 
           <div className={styles.chainSteps}>
@@ -375,16 +375,16 @@ export default function CentellaAsiatica() {
           </div>
 
           <p className={styles.bottomNote}>
-            Activities are monitored through <strong>FarmForce</strong>{" "}
-            traceability software and regular quality reviews, ensuring ethical
-            sourcing and transparency from picker to port.
+            Activities are monitored through <strong>FarmForce</strong> systems
+            and regular quality reviews, ensuring ethical sourcing and
+            transparency from picker to port.
           </p>
         </section>
 
-        {/* QUALITY & TRACEABILITY */}
+        {/* QUALITY */}
         <section className={styles.quality}>
           <div className={styles.qualityText}>
-            <h2>Quality & Traceability</h2>
+            <h2>Quality & Assurance</h2>
             <p>
               Quality is not a stage in our process — it is the process. Our
               in-house laboratory is equipped with{" "}

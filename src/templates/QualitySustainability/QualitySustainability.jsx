@@ -31,7 +31,7 @@ export default function QualitySustainability() {
               </div>
               <div className={styles.heroStat}>
                 <span>100%</span>
-                <p>Traceable Supply</p>
+                <p>Verified Supply</p>
               </div>
               <div className={styles.heroStat}>
                 <span>HPLC</span>
@@ -68,11 +68,11 @@ export default function QualitySustainability() {
 
               <div className={styles.qualityCard}>
                 <div className={styles.cardIcon}>📍</div>
-                <h3>Digital Traceability</h3>
+                <h3>Digital Quality Control</h3>
                 <p>
                   <strong>FarmForce software application</strong> implementation
-                  to strengthen our efforts and improve complete product
-                  traceability from field to export.
+                  to strengthen our efforts and improve transparency from field
+                  to export.
                 </p>
                 <div className={styles.cardHighlight}>
                   <span>Field to Export</span>
@@ -95,7 +95,7 @@ export default function QualitySustainability() {
           </div>
         </section>
 
-        {/* SUPPLY CHAIN TRACEABILITY */}
+        {/* SUPPLY CHAIN CONTROL */}
         <section className={styles.traceabilitySection}>
           <div className={styles.traceabilityContent}>
             <div className={styles.textContent}>
@@ -103,7 +103,7 @@ export default function QualitySustainability() {
               <p>
                 From <strong>4,500+ trained pickers</strong> across Madagascar's
                 biodiversity regions to international export, every step is
-                monitored to ensure quality, safety, and full traceability.
+                monitored to ensure quality, safety, and sustainability.
               </p>
 
               <div className={styles.supplyStats}>
@@ -194,7 +194,7 @@ export default function QualitySustainability() {
             <div className={styles.impactAreas}>
               <div className={styles.impactArea}>
                 <div className={styles.areaIcon}>💼</div>
-                <h3>Local Livelihood Support</h3>
+                <h3>Local Life</h3>
                 <div className={styles.areaStats}>
                   <div className={styles.stat}>
                     <span>Ongoing</span>
@@ -208,44 +208,6 @@ export default function QualitySustainability() {
                     <p>
                       Providing tools and seed support to strengthen rural
                       income sources
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className={styles.impactArea}>
-                <div className={styles.areaIcon}>🎓</div>
-                <h3>Education and Wellness</h3>
-                <div className={styles.areaStats}>
-                  <div className={styles.stat}>
-                    <span>Available</span>
-                    <p>
-                      Community programs that support local schools and youth
-                    </p>
-                  </div>
-                  <div className={styles.stat}>
-                    <span>Resource</span>
-                    <p>
-                      Learning materials and guidance for educators and families
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className={styles.impactArea}>
-                <div className={styles.areaIcon}>🏗️</div>
-                <h3>Community Infrastructure</h3>
-                <div className={styles.areaStats}>
-                  <div className={styles.stat}>
-                    <span>Improving</span>
-                    <p>
-                      Investing in shared facilities and water access projects
-                    </p>
-                  </div>
-                  <div className={styles.stat}>
-                    <span>Practical</span>
-                    <p>
-                      Creating safer, more resilient support for local villages
                     </p>
                   </div>
                 </div>
@@ -341,8 +303,7 @@ export default function QualitySustainability() {
                 <div className={styles.advantageIcon}>👥</div>
                 <h4>Trained & Experienced Network</h4>
                 <p>
-                  71-person team and 4,500+ trained harvesters ensuring
-                  consistent supply
+                  A network of 4,500+ trained pickers ensuring consistent supply
                 </p>
               </div>
 
@@ -368,7 +329,7 @@ export default function QualitySustainability() {
                 <div className={styles.advantageIcon}>⚡</div>
                 <h4>Total Process Control</h4>
                 <p>
-                  Complete supply chain control with digital traceability all
+                  Complete supply chain control with digital monitoring all
                   along the chain
                 </p>
               </div>

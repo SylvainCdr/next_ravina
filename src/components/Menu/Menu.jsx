@@ -22,14 +22,14 @@ export default function Menu() {
       href: "/about-gasikara-medicinal-plants",
       bgImage:
         // "https://images.unsplash.com/photo-1699622595987-9974344baed5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "/assets/new/image9.jpg"
+        "/assets/new/cent101.jpeg"
     },
     {
       name: "CENTELLA ASIATICA",
       href: "/centella-asiatica",
       bgImage:
         // "https://cdn.pixabay.com/photo/2018/07/05/12/09/centella-3518194_1280.jpg",
-        "/assets/new/image14.jpg"
+        "/assets/new/cent103.jpeg"
     },
     // {
     //   name: "WHAT WE PROVIDE",
@@ -47,8 +47,8 @@ export default function Menu() {
       name: "CONTACT US",
       href: "/contact",
       bgImage:
-        // "https://images.unsplash.com/photo-1596648435727-738393ce8e1c?q=80&w=1748&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "/assets/new/image10.jpg"
+         "https://images.unsplash.com/photo-1596648435727-738393ce8e1c?q=80&w=1748&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        // "/assets/new/image10.jpg"
     },
   ];
 
