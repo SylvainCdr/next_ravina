@@ -172,7 +172,7 @@ export default function Home() {
 
           <div className={styles.centellaGallery}>
             <img
-              src="/assets/new/Image9.jpg"
+              src="/assets/new/image9.jpg"
               alt="Wild Centella asiatica plant"
               className={styles.imgLarge}
             />
