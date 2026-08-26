@@ -7,12 +7,11 @@ export default function Home() {
     <div className={styles.homeContainer}>
       {/* HERO SECTION */}
       <div className={styles.hero1}>
-        <video autoPlay loop muted className={styles.videoBackground}>
-          <source src="/assets/gotuVid.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
         <div className={styles.hero}>
+          <video autoPlay loop muted className={styles.videoBackground}>
+            <source src="/assets/gotuVid.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div className={styles.overlay} />
           <div className={styles.content}>
             <div className={styles.contentLeft}>

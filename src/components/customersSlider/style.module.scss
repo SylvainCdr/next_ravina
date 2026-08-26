@@ -11,12 +11,11 @@ $animationSpeed: 30s;
     -moz-transform: translateX(calc(-250px * 15));
     -ms-transform: translateX(calc(-250px * 15));
     -o-transform: translateX(calc(-250px * 15));
-}
+  }
 }
 
 // Styling
 .slider {
-
   background: linear-gradient(to bottom right, #fdfdfdac, #73bdfe00);
 
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
@@ -85,11 +84,18 @@ $animationSpeed: 30s;
   }
 
   @media (max-width: 768px) {
-   h1 {
-    margin-top: 1em;
-      font-size: 1.8em;
+    .slide {
+      margin-left: 2.5rem;
+
+      img {
+        height: 9rem;
+        width: 9em;
+      }
     }
 
- 
+    h1 {
+      margin-top: 1em;
+      font-size: 1.8em;
+    }
   }
 }

@@ -1,167 +1,38 @@
 import styles from "./style.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useRef } from "react";
+import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [hoveredMenuItem, setHoveredMenuItem] = useState(null);
-  const menuOverlayRef = useRef(null);
-  const pageContentRef = useRef(null);
+  const router = useRouter();
 
-  // Menu items with corresponding background images
   const menuItems = [
-    {
-      name: "HOME",
-      href: "/",
-      bgImage:
-        "https://images.unsplash.com/photo-1558437753-21dc69d8ebed?q=80&w=2940&auto=format&fit=crop",
-    },
-    {
-      name: "ABOUT US",
-      href: "/about-gasikara-medicinal-plants",
-      bgImage:
-        // "https://images.unsplash.com/photo-1699622595987-9974344baed5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "/assets/new/cent101.jpeg",
-    },
-    {
-      name: "CENTELLA ASIATICA",
-      href: "/centella-asiatica",
-      bgImage:
-        // "https://cdn.pixabay.com/photo/2018/07/05/12/09/centella-3518194_1280.jpg",
-        "/assets/new/cent103.jpeg",
-    },
-    // {
-    //   name: "WHAT WE PROVIDE",
-    //   href: "/what-we-provide",
-    //   bgImage:
-    //     "https://images.unsplash.com/photo-1605040056130-38d9faad3534?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    // },
-    {
-      name: "QUALITY & SUSTAINABILITY",
-      href: "/quality-sustainability",
-      bgImage:
-        "https://images.unsplash.com/photo-1558694440-03ade9215d7b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      name: "CONTACT US",
-      href: "/contact",
-      bgImage:
-        "https://images.unsplash.com/photo-1596648435727-738393ce8e1c?q=80&w=1748&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      // "/assets/new/image10.jpg"
-    },
+    { name: "HOME", href: "/" },
+    { name: "CENTELLA ASIATICA", href: "/centella-asiatica" },
+    { name: "ABOUT US", href: "/about-gasikara-medicinal-plants" },
+    { name: "QUALITY & SUSTAINABILITY", href: "/quality-sustainability" },
+    // { name: "CONTACT US", href: "/contact" },
   ];
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((open) => !open);
   };
 
-  const handleMenuItemHover = (index) => {
-    setHoveredMenuItem(index);
-  };
-
-  const handleMenuItemLeave = () => {
-    setHoveredMenuItem(null);
-  };
-
-  const handleMenuItemClick = () => {
+  const closeMenu = () => {
     setIsMenuOpen(false);
-    setHoveredMenuItem(null);
   };
 
   return (
     <div className={styles.container}>
-      {/* Menu Overlay */}
-      <div
-        className={`${styles.menuOverlay} ${isMenuOpen ? styles.menuOpen : ""}`}
-      >
-        {/* Background Images Container */}
-        <div className={styles.menuBgContainer}>
-          {/* Default background */}
-          <div
-            className={`${styles.menuBgImg} ${
-              hoveredMenuItem === null ? styles.active : ""
-            }`}
-          >
-            {/* <img
-              src="https://images.unsplash.com/photo-1558437753-21dc69d8ebed?q=80&w=2940&auto=format&fit=crop"
-              alt="Gasikara Medicinal Plants Madagascar"
-            /> */}
-            <video autoPlay loop muted className={styles.videoBackground}>
-              <source src="/assets/gotuMenu.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          {/* Menu item backgrounds */}
-          {menuItems.map((item, index) => (
-            <div
-              key={`bg-${index}`}
-              className={`${styles.menuBgImg} ${
-                hoveredMenuItem === index ? styles.active : ""
-              }`}
-            >
-              <img src={item.bgImage} alt={item.name} />
-            </div>
-          ))}
-        </div>
-
-        {/* Menu Content */}
-        <div className={styles.menuContent}>
-          <div className={styles.menuLinks}>
-            {/* Main Menu */}
-            <div className={styles.menuMain}>
-              <ul>
-                {menuItems.map((item, index) => (
-                  <li
-                    key={item.name}
-                    onMouseEnter={() => handleMenuItemHover(index)}
-                    onMouseLeave={handleMenuItemLeave}
-                  >
-                    <Link
-                      href={item.href}
-                      onClick={handleMenuItemClick}
-                      data-text-anim
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Social Links
-            <div className={styles.menuSocials}>
-              <p>Follow Gasikara Medicinal Plants</p>
-              <ul>
-                <li>
-                  <a href="#" target="_blank">
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    Facebook
-                  </a>
-                </li>
-              </ul>
-            </div> */}
-          </div>
-        </div>
-      </div>
-
       {/* Header */}
       <header className={styles.navbar}>
         <nav className={styles.wrapper}>
           <div className={styles.menuBar}>
             {/* Logo */}
             <div className={styles.logoWrapper}>
-              <Link href="/">
+              <Link href="/" onClick={closeMenu}>
                 <Image
                   src="/assets/gmp-logo.jpg"
                   alt="Gasikara Medicinal Plants - Premium Centella Asiatica from Madagascar"
@@ -171,18 +42,23 @@ export default function Menu() {
               </Link>
             </div>
 
-            {/* Menu Toggle Button */}
-            <div
-              className={`${styles.menuToggle} ${
-                isMenuOpen ? styles.open : ""
-              }`}
-              onClick={toggleMenu}
-              id="menu-toggle"
-            >
-              <span className={styles.toggleLabel}>MENU</span>
-            </div>
+            {/* Standard nav links (desktop) */}
+            <ul className={styles.navLinks}>
+              {menuItems.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className={
+                      router.pathname === item.href ? styles.activeLink : ""
+                    }
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-            {/* CTA Button */}
+            {/* CTA Button (desktop) */}
             <Link
               href="/contact"
               className={`${styles.navbarBtn} ${styles.btn}`}
@@ -200,6 +76,45 @@ export default function Menu() {
                 />
               </svg>
             </Link>
+
+            {/* Menu Toggle Button (mobile) */}
+            <button
+              type="button"
+              className={`${styles.menuToggle} ${
+                isMenuOpen ? styles.open : ""
+              }`}
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
+              id="menu-toggle"
+            >
+              <span className={styles.burgerLine}></span>
+              <span className={styles.burgerLine}></span>
+              <span className={styles.burgerLine}></span>
+            </button>
+          </div>
+
+          {/* Mobile dropdown menu */}
+          <div
+            className={`${styles.mobileMenu} ${
+              isMenuOpen ? styles.mobileMenuOpen : ""
+            }`}
+          >
+            <ul>
+              {menuItems.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    onClick={closeMenu}
+                    className={
+                      router.pathname === item.href ? styles.activeLink : ""
+                    }
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </nav>
       </header>
