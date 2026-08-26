@@ -1,10 +1,24 @@
 ﻿import styles from "./style.module.scss";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 export default function About() {
   const router = useRouter();
   return (
     <div className={styles.aboutContainer}>
+      <Head>
+        <title>
+          About Us | Gasikara Medicinal Plants — Centella Asiatica Madagascar
+        </title>
+        <meta
+          name="description"
+          content="Discover Gasikara Medicinal Plants: our story, our wild-harvesting network in Madagascar, and our commitment to quality Centella asiatica exports."
+        />
+        <link
+          rel="canonical"
+          href="https://gasikara-plants.com/about-gasikara-medicinal-plants"
+        />
+      </Head>
       {/* HERO */}
       <div className={styles.hero}>
         <h1>About Gasikara Medicinal Plants</h1>

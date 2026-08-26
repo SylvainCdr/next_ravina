@@ -92,6 +92,10 @@ export default function CentellaAsiatica() {
           name="description"
           content="Gasikara Medicinal Plants exports 100% wild-harvested Centella asiatica dried leaves from Madagascar — high Total Triterpene content, HPLC verified."
         />
+        <link
+          rel="canonical"
+          href="https://gasikara-plants.com/centella-asiatica"
+        />
       </Head>
 
       <div className={styles.centellaContainer}>

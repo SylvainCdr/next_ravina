@@ -1,10 +1,21 @@
 ﻿import styles from "./style.module.scss";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 export default function Home() {
   const router = useRouter();
   return (
     <div className={styles.homeContainer}>
+      <Head>
+        <title>
+          Centella Asiatica Madagascar Supplier | Gasikara Medicinal Plants
+        </title>
+        <meta
+          name="description"
+          content="Gasikara Medicinal Plants exports 100% wild-harvested Centella asiatica dried leaves from Madagascar — high Total Triterpene content, HPLC verified, reliable supply chain."
+        />
+        <link rel="canonical" href="https://gasikara-plants.com/" />
+      </Head>
       {/* HERO SECTION */}
       <div className={styles.hero1}>
         <div className={styles.hero}>

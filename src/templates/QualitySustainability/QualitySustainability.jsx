@@ -13,6 +13,10 @@ export default function QualitySustainability() {
           name="description"
           content="HPLC-verified Centella asiatica sourcing from Madagascar. Gasikara Medicinal Plants — rigorous quality control and ethical supply chain from field to export."
         />
+        <link
+          rel="canonical"
+          href="https://gasikara-plants.com/quality-sustainability"
+        />
       </Head>
 
       <div className={styles.qualityContainer}>

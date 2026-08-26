@@ -26,14 +26,14 @@ export default function Document() {
           property="og:description"
           content="100% wild-harvested Centella asiatica dried leaves — high TTT content, HPLC verified, traceable from field to export."
         />
-        {/* <meta property="og:url" content="https://www.gasikara-medicinals.com" /> */}
+        <meta property="og:url" content="https://gasikara-plants.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="https://gasikara-plants.com/assets/gmp-logo.jpg" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Gasikara Medicinal Plants" />
 
         {/* Favicon */}
-        <link rel="icon" href="" />
+        <link rel="icon" href="/assets/gmp-logo.jpg" />
 
         {/*  External Stylesheets */}
         <link

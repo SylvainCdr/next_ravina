@@ -12,6 +12,7 @@ export default function Contact() {
           name="description"
           content="Contact Gasikara Medicinal Plants to request samples or discuss Centella asiatica sourcing. Wild-harvested, HPLC verified — Madagascar."
         />
+        <link rel="canonical" href="https://gasikara-plants.com/contact" />
       </Head>
 
       <div className={styles.contactContainer}>
