@@ -28,7 +28,10 @@ export default function Document() {
         />
         <meta property="og:url" content="https://gasikara-plants.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://gasikara-plants.com/assets/gmp-logo.jpg" />
+        <meta
+          property="og:image"
+          content="https://gasikara-plants.com/assets/gmp-logo.jpg"
+        />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Gasikara Medicinal Plants" />
 
