@@ -38,8 +38,8 @@ function Footer() {
         <ul>
           <li>
             <i className="fa-solid fa-envelope"></i>
-            <Link href="mailto:contact@gasikara-medicinals.com">
-              contact@gasikara-medicinals.com
+            <Link href="mailto:contact@gasikara-plants.com">
+              contact@gasikara-plants.com
             </Link>
           </li>
           <li>

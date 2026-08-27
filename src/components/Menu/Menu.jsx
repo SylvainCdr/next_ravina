@@ -13,7 +13,7 @@ export default function Menu() {
     { name: "CENTELLA ASIATICA", href: "/centella-asiatica" },
     { name: "ABOUT US", href: "/about-gasikara-medicinal-plants" },
     { name: "QUALITY & SUSTAINABILITY", href: "/quality-sustainability" },
-    // { name: "CONTACT US", href: "/contact" },
+    { name: "CONTACT US", href: "/contact" },
   ];
 
   const toggleMenu = () => {
@@ -63,7 +63,7 @@ export default function Menu() {
               href="/contact"
               className={`${styles.navbarBtn} ${styles.btn}`}
             >
-              <span className={styles.btnTxt}>CONTACT US</span>
+              <span className={styles.btnTxt}>REQUEST A SAMPLE</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
