@@ -606,16 +606,17 @@ export default function CentellaAsiatica({ lang = "en" }) {
           <p className={styles.bottomNote}>
             {isFr ? (
               <>
-                Les activités sont surveillées via les systèmes{" "}
-                <strong>FarmForce</strong> et des revues qualité régulières,
-                garantissant un approvisionnement éthique et transparent du
-                cueilleur au port.
+                Les activités sont surveillées via un{" "}
+                <strong>système numérique de traçabilité</strong> et des revues
+                qualité régulières, garantissant un approvisionnement éthique et
+                transparent du cueilleur au port.
               </>
             ) : (
               <>
-                Activities are monitored through <strong>FarmForce</strong>{" "}
-                systems and regular quality reviews, ensuring ethical sourcing
-                and transparency from picker to port.
+                Activities are monitored through a{" "}
+                <strong>digital traceability system</strong> and regular quality
+                reviews, ensuring ethical sourcing and transparency from picker
+                to port.
               </>
             )}
           </p>

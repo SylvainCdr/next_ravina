@@ -62,7 +62,7 @@ function Footer({ lang = "en" }) {
         <ul>
           <li>UEBT Member</li>
           <li>Ecocert Organic Certified</li>
-          <li>Traceability Verified by FarmForce</li>
+          <li>Digital Traceability Verified</li>
           <p className={styles.copyright}>
             © 2026 Gasikara Medicinal Plants | All rights reserved
           </p>

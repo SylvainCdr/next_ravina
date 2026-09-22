@@ -150,12 +150,12 @@ export default function QualitySustainability({ lang = "en" }) {
                 <p>
                   <strong>
                     {isFr
-                      ? "Application logicielle FarmForce"
-                      : "FarmForce software application"}
+                      ? "Suivi numérique du terrain"
+                      : "Digital field tracking"}
                   </strong>{" "}
                   {isFr
                     ? "pour renforcer nos efforts et améliorer la transparence du terrain à l'export."
-                    : "implementation to strengthen our efforts and improve transparency from field to export."}
+                    : "to strengthen our efforts and improve transparency from field to export."}
                 </p>
                 <div className={styles.cardHighlight}>
                   <span>
