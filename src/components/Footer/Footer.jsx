@@ -1,33 +1,37 @@
 import styles from "./style.module.scss";
 import Link from "next/link";
 
-function Footer() {
+function Footer({ lang = "en" }) {
+  const prefix = lang === "fr" ? "/fr" : "";
   return (
     <div className={styles["footer-container"]}>
       <div className={styles["section-1"]}>
         <img src="/assets/gmp-logo.jpg" alt="Gasikara Medicinal Plants" />
         <p className={styles.slogan}>
-          Wild-Harvested Centella Asiatica from Madagascar — Verified by
-          Science.
+          {lang === "fr"
+            ? "Centella Asiatica sauvage de Madagascar — Validée par la science."
+            : "Wild-Harvested Centella Asiatica from Madagascar — Verified by Science."}
         </p>
       </div>
 
       <div className={styles["section-2"]}>
-        <h4>Sitemap </h4>
+        <h4>{lang === "fr" ? "Plan du site" : "Sitemap"} </h4>
         <ul>
-          <Link href="/">
-            <li>Home</li>
+          <Link href={`${prefix}/`}>
+            <li>{lang === "fr" ? "Accueil" : "Home"}</li>
           </Link>
-          <Link href="/centella-asiatica">
+          <Link href={`${prefix}/centella-asiatica`}>
             <li>Centella Asiatica</li>
           </Link>
-          <Link href="/about-gasikara-medicinal-plants">
-            <li>About Us</li>
+          <Link href={`${prefix}/about-gasikara-medicinal-plants`}>
+            <li>{lang === "fr" ? "À propos" : "About Us"}</li>
           </Link>
-          <Link href="/quality-sustainability">
-            <li>Quality & Sustainability</li>
+          <Link href={`${prefix}/quality-sustainability`}>
+            <li>
+              {lang === "fr" ? "Qualité & Durabilité" : "Quality & Sustainability"}
+            </li>
           </Link>
-          <Link href="/contact">
+          <Link href={`${prefix}/contact`}>
             <li>Contact</li>
           </Link>
         </ul>

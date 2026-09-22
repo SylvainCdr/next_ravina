@@ -4,17 +4,36 @@ import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-export default function Menu() {
+export default function Menu({ lang = "en" }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
+  const prefix = lang === "fr" ? "/fr" : "";
 
-  const menuItems = [
-    { name: "HOME", href: "/" },
-    { name: "CENTELLA ASIATICA", href: "/centella-asiatica" },
-    { name: "ABOUT US", href: "/about-gasikara-medicinal-plants" },
-    { name: "QUALITY & SUSTAINABILITY", href: "/quality-sustainability" },
-    { name: "CONTACT US", href: "/contact" },
-  ];
+  const menuItems =
+    lang === "fr"
+      ? [
+          { name: "ACCUEIL", href: "/fr" },
+          { name: "CENTELLA ASIATICA", href: "/fr/centella-asiatica" },
+          { name: "À PROPOS", href: "/fr/about-gasikara-medicinal-plants" },
+          { name: "QUALITÉ & DURABILITÉ", href: "/fr/quality-sustainability" },
+          { name: "CONTACT", href: "/fr/contact" },
+        ]
+      : [
+          { name: "HOME", href: "/" },
+          { name: "CENTELLA ASIATICA", href: "/centella-asiatica" },
+          { name: "ABOUT US", href: "/about-gasikara-medicinal-plants" },
+          { name: "QUALITY & SUSTAINABILITY", href: "/quality-sustainability" },
+          { name: "CONTACT US", href: "/contact" },
+        ];
+
+  // Maps the current path to its equivalent in the other language
+  const otherLangHref = () => {
+    const path = router.pathname;
+    if (lang === "fr") {
+      return path.replace(/^\/fr/, "") || "/";
+    }
+    return `/fr${path === "/" ? "" : path}`;
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen((open) => !open);
@@ -60,10 +79,12 @@ export default function Menu() {
 
             {/* CTA Button (desktop) */}
             <Link
-              href="/contact"
+              href={`${prefix}/contact`}
               className={`${styles.navbarBtn} ${styles.btn}`}
             >
-              <span className={styles.btnTxt}>REQUEST A SAMPLE</span>
+              <span className={styles.btnTxt}>
+                {lang === "fr" ? "DEMANDER UN ÉCHANTILLON" : "REQUEST A SAMPLE"}
+              </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -76,6 +97,38 @@ export default function Menu() {
                 />
               </svg>
             </Link>
+
+            {/* Language switcher */}
+            <div className={styles.langSwitch} role="group" aria-label="Language switcher">
+              <svg
+                className={styles.langIcon}
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.6" />
+                <path
+                  d="M3 12h18M12 3c2.5 2.7 3.8 5.8 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.8-3.8-9S9.5 5.7 12 3Z"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                />
+              </svg>
+              <Link
+                href={lang === "en" ? router.pathname : otherLangHref()}
+                className={lang === "en" ? styles.langActive : styles.langOption}
+              >
+                EN
+              </Link>
+              <span className={styles.langDivider}>/</span>
+              <Link
+                href={lang === "fr" ? router.pathname : otherLangHref()}
+                className={lang === "fr" ? styles.langActive : styles.langOption}
+              >
+                FR
+              </Link>
+            </div>
 
             {/* Menu Toggle Button (mobile) */}
             <button
@@ -114,6 +167,25 @@ export default function Menu() {
                   </Link>
                 </li>
               ))}
+              <li className={styles.mobileLangItem}>
+                <Link href={otherLangHref()} onClick={closeMenu}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.6" />
+                    <path
+                      d="M3 12h18M12 3c2.5 2.7 3.8 5.8 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.8-3.8-9S9.5 5.7 12 3Z"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                    />
+                  </svg>
+                  {lang === "fr" ? "English" : "Français"}
+                </Link>
+              </li>
             </ul>
           </div>
         </nav>

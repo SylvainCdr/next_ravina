@@ -1,39 +1,60 @@
 // pages/_document.js
-import { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
-export default function Document() {
-  return (
-    <Html lang="fr">
-      <Head>
-        {/* Meta Tags for SEO */}
+class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    const lang = ctx.pathname && ctx.pathname.startsWith("/fr") ? "fr" : "en";
+    const path = ctx.pathname === "/" ? "" : ctx.pathname || "";
+    const url = `https://gasikara-plants.com${path}`;
+    return { ...initialProps, lang, url };
+  }
 
-        <meta
-          name="description"
-          content="Gasikara Medicinal Plants — Wild-harvested Centella asiatica dried leaves from Madagascar. High Total Triterpene content, HPLC verified."
-        />
-        <meta
-          name="keywords"
+  render() {
+    const { lang, url } = this.props;
+    return (
+      <Html lang={lang}>
+        <Head>
+          {/* Meta Tags for SEO */}
+
+          <meta
+            name="description"
+            content="Gasikara Medicinal Plants — Wild-harvested Centella asiatica dried leaves from Madagascar. High Total Triterpene content, HPLC verified."
+          />
+          <meta
+            name="keywords"
           content="Centella asiatica Madagascar supplier, wild-harvested Centella asiatica dried leaves, high triterpene Centella asiatica bulk, asiaticoside madecassoside raw material, ethical botanical sourcing Madagascar"
         />
         <meta name="author" content="Gasikara Medicinal Plants" />
         <meta name="robots" content="index, follow" />
 
-        <meta
-          property="og:title"
-          content="Gasikara Medicinal Plants — Centella Asiatica from Madagascar"
-        />
-        <meta
-          property="og:description"
-          content="100% wild-harvested Centella asiatica dried leaves — high TTT content, HPLC verified, traceable from field to export."
-        />
-        <meta property="og:url" content="https://gasikara-plants.com" />
+        <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://gasikara-plants.com/assets/gmp-logo.jpg"
-        />
-        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale" content={lang === "fr" ? "fr_FR" : "en_US"} />
         <meta property="og:site_name" content="Gasikara Medicinal Plants" />
+
+        {/* Organization structured data (JSON-LD) for rich results */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Gasikara Medicinal Plants",
+              url: "https://gasikara-plants.com",
+              logo: "https://gasikara-plants.com/assets/gmp-logo.jpg",
+              description:
+                lang === "fr"
+                  ? "Exportateur de Centella asiatica sauvage de Madagascar, vérifiée par HPLC."
+                  : "Exporter of wild-harvested Centella asiatica from Madagascar, HPLC verified.",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Antananarivo",
+                addressCountry: "MG",
+              },
+            }),
+          }}
+        />
 
         {/* Favicon */}
         <link rel="icon" href="/assets/gmp-logo.jpg" />
@@ -54,11 +75,6 @@ export default function Document() {
         <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
 
         <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
-
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
       </Head>
       <body>
         {/* Google Tag Manager (noscript) */}
@@ -67,5 +83,8 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  );
+    );
+  }
 }
+
+export default MyDocument;

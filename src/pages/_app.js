@@ -11,6 +11,7 @@ const GA_MEASUREMENT_ID = "G-NS69E5HFSP";
 
 function App({ Component, pageProps }) {
   const router = useRouter();
+  const lang = router.pathname.startsWith("/fr") ? "fr" : "en";
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -45,8 +46,8 @@ function App({ Component, pageProps }) {
         `}
       </Script>
 
-      <Template>
-        <Component {...pageProps} />
+      <Template lang={lang}>
+        <Component {...pageProps} lang={lang} />
       </Template>
     </>
   );

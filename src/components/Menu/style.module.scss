@@ -195,6 +195,55 @@
   color: var(--col3);
 }
 
+/* ============ LANGUAGE SWITCHER ============ */
+.langSwitch {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(33, 80, 75, 0.25);
+  background: rgba(33, 80, 75, 0.05);
+  flex-shrink: 0;
+}
+
+.langIcon {
+  color: var(--col3);
+  flex-shrink: 0;
+}
+
+.langOption,
+.langActive {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.langOption {
+  color: rgba(33, 80, 75, 0.5);
+}
+
+.langOption:hover {
+  color: var(--col3);
+}
+
+.langActive {
+  color: var(--col3);
+}
+
+.langDivider {
+  color: rgba(33, 80, 75, 0.3);
+  font-size: 12px;
+}
+
+.mobileLangItem a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 900px) {
   .navLinks {
@@ -202,6 +251,10 @@
   }
 
   .navbarBtn {
+    display: none;
+  }
+
+  .langSwitch {
     display: none;
   }
 

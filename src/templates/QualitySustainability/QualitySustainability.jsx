@@ -1,127 +1,183 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./style.module.scss";
+import { motion } from "motion/react";
+import Reveal from "@/Components/Reveal/Reveal";
 
-export default function QualitySustainability() {
+export default function QualitySustainability({ lang = "en" }) {
+  const isFr = lang === "fr";
   return (
     <>
       <Head>
         <title>
-          Quality & Sustainability | Gasikara Medicinal Plants Madagascar
+          {isFr
+            ? "Qualité & Durabilité | Gasikara Medicinal Plants Madagascar"
+            : "Quality & Sustainability | Gasikara Medicinal Plants Madagascar"}
         </title>
         <meta
           name="description"
-          content="HPLC-verified Centella asiatica sourcing from Madagascar. Gasikara Medicinal Plants — rigorous quality control and ethical supply chain from field to export."
+          content={
+            isFr
+              ? "Approvisionnement en Centella asiatica vérifié par HPLC à Madagascar. Gasikara Medicinal Plants — contrôle qualité rigoureux et chaîne d'approvisionnement éthique du terrain à l'export."
+              : "HPLC-verified Centella asiatica sourcing from Madagascar. Gasikara Medicinal Plants — rigorous quality control and ethical supply chain from field to export."
+          }
         />
         <link
           rel="canonical"
-          href="https://gasikara-plants.com/quality-sustainability"
+          href={
+            isFr
+              ? "https://gasikara-plants.com/fr/quality-sustainability"
+              : "https://gasikara-plants.com/quality-sustainability"
+          }
         />
+        <link rel="alternate" hrefLang="en" href="https://gasikara-plants.com/quality-sustainability" />
+        <link rel="alternate" hrefLang="fr" href="https://gasikara-plants.com/fr/quality-sustainability" />
+        <link rel="alternate" hrefLang="x-default" href="https://gasikara-plants.com/quality-sustainability" />
+        <meta property="og:title" content={isFr ? "Qualité & Durabilité | Gasikara Medicinal Plants" : "Quality & Sustainability | Gasikara Medicinal Plants"} />
+        <meta
+          property="og:description"
+          content={
+            isFr
+              ? "Contrôle qualité rigoureux et chaîne d'approvisionnement éthique, du terrain à l'export."
+              : "Rigorous quality control and ethical supply chain, from field to export."
+          }
+        />
+        <meta property="og:image" content="https://gasikara-plants.com/assets/gmp-logo.jpg" />
       </Head>
 
       <div className={styles.qualityContainer}>
         {/* HERO SECTION */}
-        <section className={styles.hero}>
+        <motion.section
+          className={styles.hero}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
           <div className={styles.heroContent}>
-            <h1>Beyond Quality, Creating Impact</h1>
+            <h1>{isFr ? "Au-delà de la Qualité, Créer un Impact" : "Beyond Quality, Creating Impact"}</h1>
             <p className={styles.heroSubtitle}>
-              Where rigorous quality standards meet sustainable development,
-              empowering communities and preserving Madagascar's biodiversity
+              {isFr
+                ? "Là où des normes de qualité rigoureuses rencontrent le développement durable, en renforçant les communautés et en préservant la biodiversité de Madagascar"
+                : "Where rigorous quality standards meet sustainable development, empowering communities and preserving Madagascar's biodiversity"}
             </p>
             <div className={styles.heroStats}>
               <div className={styles.heroStat}>
                 <span>4,500+</span>
-                <p>Trained Pickers</p>
+                <p>{isFr ? "Cueilleurs Formés" : "Trained Pickers"}</p>
               </div>
               <div className={styles.heroStat}>
                 <span>100%</span>
-                <p>Verified Supply</p>
+                <p>{isFr ? "Approvisionnement Vérifié" : "Verified Supply"}</p>
               </div>
               <div className={styles.heroStat}>
                 <span>HPLC</span>
-                <p>Verified Every Batch</p>
+                <p>{isFr ? "Vérifié à Chaque Lot" : "Verified Every Batch"}</p>
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* QUALITY CERTIFICATIONS SECTION */}
-        <section className={styles.qualitySection}>
+        <Reveal as="section" className={styles.qualitySection}>
           <div className={styles.qualityContent}>
             <div className={styles.sectionHeader}>
-              <h2>Uncompromising Quality Standards</h2>
+              <h2>{isFr ? "Normes de Qualité Sans Compromis" : "Uncompromising Quality Standards"}</h2>
               <p>
-                The foundation of our reputation lies in rigorous quality
-                control at every step of our supply chain
+                {isFr
+                  ? "Le fondement de notre réputation repose sur un contrôle qualité rigoureux à chaque étape de notre chaîne d'approvisionnement"
+                  : "The foundation of our reputation lies in rigorous quality control at every step of our supply chain"}
               </p>
             </div>
 
             <div className={styles.qualityGrid}>
               <div className={styles.qualityCard}>
                 <div className={styles.cardIcon}>🔬</div>
-                <h3>HPLC Laboratory</h3>
+                <h3>{isFr ? "Laboratoire HPLC" : "HPLC Laboratory"}</h3>
                 <p>
-                  <strong>In-house HPLC testing equipment</strong> with skilled
-                  and experienced lab technician for asiaticoside/madecassoside
-                  verification and microbiological checks.
+                  <strong>{isFr ? "Équipement de test HPLC interne" : "In-house HPLC testing equipment"}</strong>{" "}
+                  {isFr
+                    ? "avec un technicien de laboratoire qualifié et expérimenté pour la vérification asiaticoside/madécassoside et les contrôles microbiologiques."
+                    : "with skilled and experienced lab technician for asiaticoside/madecassoside verification and microbiological checks."}
                 </p>
                 <div className={styles.cardHighlight}>
-                  <span>Autonomous Analysis</span>
+                  <span>{isFr ? "Analyse Autonome" : "Autonomous Analysis"}</span>
                 </div>
               </div>
 
               <div className={styles.qualityCard}>
                 <div className={styles.cardIcon}>📍</div>
-                <h3>Digital Quality Control</h3>
+                <h3>{isFr ? "Contrôle Qualité Numérique" : "Digital Quality Control"}</h3>
                 <p>
-                  <strong>FarmForce software application</strong> implementation
-                  to strengthen our efforts and improve transparency from field
-                  to export.
+                  <strong>{isFr ? "Application logicielle FarmForce" : "FarmForce software application"}</strong>{" "}
+                  {isFr
+                    ? "pour renforcer nos efforts et améliorer la transparence du terrain à l'export."
+                    : "implementation to strengthen our efforts and improve transparency from field to export."}
                 </p>
                 <div className={styles.cardHighlight}>
-                  <span>Field to Export</span>
+                  <span>{isFr ? "Du Terrain à l'Export" : "Field to Export"}</span>
                 </div>
               </div>
 
               <div className={styles.qualityCard}>
                 <div className={styles.cardIcon}>📦</div>
-                <h3>Specification-Grade Consistency</h3>
+                <h3>{isFr ? "Constance de Qualité Spécifiée" : "Specification-Grade Consistency"}</h3>
                 <p>
-                  Every shipment meets defined TTT specifications — not just
-                  once, but <strong>reliably, batch after batch</strong>. Full
-                  analytical documentation included with every export.
+                  {isFr ? (
+                    <>
+                      Chaque expédition respecte les spécifications TTT définies —
+                      pas seulement une fois, mais <strong>de manière fiable, lot après lot</strong>.
+                      Documentation analytique complète incluse à chaque export.
+                    </>
+                  ) : (
+                    <>
+                      Every shipment meets defined TTT specifications — not just
+                      once, but <strong>reliably, batch after batch</strong>. Full
+                      analytical documentation included with every export.
+                    </>
+                  )}
                 </p>
                 <div className={styles.cardHighlight}>
-                  <span>Batch Documentation</span>
+                  <span>{isFr ? "Documentation par Lot" : "Batch Documentation"}</span>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
 
         {/* SUPPLY CHAIN CONTROL */}
-        <section className={styles.traceabilitySection}>
+        <Reveal as="section" className={styles.traceabilitySection}>
           <div className={styles.traceabilityContent}>
             <div className={styles.textContent}>
-              <h2>Complete Supply Chain Control</h2>
+              <h2>{isFr ? "Contrôle Total de la Chaîne d'Approvisionnement" : "Complete Supply Chain Control"}</h2>
               <p>
-                From <strong>4,500+ trained pickers</strong> across Madagascar's
-                biodiversity regions to international export, every step is
-                monitored to ensure quality, safety, and sustainability.
+                {isFr ? (
+                  <>
+                    De plus de <strong>4 500 cueilleurs formés</strong> dans les
+                    régions de biodiversité de Madagascar jusqu'à l'export
+                    international, chaque étape est surveillée pour garantir
+                    qualité, sécurité et durabilité.
+                  </>
+                ) : (
+                  <>
+                    From <strong>4,500+ trained pickers</strong> across Madagascar's
+                    biodiversity regions to international export, every step is
+                    monitored to ensure quality, safety, and sustainability.
+                  </>
+                )}
               </p>
 
               <div className={styles.supplyStats}>
                 <div className={styles.supplyStat}>
                   <span>20</span>
-                  <p>Advanced Post Collectors</p>
+                  <p>{isFr ? "Collecteurs de Poste Avancé" : "Advanced Post Collectors"}</p>
                 </div>
                 <div className={styles.supplyStat}>
                   <span>4</span>
-                  <p>Field Supervisors</p>
+                  <p>{isFr ? "Superviseurs de Terrain" : "Field Supervisors"}</p>
                 </div>
                 <div className={styles.supplyStat}>
                   <span>3</span>
-                  <p>Processing Centers</p>
+                  <p>{isFr ? "Centres de Traitement" : "Processing Centers"}</p>
                 </div>
               </div>
 
@@ -129,29 +185,33 @@ export default function QualitySustainability() {
                 <div className={styles.step}>
                   <div className={styles.stepNumber}>1</div>
                   <div>
-                    <h4>Field Collection</h4>
+                    <h4>{isFr ? "Collecte sur le Terrain" : "Field Collection"}</h4>
                     <p>
-                      Trained harvesters in Alaotra-Mangoro and
-                      Atsimo-Atsinanana regions
+                      {isFr
+                        ? "Cueilleurs formés dans les régions d'Alaotra-Mangoro et d'Atsimo-Atsinanana"
+                        : "Trained harvesters in Alaotra-Mangoro and Atsimo-Atsinanana regions"}
                     </p>
                   </div>
                 </div>
                 <div className={styles.step}>
                   <div className={styles.stepNumber}>2</div>
                   <div>
-                    <h4>Quality Control</h4>
+                    <h4>{isFr ? "Contrôle Qualité" : "Quality Control"}</h4>
                     <p>
-                      Basic quality control and storage at branch warehouses
+                      {isFr
+                        ? "Contrôle qualité de base et stockage dans les entrepôts régionaux"
+                        : "Basic quality control and storage at branch warehouses"}
                     </p>
                   </div>
                 </div>
                 <div className={styles.step}>
                   <div className={styles.stepNumber}>3</div>
                   <div>
-                    <h4>Advanced Processing</h4>
+                    <h4>{isFr ? "Traitement Avancé" : "Advanced Processing"}</h4>
                     <p>
-                      HPLC testing, packaging, and shipping at main office
-                      Antananarivo
+                      {isFr
+                        ? "Tests HPLC, emballage et expédition au siège d'Antananarivo"
+                        : "HPLC testing, packaging, and shipping at main office Antananarivo"}
                     </p>
                   </div>
                 </div>
@@ -171,47 +231,49 @@ export default function QualitySustainability() {
                 <div className={styles.mapOverlay}>
                   <div className={styles.region}>
                     <h5>Alaotra-Mangoro</h5>
-                    <p>Central-East Region</p>
+                    <p>{isFr ? "Région Centre-Est" : "Central-East Region"}</p>
                   </div>
                   <div className={styles.region}>
                     <h5>Atsimo-Atsinanana</h5>
-                    <p>South-East Region</p>
+                    <p>{isFr ? "Région Sud-Est" : "South-East Region"}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
 
         {/* COMMUNITY DEVELOPMENT PROJECTS */}
-        <section className={styles.communitySection}>
+        <Reveal as="section" className={styles.communitySection}>
           <div className={styles.communityContent}>
             <div className={styles.sectionHeader}>
-              <h2>Community Development Projects</h2>
+              <h2>{isFr ? "Projets de Développement Communautaire" : "Community Development Projects"}</h2>
               <p>
-                Our social responsibility goes beyond fair sourcing - we are
-                deeply engaged with the communities we work with, creating
-                measurable impact
+                {isFr
+                  ? "Notre responsabilité sociale va au-delà de l'approvisionnement équitable — nous sommes profondément engagés avec les communautés avec lesquelles nous travaillons, créant un impact mesurable"
+                  : "Our social responsibility goes beyond fair sourcing - we are deeply engaged with the communities we work with, creating measurable impact"}
               </p>
             </div>
 
             <div className={styles.impactAreas}>
               <div className={styles.impactArea}>
                 <div className={styles.areaIcon}>💼</div>
-                <h3>Local Life</h3>
+                <h3>{isFr ? "Vie Locale" : "Local Life"}</h3>
                 <div className={styles.areaStats}>
                   <div className={styles.stat}>
-                    <span>Ongoing</span>
+                    <span>{isFr ? "En Cours" : "Ongoing"}</span>
                     <p>
-                      Supporting harvesters with practical training and
-                      agricultural guidance
+                      {isFr
+                        ? "Accompagnement des récolteurs avec une formation pratique et des conseils agricoles"
+                        : "Supporting harvesters with practical training and agricultural guidance"}
                     </p>
                   </div>
                   <div className={styles.stat}>
-                    <span>Practical</span>
+                    <span>{isFr ? "Concret" : "Practical"}</span>
                     <p>
-                      Providing tools and seed support to strengthen rural
-                      income sources
+                      {isFr
+                        ? "Fourniture d'outils et de semences pour renforcer les revenus ruraux"
+                        : "Providing tools and seed support to strengthen rural income sources"}
                     </p>
                   </div>
                 </div>
@@ -219,25 +281,29 @@ export default function QualitySustainability() {
 
               <div className={styles.impactArea}>
                 <div className={styles.areaIcon}>🌿</div>
-                <h3>Sustainable Practices</h3>
+                <h3>{isFr ? "Pratiques Durables" : "Sustainable Practices"}</h3>
                 <div className={styles.areaStats}>
                   <div className={styles.stat}>
-                    <span>Guided</span>
+                    <span>{isFr ? "Encadré" : "Guided"}</span>
                     <p>
-                      Supporting responsible harvesting and natural regeneration
+                      {isFr
+                        ? "Soutien à une récolte responsable et à la régénération naturelle"
+                        : "Supporting responsible harvesting and natural regeneration"}
                     </p>
                   </div>
                   <div className={styles.stat}>
-                    <span>Ongoing</span>
+                    <span>{isFr ? "En Cours" : "Ongoing"}</span>
                     <p>
-                      Engaging in local conservation and restoration activities
+                      {isFr
+                        ? "Participation aux activités locales de conservation et de restauration"
+                        : "Engaging in local conservation and restoration activities"}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
 
         {/* PARTNERSHIPS */}
         {/* <section className={styles.partnershipsSection}>
@@ -285,85 +351,95 @@ export default function QualitySustainability() {
         </section> */}
 
         {/* WHY CHOOSE GASIKARA */}
-        <section className={styles.whySection}>
+        <Reveal as="section" className={styles.whySection}>
           <div className={styles.whyContent}>
-            <h2>Why Gasikara Medicinal Plants</h2>
+            <h2>{isFr ? "Pourquoi Gasikara Medicinal Plants" : "Why Gasikara Medicinal Plants"}</h2>
             <p>
-              A focused supplier — one product, documented quality, and a supply
-              chain built on people, not just process
+              {isFr
+                ? "Un fournisseur ciblé — un seul produit, une qualité documentée, et une chaîne d'approvisionnement bâtie sur des personnes, pas seulement des processus"
+                : "A focused supplier — one product, documented quality, and a supply chain built on people, not just process"}
             </p>
 
             <div className={styles.advantagesGrid}>
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>🎯</div>
-                <h4>High-Quality Dried Leaves</h4>
+                <h4>{isFr ? "Feuilles Séchées de Haute Qualité" : "High-Quality Dried Leaves"}</h4>
                 <p>
-                  Adaptable supply plans to suit any requirements with
-                  HPLC-verified quality
+                  {isFr
+                    ? "Plans d'approvisionnement adaptables à tous les besoins, avec une qualité vérifiée par HPLC"
+                    : "Adaptable supply plans to suit any requirements with HPLC-verified quality"}
                 </p>
               </div>
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>👥</div>
-                <h4>Trained & Experienced Network</h4>
+                <h4>{isFr ? "Réseau Formé & Expérimenté" : "Trained & Experienced Network"}</h4>
                 <p>
-                  A network of 4,500+ trained pickers ensuring consistent supply
+                  {isFr
+                    ? "Un réseau de plus de 4 500 cueilleurs formés garantissant un approvisionnement constant"
+                    : "A network of 4,500+ trained pickers ensuring consistent supply"}
                 </p>
               </div>
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>✅</div>
-                <h4>Ethically Sourced</h4>
+                <h4>{isFr ? "Approvisionnement Éthique" : "Ethically Sourced"}</h4>
                 <p>
-                  Full compliance with international ethical sourcing standards,
-                  verified through ongoing quality reviews
+                  {isFr
+                    ? "Pleine conformité avec les normes internationales d'approvisionnement éthique, vérifiée par des revues qualité continues"
+                    : "Full compliance with international ethical sourcing standards, verified through ongoing quality reviews"}
                 </p>
               </div>
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>🏭</div>
-                <h4>Fully Equipped Sites</h4>
+                <h4>{isFr ? "Sites Entièrement Équipés" : "Fully Equipped Sites"}</h4>
                 <p>
-                  HPLC laboratory, solar drying facilities, and processing
-                  centers
+                  {isFr
+                    ? "Laboratoire HPLC, installations de séchage solaire et centres de traitement"
+                    : "HPLC laboratory, solar drying facilities, and processing centers"}
                 </p>
               </div>
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>⚡</div>
-                <h4>Total Process Control</h4>
+                <h4>{isFr ? "Contrôle Total du Processus" : "Total Process Control"}</h4>
                 <p>
-                  Complete supply chain control with digital monitoring all
-                  along the chain
+                  {isFr
+                    ? "Contrôle complet de la chaîne d'approvisionnement avec une surveillance numérique tout au long de la chaîne"
+                    : "Complete supply chain control with digital monitoring all along the chain"}
                 </p>
               </div>
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>📋</div>
-                <h4>Fast Administrative Track</h4>
+                <h4>{isFr ? "Procédure Administrative Rapide" : "Fast Administrative Track"}</h4>
                 <p>
-                  Streamlined regulatory procedures and export documentation
+                  {isFr
+                    ? "Procédures réglementaires simplifiées et documentation d'export"
+                    : "Streamlined regulatory procedures and export documentation"}
                 </p>
               </div>
             </div>
 
             <div className={styles.ctaSection}>
-              <h3>Ready to Source with Gasikara?</h3>
+              <h3>{isFr ? "Prêt à vous approvisionner avec Gasikara ?" : "Ready to Source with Gasikara?"}</h3>
               <p>
-                Request samples or discuss your specifications — we respond with
-                full analytical data and transparent commercial terms.
+                {isFr
+                  ? "Demandez des échantillons ou discutez de vos spécifications — nous répondons avec des données analytiques complètes et des conditions commerciales transparentes."
+                  : "Request samples or discuss your specifications — we respond with full analytical data and transparent commercial terms."}
               </p>
               <div className={styles.ctaButtons}>
-                <a href="/contact" className={styles.primaryButton}>
-                  Contact Us
+                <a href={isFr ? "/fr/contact" : "/contact"} className={styles.primaryButton}>
+                  {isFr ? "Contactez-nous" : "Contact Us"}
                 </a>
-                <a href="/centella-asiatica" className={styles.secondaryButton}>
-                  Our Product
+                <a href={isFr ? "/fr/centella-asiatica" : "/centella-asiatica"} className={styles.secondaryButton}>
+                  {isFr ? "Notre Produit" : "Our Product"}
                 </a>
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
       </div>
     </>
   );
