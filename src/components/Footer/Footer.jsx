@@ -28,7 +28,9 @@ function Footer({ lang = "en" }) {
           </Link>
           <Link href={`${prefix}/quality-sustainability`}>
             <li>
-              {lang === "fr" ? "Qualité & Durabilité" : "Quality & Sustainability"}
+              {lang === "fr"
+                ? "Qualité & Durabilité"
+                : "Quality & Sustainability"}
             </li>
           </Link>
           <Link href={`${prefix}/contact`}>
@@ -50,7 +52,8 @@ function Footer({ lang = "en" }) {
             <i className="fa-brands fa-whatsapp"></i> WhatsApp: +261 38 070 7809
           </li>
           <li>
-            <i className="fa-solid fa-location-dot"></i> Antananarivo, Madagascar
+            <i className="fa-solid fa-location-dot"></i> Antananarivo,
+            Madagascar
           </li>
         </ul>
       </div>

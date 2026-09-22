@@ -6,8 +6,8 @@ import Footer from "../Footer/Footer";
 function Template({ children, lang = "en" }) {
   return (
     <>
-    {/* <Header /> */}
-    <Menu lang={lang} />
+      {/* <Header /> */}
+      <Menu lang={lang} />
       {children}
       <Footer lang={lang} />
     </>

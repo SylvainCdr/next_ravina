@@ -30,10 +30,29 @@ export default function QualitySustainability({ lang = "en" }) {
               : "https://gasikara-plants.com/quality-sustainability"
           }
         />
-        <link rel="alternate" hrefLang="en" href="https://gasikara-plants.com/quality-sustainability" />
-        <link rel="alternate" hrefLang="fr" href="https://gasikara-plants.com/fr/quality-sustainability" />
-        <link rel="alternate" hrefLang="x-default" href="https://gasikara-plants.com/quality-sustainability" />
-        <meta property="og:title" content={isFr ? "Qualité & Durabilité | Gasikara Medicinal Plants" : "Quality & Sustainability | Gasikara Medicinal Plants"} />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://gasikara-plants.com/quality-sustainability"
+        />
+        <link
+          rel="alternate"
+          hrefLang="fr"
+          href="https://gasikara-plants.com/fr/quality-sustainability"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://gasikara-plants.com/quality-sustainability"
+        />
+        <meta
+          property="og:title"
+          content={
+            isFr
+              ? "Qualité & Durabilité | Gasikara Medicinal Plants"
+              : "Quality & Sustainability | Gasikara Medicinal Plants"
+          }
+        />
         <meta
           property="og:description"
           content={
@@ -42,7 +61,10 @@ export default function QualitySustainability({ lang = "en" }) {
               : "Rigorous quality control and ethical supply chain, from field to export."
           }
         />
-        <meta property="og:image" content="https://gasikara-plants.com/assets/gmp-logo.jpg" />
+        <meta
+          property="og:image"
+          content="https://gasikara-plants.com/assets/gmp-logo.jpg"
+        />
       </Head>
 
       <div className={styles.qualityContainer}>
@@ -54,7 +76,11 @@ export default function QualitySustainability({ lang = "en" }) {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <div className={styles.heroContent}>
-            <h1>{isFr ? "Au-delà de la Qualité, Créer un Impact" : "Beyond Quality, Creating Impact"}</h1>
+            <h1>
+              {isFr
+                ? "Au-delà de la Qualité, Créer un Impact"
+                : "Beyond Quality, Creating Impact"}
+            </h1>
             <p className={styles.heroSubtitle}>
               {isFr
                 ? "Là où des normes de qualité rigoureuses rencontrent le développement durable, en renforçant les communautés et en préservant la biodiversité de Madagascar"
@@ -81,7 +107,11 @@ export default function QualitySustainability({ lang = "en" }) {
         <Reveal as="section" className={styles.qualitySection}>
           <div className={styles.qualityContent}>
             <div className={styles.sectionHeader}>
-              <h2>{isFr ? "Normes de Qualité Sans Compromis" : "Uncompromising Quality Standards"}</h2>
+              <h2>
+                {isFr
+                  ? "Normes de Qualité Sans Compromis"
+                  : "Uncompromising Quality Standards"}
+              </h2>
               <p>
                 {isFr
                   ? "Le fondement de notre réputation repose sur un contrôle qualité rigoureux à chaque étape de notre chaîne d'approvisionnement"
@@ -94,50 +124,73 @@ export default function QualitySustainability({ lang = "en" }) {
                 <div className={styles.cardIcon}>🔬</div>
                 <h3>{isFr ? "Laboratoire HPLC" : "HPLC Laboratory"}</h3>
                 <p>
-                  <strong>{isFr ? "Équipement de test HPLC interne" : "In-house HPLC testing equipment"}</strong>{" "}
+                  <strong>
+                    {isFr
+                      ? "Équipement de test HPLC interne"
+                      : "In-house HPLC testing equipment"}
+                  </strong>{" "}
                   {isFr
                     ? "avec un technicien de laboratoire qualifié et expérimenté pour la vérification asiaticoside/madécassoside et les contrôles microbiologiques."
                     : "with skilled and experienced lab technician for asiaticoside/madecassoside verification and microbiological checks."}
                 </p>
                 <div className={styles.cardHighlight}>
-                  <span>{isFr ? "Analyse Autonome" : "Autonomous Analysis"}</span>
+                  <span>
+                    {isFr ? "Analyse Autonome" : "Autonomous Analysis"}
+                  </span>
                 </div>
               </div>
 
               <div className={styles.qualityCard}>
                 <div className={styles.cardIcon}>📍</div>
-                <h3>{isFr ? "Contrôle Qualité Numérique" : "Digital Quality Control"}</h3>
+                <h3>
+                  {isFr
+                    ? "Contrôle Qualité Numérique"
+                    : "Digital Quality Control"}
+                </h3>
                 <p>
-                  <strong>{isFr ? "Application logicielle FarmForce" : "FarmForce software application"}</strong>{" "}
+                  <strong>
+                    {isFr
+                      ? "Application logicielle FarmForce"
+                      : "FarmForce software application"}
+                  </strong>{" "}
                   {isFr
                     ? "pour renforcer nos efforts et améliorer la transparence du terrain à l'export."
                     : "implementation to strengthen our efforts and improve transparency from field to export."}
                 </p>
                 <div className={styles.cardHighlight}>
-                  <span>{isFr ? "Du Terrain à l'Export" : "Field to Export"}</span>
+                  <span>
+                    {isFr ? "Du Terrain à l'Export" : "Field to Export"}
+                  </span>
                 </div>
               </div>
 
               <div className={styles.qualityCard}>
                 <div className={styles.cardIcon}>📦</div>
-                <h3>{isFr ? "Constance de Qualité Spécifiée" : "Specification-Grade Consistency"}</h3>
+                <h3>
+                  {isFr
+                    ? "Constance de Qualité Spécifiée"
+                    : "Specification-Grade Consistency"}
+                </h3>
                 <p>
                   {isFr ? (
                     <>
-                      Chaque expédition respecte les spécifications TTT définies —
-                      pas seulement une fois, mais <strong>de manière fiable, lot après lot</strong>.
+                      Chaque expédition respecte les spécifications TTT définies
+                      — pas seulement une fois, mais{" "}
+                      <strong>de manière fiable, lot après lot</strong>.
                       Documentation analytique complète incluse à chaque export.
                     </>
                   ) : (
                     <>
                       Every shipment meets defined TTT specifications — not just
-                      once, but <strong>reliably, batch after batch</strong>. Full
-                      analytical documentation included with every export.
+                      once, but <strong>reliably, batch after batch</strong>.
+                      Full analytical documentation included with every export.
                     </>
                   )}
                 </p>
                 <div className={styles.cardHighlight}>
-                  <span>{isFr ? "Documentation par Lot" : "Batch Documentation"}</span>
+                  <span>
+                    {isFr ? "Documentation par Lot" : "Batch Documentation"}
+                  </span>
                 </div>
               </div>
             </div>
@@ -148,7 +201,11 @@ export default function QualitySustainability({ lang = "en" }) {
         <Reveal as="section" className={styles.traceabilitySection}>
           <div className={styles.traceabilityContent}>
             <div className={styles.textContent}>
-              <h2>{isFr ? "Contrôle Total de la Chaîne d'Approvisionnement" : "Complete Supply Chain Control"}</h2>
+              <h2>
+                {isFr
+                  ? "Contrôle Total de la Chaîne d'Approvisionnement"
+                  : "Complete Supply Chain Control"}
+              </h2>
               <p>
                 {isFr ? (
                   <>
@@ -159,9 +216,10 @@ export default function QualitySustainability({ lang = "en" }) {
                   </>
                 ) : (
                   <>
-                    From <strong>4,500+ trained pickers</strong> across Madagascar's
-                    biodiversity regions to international export, every step is
-                    monitored to ensure quality, safety, and sustainability.
+                    From <strong>4,500+ trained pickers</strong> across
+                    Madagascar's biodiversity regions to international export,
+                    every step is monitored to ensure quality, safety, and
+                    sustainability.
                   </>
                 )}
               </p>
@@ -169,11 +227,17 @@ export default function QualitySustainability({ lang = "en" }) {
               <div className={styles.supplyStats}>
                 <div className={styles.supplyStat}>
                   <span>20</span>
-                  <p>{isFr ? "Collecteurs de Poste Avancé" : "Advanced Post Collectors"}</p>
+                  <p>
+                    {isFr
+                      ? "Collecteurs de Poste Avancé"
+                      : "Advanced Post Collectors"}
+                  </p>
                 </div>
                 <div className={styles.supplyStat}>
                   <span>4</span>
-                  <p>{isFr ? "Superviseurs de Terrain" : "Field Supervisors"}</p>
+                  <p>
+                    {isFr ? "Superviseurs de Terrain" : "Field Supervisors"}
+                  </p>
                 </div>
                 <div className={styles.supplyStat}>
                   <span>3</span>
@@ -185,7 +249,9 @@ export default function QualitySustainability({ lang = "en" }) {
                 <div className={styles.step}>
                   <div className={styles.stepNumber}>1</div>
                   <div>
-                    <h4>{isFr ? "Collecte sur le Terrain" : "Field Collection"}</h4>
+                    <h4>
+                      {isFr ? "Collecte sur le Terrain" : "Field Collection"}
+                    </h4>
                     <p>
                       {isFr
                         ? "Cueilleurs formés dans les régions d'Alaotra-Mangoro et d'Atsimo-Atsinanana"
@@ -207,7 +273,9 @@ export default function QualitySustainability({ lang = "en" }) {
                 <div className={styles.step}>
                   <div className={styles.stepNumber}>3</div>
                   <div>
-                    <h4>{isFr ? "Traitement Avancé" : "Advanced Processing"}</h4>
+                    <h4>
+                      {isFr ? "Traitement Avancé" : "Advanced Processing"}
+                    </h4>
                     <p>
                       {isFr
                         ? "Tests HPLC, emballage et expédition au siège d'Antananarivo"
@@ -247,7 +315,11 @@ export default function QualitySustainability({ lang = "en" }) {
         <Reveal as="section" className={styles.communitySection}>
           <div className={styles.communityContent}>
             <div className={styles.sectionHeader}>
-              <h2>{isFr ? "Projets de Développement Communautaire" : "Community Development Projects"}</h2>
+              <h2>
+                {isFr
+                  ? "Projets de Développement Communautaire"
+                  : "Community Development Projects"}
+              </h2>
               <p>
                 {isFr
                   ? "Notre responsabilité sociale va au-delà de l'approvisionnement équitable — nous sommes profondément engagés avec les communautés avec lesquelles nous travaillons, créant un impact mesurable"
@@ -353,7 +425,11 @@ export default function QualitySustainability({ lang = "en" }) {
         {/* WHY CHOOSE GASIKARA */}
         <Reveal as="section" className={styles.whySection}>
           <div className={styles.whyContent}>
-            <h2>{isFr ? "Pourquoi Gasikara Medicinal Plants" : "Why Gasikara Medicinal Plants"}</h2>
+            <h2>
+              {isFr
+                ? "Pourquoi Gasikara Medicinal Plants"
+                : "Why Gasikara Medicinal Plants"}
+            </h2>
             <p>
               {isFr
                 ? "Un fournisseur ciblé — un seul produit, une qualité documentée, et une chaîne d'approvisionnement bâtie sur des personnes, pas seulement des processus"
@@ -363,7 +439,11 @@ export default function QualitySustainability({ lang = "en" }) {
             <div className={styles.advantagesGrid}>
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>🎯</div>
-                <h4>{isFr ? "Feuilles Séchées de Haute Qualité" : "High-Quality Dried Leaves"}</h4>
+                <h4>
+                  {isFr
+                    ? "Feuilles Séchées de Haute Qualité"
+                    : "High-Quality Dried Leaves"}
+                </h4>
                 <p>
                   {isFr
                     ? "Plans d'approvisionnement adaptables à tous les besoins, avec une qualité vérifiée par HPLC"
@@ -373,7 +453,11 @@ export default function QualitySustainability({ lang = "en" }) {
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>👥</div>
-                <h4>{isFr ? "Réseau Formé & Expérimenté" : "Trained & Experienced Network"}</h4>
+                <h4>
+                  {isFr
+                    ? "Réseau Formé & Expérimenté"
+                    : "Trained & Experienced Network"}
+                </h4>
                 <p>
                   {isFr
                     ? "Un réseau de plus de 4 500 cueilleurs formés garantissant un approvisionnement constant"
@@ -383,7 +467,9 @@ export default function QualitySustainability({ lang = "en" }) {
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>✅</div>
-                <h4>{isFr ? "Approvisionnement Éthique" : "Ethically Sourced"}</h4>
+                <h4>
+                  {isFr ? "Approvisionnement Éthique" : "Ethically Sourced"}
+                </h4>
                 <p>
                   {isFr
                     ? "Pleine conformité avec les normes internationales d'approvisionnement éthique, vérifiée par des revues qualité continues"
@@ -393,7 +479,9 @@ export default function QualitySustainability({ lang = "en" }) {
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>🏭</div>
-                <h4>{isFr ? "Sites Entièrement Équipés" : "Fully Equipped Sites"}</h4>
+                <h4>
+                  {isFr ? "Sites Entièrement Équipés" : "Fully Equipped Sites"}
+                </h4>
                 <p>
                   {isFr
                     ? "Laboratoire HPLC, installations de séchage solaire et centres de traitement"
@@ -403,7 +491,11 @@ export default function QualitySustainability({ lang = "en" }) {
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>⚡</div>
-                <h4>{isFr ? "Contrôle Total du Processus" : "Total Process Control"}</h4>
+                <h4>
+                  {isFr
+                    ? "Contrôle Total du Processus"
+                    : "Total Process Control"}
+                </h4>
                 <p>
                   {isFr
                     ? "Contrôle complet de la chaîne d'approvisionnement avec une surveillance numérique tout au long de la chaîne"
@@ -413,7 +505,11 @@ export default function QualitySustainability({ lang = "en" }) {
 
               <div className={styles.advantage}>
                 <div className={styles.advantageIcon}>📋</div>
-                <h4>{isFr ? "Procédure Administrative Rapide" : "Fast Administrative Track"}</h4>
+                <h4>
+                  {isFr
+                    ? "Procédure Administrative Rapide"
+                    : "Fast Administrative Track"}
+                </h4>
                 <p>
                   {isFr
                     ? "Procédures réglementaires simplifiées et documentation d'export"
@@ -423,17 +519,27 @@ export default function QualitySustainability({ lang = "en" }) {
             </div>
 
             <div className={styles.ctaSection}>
-              <h3>{isFr ? "Prêt à vous approvisionner avec Gasikara ?" : "Ready to Source with Gasikara?"}</h3>
+              <h3>
+                {isFr
+                  ? "Prêt à vous approvisionner avec Gasikara ?"
+                  : "Ready to Source with Gasikara?"}
+              </h3>
               <p>
                 {isFr
                   ? "Demandez des échantillons ou discutez de vos spécifications — nous répondons avec des données analytiques complètes et des conditions commerciales transparentes."
                   : "Request samples or discuss your specifications — we respond with full analytical data and transparent commercial terms."}
               </p>
               <div className={styles.ctaButtons}>
-                <a href={isFr ? "/fr/contact" : "/contact"} className={styles.primaryButton}>
+                <a
+                  href={isFr ? "/fr/contact" : "/contact"}
+                  className={styles.primaryButton}
+                >
                   {isFr ? "Contactez-nous" : "Contact Us"}
                 </a>
-                <a href={isFr ? "/fr/centella-asiatica" : "/centella-asiatica"} className={styles.secondaryButton}>
+                <a
+                  href={isFr ? "/fr/centella-asiatica" : "/centella-asiatica"}
+                  className={styles.secondaryButton}
+                >
                   {isFr ? "Notre Produit" : "Our Product"}
                 </a>
               </div>

@@ -31,10 +31,29 @@ export default function About({ lang = "en" }) {
               : "https://gasikara-plants.com/about-gasikara-medicinal-plants"
           }
         />
-        <link rel="alternate" hrefLang="en" href="https://gasikara-plants.com/about-gasikara-medicinal-plants" />
-        <link rel="alternate" hrefLang="fr" href="https://gasikara-plants.com/fr/about-gasikara-medicinal-plants" />
-        <link rel="alternate" hrefLang="x-default" href="https://gasikara-plants.com/about-gasikara-medicinal-plants" />
-        <meta property="og:title" content={isFr ? "À Propos de Gasikara Medicinal Plants" : "About Gasikara Medicinal Plants"} />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://gasikara-plants.com/about-gasikara-medicinal-plants"
+        />
+        <link
+          rel="alternate"
+          hrefLang="fr"
+          href="https://gasikara-plants.com/fr/about-gasikara-medicinal-plants"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://gasikara-plants.com/about-gasikara-medicinal-plants"
+        />
+        <meta
+          property="og:title"
+          content={
+            isFr
+              ? "À Propos de Gasikara Medicinal Plants"
+              : "About Gasikara Medicinal Plants"
+          }
+        />
         <meta
           property="og:description"
           content={
@@ -43,7 +62,10 @@ export default function About({ lang = "en" }) {
               : "Our story, our wild-harvesting network in Madagascar, and our commitment to quality."
           }
         />
-        <meta property="og:image" content="https://gasikara-plants.com/assets/gmp-logo.jpg" />
+        <meta
+          property="og:image"
+          content="https://gasikara-plants.com/assets/gmp-logo.jpg"
+        />
       </Head>
       {/* HERO */}
       <motion.div
@@ -52,7 +74,11 @@ export default function About({ lang = "en" }) {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <h1>{isFr ? "À Propos de Gasikara Medicinal Plants" : "About Gasikara Medicinal Plants"}</h1>
+        <h1>
+          {isFr
+            ? "À Propos de Gasikara Medicinal Plants"
+            : "About Gasikara Medicinal Plants"}
+        </h1>
         <p>
           {isFr
             ? "Une entreprise malgache. Un seul produit. Une exigence sans compromis."
@@ -69,9 +95,10 @@ export default function About({ lang = "en" }) {
               <p>
                 {isFr ? (
                   <>
-                    Madagascar abrite l'une des <strong>Centella asiatica</strong>{" "}
-                    les plus bioactives au monde — et nous avons bâti toute notre
-                    activité autour de son exportation dans les meilleures conditions.
+                    Madagascar abrite l'une des{" "}
+                    <strong>Centella asiatica</strong> les plus bioactives au
+                    monde — et nous avons bâti toute notre activité autour de
+                    son exportation dans les meilleures conditions.
                   </>
                 ) : (
                   <>
@@ -86,26 +113,28 @@ export default function About({ lang = "en" }) {
                   <>
                     Nous sommes une entreprise malgache exportant des feuilles
                     séchées de Centella asiatica 100% sauvages vers les marchés
-                    internationaux. Tout ce que nous faisons repose sur une seule
-                    conviction :{" "}
+                    internationaux. Tout ce que nous faisons repose sur une
+                    seule conviction :{" "}
                     <strong>
-                      la qualité de la matière première est le fondement de toute
-                      grande formulation
+                      la qualité de la matière première est le fondement de
+                      toute grande formulation
                     </strong>
-                    . Cette conviction guide notre approvisionnement, la formation
-                    de nos équipes, notre traitement et notre livraison.
+                    . Cette conviction guide notre approvisionnement, la
+                    formation de nos équipes, notre traitement et notre
+                    livraison.
                   </>
                 ) : (
                   <>
-                    We are a Malagasy company exporting 100% wild-harvested, dried
-                    Centella asiatica leaves to international markets. Everything we
-                    do is oriented around a single conviction: that{" "}
+                    We are a Malagasy company exporting 100% wild-harvested,
+                    dried Centella asiatica leaves to international markets.
+                    Everything we do is oriented around a single conviction:
+                    that{" "}
                     <strong>
                       raw material quality is the foundation of every great
                       formulation
                     </strong>
-                    . That conviction shapes how we source, how we train our people,
-                    how we process, and how we deliver.
+                    . That conviction shapes how we source, how we train our
+                    people, how we process, and how we deliver.
                   </>
                 )}
               </p>
@@ -122,7 +151,11 @@ export default function About({ lang = "en" }) {
 
           {/* WHY MADAGASCAR — inside introContent to match SCSS */}
           <Reveal as="section" className={styles.values}>
-            <h2>{isFr ? "Pourquoi Madagascar. Pourquoi Nous." : "Why Madagascar. Why Us."}</h2>
+            <h2>
+              {isFr
+                ? "Pourquoi Madagascar. Pourquoi Nous."
+                : "Why Madagascar. Why Us."}
+            </h2>
             <p>
               {isFr
                 ? "La Centella asiatica de Madagascar est mondialement reconnue pour son profil phytochimique supérieur. La biodiversité unique de l'île et ses conditions de croissance produisent des feuilles avec des concentrations en triterpènes qui surpassent constamment les alternatives cultivées."
@@ -131,19 +164,20 @@ export default function About({ lang = "en" }) {
             <p>
               {isFr ? (
                 <>
-                  Nous sommes l'un des rares exportateurs à combiner cet avantage
-                  naturel avec un{" "}
+                  Nous sommes l'un des rares exportateurs à combiner cet
+                  avantage naturel avec un{" "}
                   <strong>contrôle qualité rigoureux et documenté</strong> de la
-                  récolte à la livraison — ce qui fait de nous un partenaire fiable
-                  pour les acheteurs qui ne peuvent se permettre de compromis sur
-                  l'intégrité de la matière première.
+                  récolte à la livraison — ce qui fait de nous un partenaire
+                  fiable pour les acheteurs qui ne peuvent se permettre de
+                  compromis sur l'intégrité de la matière première.
                 </>
               ) : (
                 <>
-                  We are one of the few exporters combining this natural advantage
-                  with <strong>rigorous, documented quality control</strong> from
-                  harvest to delivery — making us a reliable partner for buyers who
-                  cannot afford to compromise on raw material integrity.
+                  We are one of the few exporters combining this natural
+                  advantage with{" "}
+                  <strong>rigorous, documented quality control</strong> from
+                  harvest to delivery — making us a reliable partner for buyers
+                  who cannot afford to compromise on raw material integrity.
                 </>
               )}
             </p>

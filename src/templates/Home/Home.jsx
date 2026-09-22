@@ -25,12 +25,35 @@ export default function Home({ lang = "en" }) {
         />
         <link
           rel="canonical"
-          href={isFr ? "https://gasikara-plants.com/fr" : "https://gasikara-plants.com/"}
+          href={
+            isFr
+              ? "https://gasikara-plants.com/fr"
+              : "https://gasikara-plants.com/"
+          }
         />
-        <link rel="alternate" hrefLang="en" href="https://gasikara-plants.com/" />
-        <link rel="alternate" hrefLang="fr" href="https://gasikara-plants.com/fr" />
-        <link rel="alternate" hrefLang="x-default" href="https://gasikara-plants.com/" />
-        <meta property="og:title" content={isFr ? "Centella Asiatica sauvage de Madagascar" : "Wild-Harvested Centella Asiatica from Madagascar"} />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://gasikara-plants.com/"
+        />
+        <link
+          rel="alternate"
+          hrefLang="fr"
+          href="https://gasikara-plants.com/fr"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://gasikara-plants.com/"
+        />
+        <meta
+          property="og:title"
+          content={
+            isFr
+              ? "Centella Asiatica sauvage de Madagascar"
+              : "Wild-Harvested Centella Asiatica from Madagascar"
+          }
+        />
         <meta
           property="og:description"
           content={
@@ -39,7 +62,10 @@ export default function Home({ lang = "en" }) {
               : "100% wild-harvested Centella asiatica leaves, HPLC verified — from Madagascar to the world."
           }
         />
-        <meta property="og:image" content="https://gasikara-plants.com/assets/gmp-logo.jpg" />
+        <meta
+          property="og:image"
+          content="https://gasikara-plants.com/assets/gmp-logo.jpg"
+        />
       </Head>
       {/* HERO SECTION */}
       <div className={styles.hero1}>
@@ -68,7 +94,11 @@ export default function Home({ lang = "en" }) {
               </p>
               <button
                 className={styles.ctaButton}
-                onClick={() => router.push(isFr ? "/fr/centella-asiatica" : "/centella-asiatica")}
+                onClick={() =>
+                  router.push(
+                    isFr ? "/fr/centella-asiatica" : "/centella-asiatica",
+                  )
+                }
               >
                 {isFr ? "Notre Produit" : "Our Product"}
               </button>
@@ -87,7 +117,11 @@ export default function Home({ lang = "en" }) {
               backgroundImage: "url(assets/new/cent101.jpeg)",
             }}
           >
-            <h2>{isFr ? "Récolte Sauvage & Approvisionnement" : "Wild Harvest & Sourcing"}</h2>
+            <h2>
+              {isFr
+                ? "Récolte Sauvage & Approvisionnement"
+                : "Wild Harvest & Sourcing"}
+            </h2>
           </div>
           <div
             className={styles.section1Content}
@@ -96,7 +130,9 @@ export default function Home({ lang = "en" }) {
                 "url(https://as1.ftcdn.net/v2/jpg/03/36/48/88/1000_F_336488872_GIoXi9yCmZbUfAsMyVtYjn8THOG2Vhcc.jpg)",
             }}
           >
-            <h2>{isFr ? "Traitement & Qualité HPLC" : "Processing & HPLC Quality"}</h2>
+            <h2>
+              {isFr ? "Traitement & Qualité HPLC" : "Processing & HPLC Quality"}
+            </h2>
           </div>
           <div
             className={styles.section1Content}
@@ -105,7 +141,9 @@ export default function Home({ lang = "en" }) {
                 "url(https://as1.ftcdn.net/v2/jpg/16/73/45/06/1000_F_1673450627_4ApEUkBmwEmZzJNgJwEyRFCaxDp6dVbR.jpg)",
             }}
           >
-            <h2>{isFr ? "Export par Fret Maritime" : "Export by Sea Freight"}</h2>
+            <h2>
+              {isFr ? "Export par Fret Maritime" : "Export by Sea Freight"}
+            </h2>
           </div>
         </Reveal>
       </div>
@@ -125,7 +163,11 @@ export default function Home({ lang = "en" }) {
       {/* WHY US */}
       <Reveal as="section" className={styles.partnerSection}>
         <div className={styles.partnerContent}>
-          <h1>{isFr ? "Pourquoi Gasikara Medicinal Plants" : "Why Gasikara Medicinal Plants"}</h1>
+          <h1>
+            {isFr
+              ? "Pourquoi Gasikara Medicinal Plants"
+              : "Why Gasikara Medicinal Plants"}
+          </h1>
           <p>
             {isFr
               ? "La Centella asiatica sauvage de Madagascar est mondialement reconnue pour son profil phytochimique supérieur. Nous combinons cet avantage naturel à un contrôle qualité rigoureux et documenté — de la récolte à la livraison."
@@ -153,7 +195,11 @@ export default function Home({ lang = "en" }) {
             </div>
             <div className={styles.partnerCard}>
               <span>🤝</span>
-              <h2>{isFr ? "Chaîne d'Approvisionnement Éthique" : "Ethical Supply Chain"}</h2>
+              <h2>
+                {isFr
+                  ? "Chaîne d'Approvisionnement Éthique"
+                  : "Ethical Supply Chain"}
+              </h2>
               <p>
                 {isFr
                   ? "Un réseau dense de cueilleurs formés — principalement des femmes des communautés rurales — sélectionnés et supervisés par nos équipes de terrain depuis de nombreuses années."
@@ -177,7 +223,11 @@ export default function Home({ lang = "en" }) {
         <div className={styles.capacityGrid}>
           <div className={styles.capacityCard}>
             <h2>{isFr ? "200+ Tonnes / An" : "200+ Tons / Year"}</h2>
-            <p>{isFr ? "Feuilles séchées de Centella asiatica exportées annuellement." : "Dried Centella asiatica leaves exported annually."}</p>
+            <p>
+              {isFr
+                ? "Feuilles séchées de Centella asiatica exportées annuellement."
+                : "Dried Centella asiatica leaves exported annually."}
+            </p>
           </div>
           <div className={styles.capacityCard}>
             <h2>{isFr ? "4 500+ Cueilleurs" : "4,500+ Pickers"}</h2>
@@ -189,7 +239,11 @@ export default function Home({ lang = "en" }) {
           </div>
           <div className={styles.capacityCard}>
             <h2>{isFr ? "Balles de 50 kg" : "50 kg Bales"}</h2>
-            <p>{isFr ? "Balles de polypropylène prêtes à l'export, optimisées pour le fret maritime." : "Export-ready polypropylene bales, optimized for sea freight."}</p>
+            <p>
+              {isFr
+                ? "Balles de polypropylène prêtes à l'export, optimisées pour le fret maritime."
+                : "Export-ready polypropylene bales, optimized for sea freight."}
+            </p>
           </div>
           <div className={styles.capacityCard}>
             <h2>{isFr ? "Vérifié HPLC" : "HPLC Verified"}</h2>
@@ -206,8 +260,14 @@ export default function Home({ lang = "en" }) {
       <Reveal as="section" className={styles.centellaSection}>
         <div className={styles.centellaContent}>
           <div className={styles.centellaText}>
-            <span className={styles.badge}>{isFr ? "Notre Expertise" : "Our Expertise"}</span>
-            <h1>{isFr ? "Votre Fournisseur de Confiance en Centella Asiatica" : "Your Trusted Centella Asiatica Supplier"}</h1>
+            <span className={styles.badge}>
+              {isFr ? "Notre Expertise" : "Our Expertise"}
+            </span>
+            <h1>
+              {isFr
+                ? "Votre Fournisseur de Confiance en Centella Asiatica"
+                : "Your Trusted Centella Asiatica Supplier"}
+            </h1>
             <p>
               {isFr
                 ? "De la plante sauvage aux feuilles séchées prêtes à l'export, nous contrôlons chaque étape de la chaîne d'approvisionnement de Centella asiatica à Madagascar. Nous expédions notre produit vérifié HPLC à des clients dans le monde entier, au service des industries pharmaceutique, cosmétique et nutraceutique."
@@ -237,7 +297,11 @@ export default function Home({ lang = "en" }) {
 
       {/* FINAL CTA */}
       <Reveal as="section" className={styles.section4}>
-        <h1>{isFr ? "Un Seul Produit. Une Qualité Sans Compromis." : "One Product. Uncompromised Quality."}</h1>
+        <h1>
+          {isFr
+            ? "Un Seul Produit. Une Qualité Sans Compromis."
+            : "One Product. Uncompromised Quality."}
+        </h1>
         <h2>
           {isFr
             ? "Nous ne rivalisons pas sur le volume. Nous rivalisons sur l'excellence biochimique — et nous l'appuyons par des données."

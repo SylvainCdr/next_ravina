@@ -65,57 +65,57 @@ export default function CentellaAsiatica({ lang = "en" }) {
         },
       ]
     : [
-    {
-      id: 1,
-      top: "30%",
-      left: "45%",
-      icon: "🌿",
-      title: "Leaves",
-      description:
-        "Fan-shaped, kidney-like leaves rich in <strong>asiaticoside</strong> and <strong>madecassoside</strong>. These are the primary harvested part for medicinal use.",
-      legendText: "Medicinal Leaves",
-    },
-    {
-      id: 2,
-      top: "70%",
-      left: "30%",
-      icon: "🌱",
-      title: "Stolons",
-      description:
-        "Creeping stems that allow the plant to spread horizontally. They root at nodes, creating new plants and ensuring sustainable regrowth after harvest.",
-      legendText: "Regenerative Stolons",
-    },
-    {
-      id: 3,
-      top: "85%",
-      left: "60%",
-      icon: "🌍",
-      title: "Root System",
-      description:
-        "Shallow but extensive root network that thrives in Madagascar's moist, mineral-rich soils. Roots also contain beneficial triterpenes.",
-      legendText: "Root Network",
-    },
-    {
-      id: 4,
-      top: "35%",
-      left: "75%",
-      icon: "🌸",
-      title: "Flowers",
-      description:
-        "Tiny pink or white flowers in clusters. While small, they indicate plant maturity — the optimal time for harvesting active compounds.",
-      legendText: "Indicator Flowers",
-    },
-    {
-      id: 5,
-      top: "35%",
-      left: "20%",
-      icon: "🏝️",
-      title: "Habitat",
-      description:
-        "Thrives in Madagascar's <strong>Alaotra-Mangoro</strong> and <strong>Atsimo-Atsinanana</strong> regions — wetlands and forest edges with rich biodiversity.",
-      legendText: "Natural Habitat",
-    },
-  ];
+        {
+          id: 1,
+          top: "30%",
+          left: "45%",
+          icon: "🌿",
+          title: "Leaves",
+          description:
+            "Fan-shaped, kidney-like leaves rich in <strong>asiaticoside</strong> and <strong>madecassoside</strong>. These are the primary harvested part for medicinal use.",
+          legendText: "Medicinal Leaves",
+        },
+        {
+          id: 2,
+          top: "70%",
+          left: "30%",
+          icon: "🌱",
+          title: "Stolons",
+          description:
+            "Creeping stems that allow the plant to spread horizontally. They root at nodes, creating new plants and ensuring sustainable regrowth after harvest.",
+          legendText: "Regenerative Stolons",
+        },
+        {
+          id: 3,
+          top: "85%",
+          left: "60%",
+          icon: "🌍",
+          title: "Root System",
+          description:
+            "Shallow but extensive root network that thrives in Madagascar's moist, mineral-rich soils. Roots also contain beneficial triterpenes.",
+          legendText: "Root Network",
+        },
+        {
+          id: 4,
+          top: "35%",
+          left: "75%",
+          icon: "🌸",
+          title: "Flowers",
+          description:
+            "Tiny pink or white flowers in clusters. While small, they indicate plant maturity — the optimal time for harvesting active compounds.",
+          legendText: "Indicator Flowers",
+        },
+        {
+          id: 5,
+          top: "35%",
+          left: "20%",
+          icon: "🏝️",
+          title: "Habitat",
+          description:
+            "Thrives in Madagascar's <strong>Alaotra-Mangoro</strong> and <strong>Atsimo-Atsinanana</strong> regions — wetlands and forest edges with rich biodiversity.",
+          legendText: "Natural Habitat",
+        },
+      ];
 
   const handleDiscover = (id) => {
     setDiscovered((prev) => new Set([...prev, id]));
@@ -162,10 +162,29 @@ export default function CentellaAsiatica({ lang = "en" }) {
               : "https://gasikara-plants.com/centella-asiatica"
           }
         />
-        <link rel="alternate" hrefLang="en" href="https://gasikara-plants.com/centella-asiatica" />
-        <link rel="alternate" hrefLang="fr" href="https://gasikara-plants.com/fr/centella-asiatica" />
-        <link rel="alternate" hrefLang="x-default" href="https://gasikara-plants.com/centella-asiatica" />
-        <meta property="og:title" content={isFr ? "Centella Asiatica \u2014 Feuilles S\u00e9ch\u00e9es Premium" : "Centella Asiatica \u2014 Premium Dried Leaves"} />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://gasikara-plants.com/centella-asiatica"
+        />
+        <link
+          rel="alternate"
+          hrefLang="fr"
+          href="https://gasikara-plants.com/fr/centella-asiatica"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://gasikara-plants.com/centella-asiatica"
+        />
+        <meta
+          property="og:title"
+          content={
+            isFr
+              ? "Centella Asiatica \u2014 Feuilles S\u00e9ch\u00e9es Premium"
+              : "Centella Asiatica \u2014 Premium Dried Leaves"
+          }
+        />
         <meta
           property="og:description"
           content={
@@ -174,7 +193,10 @@ export default function CentellaAsiatica({ lang = "en" }) {
               : "100% wild-harvested, high Total Triterpene content, HPLC verified on every batch."
           }
         />
-        <meta property="og:image" content="https://gasikara-plants.com/assets/new/cent102.jpeg" />
+        <meta
+          property="og:image"
+          content="https://gasikara-plants.com/assets/new/cent102.jpeg"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -220,45 +242,46 @@ export default function CentellaAsiatica({ lang = "en" }) {
               <p>
                 {isFr ? (
                   <>
-                    Également connue sous le nom de <strong>Gotu Kola</strong> ou{" "}
-                    <strong>Herbe du Tigre</strong>, la Centella asiatica est une
-                    plante médicinale largement utilisée dans les industries
+                    Également connue sous le nom de <strong>Gotu Kola</strong>{" "}
+                    ou <strong>Herbe du Tigre</strong>, la Centella asiatica est
+                    une plante médicinale largement utilisée dans les industries
                     pharmaceutique, cosmétique et nutraceutique pour son profil
                     bioactif exceptionnel. Gasikara Medicinal Plants la récolte
                     exclusivement à l'état sauvage dans les régions{" "}
                     <strong>d'Alaotra-Mangoro</strong> et{" "}
                     <strong>d'Atsimo-Atsinanana</strong> de Madagascar — où des
-                    sols et un climat uniques produisent constamment des feuilles
-                    aux concentrations supérieures en triterpènes.
+                    sols et un climat uniques produisent constamment des
+                    feuilles aux concentrations supérieures en triterpènes.
                   </>
                 ) : (
                   <>
                     Also known as <strong>Gotu Kola</strong> or{" "}
-                    <strong>Tiger Grass</strong>, Centella asiatica is a medicinal
-                    plant widely used in the pharmaceutical, cosmetic, and
-                    nutraceutical industries for its exceptional bioactive profile.
-                    Gasikara Medicinal Plants wild-harvests it exclusively from the{" "}
-                    <strong>Alaotra-Mangoro</strong> and{" "}
-                    <strong>Atsimo-Atsinanana</strong> regions of Madagascar — where
-                    unique soils and climate conditions consistently produce leaves
-                    with superior triterpene concentrations.
+                    <strong>Tiger Grass</strong>, Centella asiatica is a
+                    medicinal plant widely used in the pharmaceutical, cosmetic,
+                    and nutraceutical industries for its exceptional bioactive
+                    profile. Gasikara Medicinal Plants wild-harvests it
+                    exclusively from the <strong>Alaotra-Mangoro</strong> and{" "}
+                    <strong>Atsimo-Atsinanana</strong> regions of Madagascar —
+                    where unique soils and climate conditions consistently
+                    produce leaves with superior triterpene concentrations.
                   </>
                 )}
               </p>
               <p>
                 {isFr ? (
                   <>
-                    Nous fournissons des <strong>feuilles séchées</strong> conditionnées
-                    en <strong>balles de polypropylène de 50 kg</strong>, prêtes à
-                    l'export par fret maritime, avec une documentation d'analyse HPLC
-                    incluse à chaque expédition.
+                    Nous fournissons des <strong>feuilles séchées</strong>{" "}
+                    conditionnées en{" "}
+                    <strong>balles de polypropylène de 50 kg</strong>, prêtes à
+                    l'export par fret maritime, avec une documentation d'analyse
+                    HPLC incluse à chaque expédition.
                   </>
                 ) : (
                   <>
                     We supply <strong>dried leaves</strong> packed in{" "}
-                    <strong>50 kg polypropylene bales</strong>, export-ready for sea
-                    freight, with HPLC analysis documentation included with every
-                    shipment.
+                    <strong>50 kg polypropylene bales</strong>, export-ready for
+                    sea freight, with HPLC analysis documentation included with
+                    every shipment.
                   </>
                 )}
               </p>
@@ -288,8 +311,14 @@ export default function CentellaAsiatica({ lang = "en" }) {
         <Reveal as="section" className={styles.flagship}>
           <div className={styles.flagshipContent}>
             <div className={styles.flagshipText}>
-              <span className={styles.badge}>{isFr ? "Notre Produit" : "Our Product"}</span>
-              <h2>{isFr ? "Feuilles de Centella Séchées Premium" : "Premium Dried Centella Leaves"}</h2>
+              <span className={styles.badge}>
+                {isFr ? "Notre Produit" : "Our Product"}
+              </span>
+              <h2>
+                {isFr
+                  ? "Feuilles de Centella Séchées Premium"
+                  : "Premium Dried Centella Leaves"}
+              </h2>
               <p className={styles.subtitle}>
                 {isFr
                   ? "Récoltées à l'état sauvage dans les régions les plus bioactives de Madagascar — vérifiées par HPLC à chaque étape"
@@ -300,7 +329,11 @@ export default function CentellaAsiatica({ lang = "en" }) {
                 <div className={styles.format}>
                   <div className={styles.formatIcon}>🌿</div>
                   <div>
-                    <h4>{isFr ? "Feuilles Séchées — Balles de 50 kg" : "Dried Leaves — 50 kg Bales"}</h4>
+                    <h4>
+                      {isFr
+                        ? "Feuilles Séchées — Balles de 50 kg"
+                        : "Dried Leaves — 50 kg Bales"}
+                    </h4>
                     <p>
                       {isFr
                         ? "Pressées et emballées en balles de polypropylène, prêtes à l'export par fret maritime. Chaque lot est documenté avec des registres détaillés."
@@ -311,7 +344,9 @@ export default function CentellaAsiatica({ lang = "en" }) {
                 <div className={styles.format}>
                   <div className={styles.formatIcon}>🔬</div>
                   <div>
-                    <h4>{isFr ? "Qualité Vérifiée HPLC" : "HPLC-Verified Quality"}</h4>
+                    <h4>
+                      {isFr ? "Qualité Vérifiée HPLC" : "HPLC-Verified Quality"}
+                    </h4>
                     <p>
                       {isFr
                         ? "Forte teneur en triterpènes totaux — asiaticoside et madecassoside — confirmée par analyse en laboratoire interne sur chaque lot."
@@ -325,18 +360,34 @@ export default function CentellaAsiatica({ lang = "en" }) {
                 <h4>{isFr ? "Adapté pour :" : "Suited for:"}</h4>
                 <ul>
                   <li>
-                    <strong>{isFr ? "Pharmaceutique" : "Pharmaceutical"}</strong> {isFr ? " — approvisionnement en ingrédients" : "ingredient sourcing"}
+                    <strong>
+                      {isFr ? "Pharmaceutique" : "Pharmaceutical"}
+                    </strong>{" "}
+                    {isFr
+                      ? " — approvisionnement en ingrédients"
+                      : "ingredient sourcing"}
                   </li>
                   <li>
-                    <strong>{isFr ? "Cosmétique et soins personnels" : "Cosmetic & personal care"}</strong> {isFr ? " — formulations" : "formulations"}
+                    <strong>
+                      {isFr
+                        ? "Cosmétique et soins personnels"
+                        : "Cosmetic & personal care"}
+                    </strong>{" "}
+                    {isFr ? " — formulations" : "formulations"}
                   </li>
                   <li>
-                    <strong>{isFr ? "Extraits botaniques" : "Botanical extract"}</strong> {isFr ? " — fabrication" : "manufacturing"}
+                    <strong>
+                      {isFr ? "Extraits botaniques" : "Botanical extract"}
+                    </strong>{" "}
+                    {isFr ? " — fabrication" : "manufacturing"}
                   </li>
                 </ul>
               </div>
 
-              <a href={isFr ? "/fr/contact" : "/contact"} className={styles.productButton}>
+              <a
+                href={isFr ? "/fr/contact" : "/contact"}
+                className={styles.productButton}
+              >
                 {isFr ? "Demander des Échantillons" : "Request Samples"}
               </a>
             </div>
@@ -359,7 +410,11 @@ export default function CentellaAsiatica({ lang = "en" }) {
           <h2>{isFr ? "Applications Clés" : "Key Applications"}</h2>
           <div className={styles.appGrid}>
             <div>
-              <h3>{isFr ? "💧 Soins de la Peau & Cosmétiques" : "💧 Skincare & Cosmetics"}</h3>
+              <h3>
+                {isFr
+                  ? "💧 Soins de la Peau & Cosmétiques"
+                  : "💧 Skincare & Cosmetics"}
+              </h3>
               <p>
                 {isFr
                   ? "Utilisée dans les crèmes, sérums et masques pour ses propriétés apaisantes, anti-âge et cicatrisantes."
@@ -414,9 +469,12 @@ export default function CentellaAsiatica({ lang = "en" }) {
                 ></div>
               </div>
               <span className={styles.counterText}>
-                {discovered.size}/{hotspots.length} {isFr ? "découvert(e)s" : "discovered"}
+                {discovered.size}/{hotspots.length}{" "}
+                {isFr ? "découvert(e)s" : "discovered"}
                 {discovered.size === hotspots.length && (
-                  <span className={styles.completeBadge}>{isFr ? "✨ Terminé !" : "✨ Complete!"}</span>
+                  <span className={styles.completeBadge}>
+                    {isFr ? "✨ Terminé !" : "✨ Complete!"}
+                  </span>
                 )}
               </span>
             </div>
@@ -439,7 +497,9 @@ export default function CentellaAsiatica({ lang = "en" }) {
               {discovered.size === 0 && (
                 <div className={styles.hoverHint}>
                   <span className={styles.hintIcon}>👆</span>
-                  <span>{isFr ? "Survolez pour explorer" : "Hover to explore"}</span>
+                  <span>
+                    {isFr ? "Survolez pour explorer" : "Hover to explore"}
+                  </span>
                 </div>
               )}
 
@@ -496,7 +556,11 @@ export default function CentellaAsiatica({ lang = "en" }) {
 
         {/* SUPPLY CHAIN */}
         <Reveal as="section" className={styles.valueChain}>
-          <h2>{isFr ? "Notre Chaîne d'Approvisionnement Centella" : "Our Centella Supply Chain"}</h2>
+          <h2>
+            {isFr
+              ? "Notre Chaîne d'Approvisionnement Centella"
+              : "Our Centella Supply Chain"}
+          </h2>
           <p>
             {isFr ? (
               <>
@@ -508,20 +572,35 @@ export default function CentellaAsiatica({ lang = "en" }) {
               </>
             ) : (
               <>
-                From field collection to export, our integrated value chain ensures
-                top quality. Each step is managed under strict procedures, with over
-                <strong>4,500 trained pickers</strong> and a network of dedicated
-                supervisors and collectors.
+                From field collection to export, our integrated value chain
+                ensures top quality. Each step is managed under strict
+                procedures, with over
+                <strong>4,500 trained pickers</strong> and a network of
+                dedicated supervisors and collectors.
               </>
             )}
           </p>
 
           <div className={styles.chainSteps}>
-            <div>{isFr ? "🌿 Collecte sur le Terrain" : "🌿 Field Collection"}</div>
-            <div>{isFr ? "🏭 Traitement & Séchage" : "🏭 Processing & Drying"}</div>
-            <div>{isFr ? "🔬 Contrôle Qualité (HPLC)" : "🔬 Quality Control (HPLC)"}</div>
-            <div>{isFr ? "📦 Emballage & Stockage" : "📦 Packaging & Storage"}</div>
-            <div>{isFr ? "🌍 Export & Livraison Client" : "🌍 Export & Client Delivery"}</div>
+            <div>
+              {isFr ? "🌿 Collecte sur le Terrain" : "🌿 Field Collection"}
+            </div>
+            <div>
+              {isFr ? "🏭 Traitement & Séchage" : "🏭 Processing & Drying"}
+            </div>
+            <div>
+              {isFr
+                ? "🔬 Contrôle Qualité (HPLC)"
+                : "🔬 Quality Control (HPLC)"}
+            </div>
+            <div>
+              {isFr ? "📦 Emballage & Stockage" : "📦 Packaging & Storage"}
+            </div>
+            <div>
+              {isFr
+                ? "🌍 Export & Livraison Client"
+                : "🌍 Export & Client Delivery"}
+            </div>
           </div>
 
           <p className={styles.bottomNote}>
@@ -534,9 +613,9 @@ export default function CentellaAsiatica({ lang = "en" }) {
               </>
             ) : (
               <>
-                Activities are monitored through <strong>FarmForce</strong> systems
-                and regular quality reviews, ensuring ethical sourcing and
-                transparency from picker to port.
+                Activities are monitored through <strong>FarmForce</strong>{" "}
+                systems and regular quality reviews, ensuring ethical sourcing
+                and transparency from picker to port.
               </>
             )}
           </p>
@@ -551,16 +630,17 @@ export default function CentellaAsiatica({ lang = "en" }) {
                 <>
                   La qualité n'est pas une étape de notre processus — c'est le
                   processus. Notre laboratoire interne est équipé d'
-                  <strong>appareils de test HPLC</strong> pour vérifier la teneur
-                  en triterpènes totaux à chaque étape critique de chaque campagne
-                  de collecte.
+                  <strong>appareils de test HPLC</strong> pour vérifier la
+                  teneur en triterpènes totaux à chaque étape critique de chaque
+                  campagne de collecte.
                 </>
               ) : (
                 <>
                   Quality is not a stage in our process — it is the process. Our
                   in-house laboratory is equipped with{" "}
-                  <strong>HPLC testing equipment</strong> to verify Total Triterpene
-                  content at every critical stage of each collection campaign.
+                  <strong>HPLC testing equipment</strong> to verify Total
+                  Triterpene content at every critical stage of each collection
+                  campaign.
                 </>
               )}
             </p>
@@ -577,18 +657,20 @@ export default function CentellaAsiatica({ lang = "en" }) {
           <p>
             {isFr ? (
               <>
-                Chaque kilogramme de Centella exporté soutient une récolte durable
-                et les moyens de subsistance de plus de{" "}
+                Chaque kilogramme de Centella exporté soutient une récolte
+                durable et les moyens de subsistance de plus de{" "}
                 <strong>4 500 cueilleurs locaux</strong>. Grâce à des programmes
-                d'éducation, de nutrition et de biodiversité, nous garantissons un
-                impact environnemental et social positif à travers Madagascar.
+                d'éducation, de nutrition et de biodiversité, nous garantissons
+                un impact environnemental et social positif à travers
+                Madagascar.
               </>
             ) : (
               <>
-                Every kilogram of Centella exported supports sustainable harvesting
-                and the livelihoods of over <strong>4,500 local pickers</strong>.
-                Through education, nutrition, and biodiversity programs, we ensure
-                positive environmental and social impact across Madagascar.
+                Every kilogram of Centella exported supports sustainable
+                harvesting and the livelihoods of over{" "}
+                <strong>4,500 local pickers</strong>. Through education,
+                nutrition, and biodiversity programs, we ensure positive
+                environmental and social impact across Madagascar.
               </>
             )}
           </p>
@@ -596,13 +678,20 @@ export default function CentellaAsiatica({ lang = "en" }) {
 
         {/* CTA */}
         <Reveal as="section" className={styles.ctaSection}>
-          <h2>{isFr ? "Prêt à vous approvisionner avec Gasikara ?" : "Ready to Source with Gasikara?"}</h2>
+          <h2>
+            {isFr
+              ? "Prêt à vous approvisionner avec Gasikara ?"
+              : "Ready to Source with Gasikara?"}
+          </h2>
           <p>
             {isFr
               ? "Demandez des échantillons ou discutez de vos spécifications — nous répondons avec des données analytiques complètes et des conditions commerciales transparentes."
               : "Request samples or discuss your specifications — we respond with full analytical data and transparent commercial terms."}
           </p>
-          <a href={isFr ? "/fr/contact" : "/contact"} className={styles.ctaButton}>
+          <a
+            href={isFr ? "/fr/contact" : "/contact"}
+            className={styles.ctaButton}
+          >
             {isFr ? "Contactez-nous" : "Contact Us"}
           </a>
         </Reveal>
