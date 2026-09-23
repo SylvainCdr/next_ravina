@@ -143,15 +143,15 @@ export default function CentellaAsiatica({ lang = "en" }) {
       <Head>
         <title>
           {isFr
-            ? "Fournisseur de Centella Asiatica Madagascar | Gasikara Medicinal Plants"
-            : "Centella Asiatica Madagascar Supplier | Gasikara Medicinal Plants"}
+            ? "Feuilles Séchées de Centella Asiatica Sauvage Madagascar (Gotu Kola) | Gasikara"
+            : "Wild Centella Asiatica Dried Leaves Madagascar (Bulk Gotu Kola) | Gasikara"}
         </title>
         <meta
           name="description"
           content={
             isFr
-              ? "Gasikara Medicinal Plants exporte des feuilles séchées de Centella asiatica 100% sauvages de Madagascar — forte teneur en triterpènes totaux, vérifiée par HPLC."
-              : "Gasikara Medicinal Plants exports 100% wild-harvested Centella asiatica dried leaves from Madagascar — high Total Triterpene content, HPLC verified."
+              ? "Achetez en gros des feuilles séchées de Centella asiatica (Gotu Kola) sauvages de Madagascar. Forte teneur en triterpènes totaux (asiaticoside, madécassoside) vérifiée par HPLC."
+              : "Source bulk wild-harvested Centella asiatica (Gotu Kola) dried leaves from Madagascar. High Total Triterpene content (asiaticoside, madecassoside) HPLC verified for pharma & cosmetics."
           }
         />
         <link
@@ -178,23 +178,53 @@ export default function CentellaAsiatica({ lang = "en" }) {
           href="https://gasikara-plants.com/centella-asiatica"
         />
         <meta
+          property="og:url"
+          content={
+            isFr
+              ? "https://gasikara-plants.com/fr/centella-asiatica"
+              : "https://gasikara-plants.com/centella-asiatica"
+          }
+        />
+        <meta property="og:type" content="product" />
+        <meta
           property="og:title"
           content={
             isFr
-              ? "Centella Asiatica \u2014 Feuilles S\u00e9ch\u00e9es Premium"
-              : "Centella Asiatica \u2014 Premium Dried Leaves"
+              ? "Feuilles Séchées de Centella Asiatica Sauvage — Madagascar"
+              : "Wild Centella Asiatica Dried Leaves — Madagascar Bulk Export"
           }
         />
         <meta
           property="og:description"
           content={
             isFr
-              ? "100% sauvage, forte teneur en triterp\u00e8nes totaux, v\u00e9rifi\u00e9e par HPLC sur chaque lot."
-              : "100% wild-harvested, high Total Triterpene content, HPLC verified on every batch."
+              ? "Feuilles séchées de Centella asiatica 100% sauvages. Contrôle HPLC de chaque lot, forte teneur en triterpènes actifs pour formulateurs."
+              : "100% wild-harvested Centella asiatica dried leaves. In-house HPLC batch testing, high active triterpenes for extractors and formulators."
           }
         />
         <meta
           property="og:image"
+          content="https://gasikara-plants.com/assets/new/cent102.jpeg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content={
+            isFr
+              ? "Centella Asiatica Sauvage Madagascar | Feuilles Séchées"
+              : "Wild Centella Asiatica Dried Leaves Madagascar | Gasikara"
+          }
+        />
+        <meta
+          name="twitter:description"
+          content={
+            isFr
+              ? "Approvisionnement en gros de Centella asiatica sauvage de Madagascar, teneur élevée en triterpènes contrôlée par HPLC."
+              : "Bulk supply of wild Madagascar Centella asiatica dried leaves, high triterpene content HPLC tested."
+          }
+        />
+        <meta
+          name="twitter:image"
           content="https://gasikara-plants.com/assets/new/cent102.jpeg"
         />
         <script
@@ -203,13 +233,61 @@ export default function CentellaAsiatica({ lang = "en" }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Product",
-              name: "Centella Asiatica — Dried Leaves",
+              name: isFr
+                ? "Centella Asiatica — Feuilles Séchées Sauvages (Gotu Kola)"
+                : "Centella Asiatica — Wild-Harvested Dried Leaves (Gotu Kola)",
               description: isFr
-                ? "Feuilles s\u00e9ch\u00e9es de Centella asiatica 100% sauvages de Madagascar, v\u00e9rifi\u00e9es par HPLC."
-                : "100% wild-harvested dried Centella asiatica leaves from Madagascar, HPLC verified.",
+                ? "Feuilles séchées de Centella asiatica 100% sauvages récoltées à Madagascar, forte teneur en triterpènes totaux vérifiée par HPLC."
+                : "100% wild-harvested dried Centella asiatica leaves from Madagascar, high Total Triterpene content verified by HPLC.",
               image: "https://gasikara-plants.com/assets/new/cent102.jpeg",
               brand: { "@type": "Brand", name: "Gasikara Medicinal Plants" },
-              countryOfOrigin: "Madagascar",
+              category: "Botanical Raw Materials / Medicinal Plants",
+              countryOfOrigin: {
+                "@type": "Country",
+                name: "Madagascar",
+              },
+              offers: {
+                "@type": "Offer",
+                priceCurrency: "USD",
+                availability: "https://schema.org/InStock",
+                itemCondition: "https://schema.org/NewCondition",
+                businessFunction: "http://purl.org/goodrelations/v1#Wholesale",
+                url: isFr
+                  ? "https://gasikara-plants.com/fr/centella-asiatica"
+                  : "https://gasikara-plants.com/centella-asiatica",
+              },
+              additionalProperty: [
+                {
+                  "@type": "PropertyValue",
+                  name: "Botanical Name",
+                  value: "Centella asiatica (L.) Urban",
+                },
+                {
+                  "@type": "PropertyValue",
+                  name: "Common Names",
+                  value: "Gotu Kola, Mandukaparni, Talapetraka",
+                },
+                {
+                  "@type": "PropertyValue",
+                  name: "Active Components",
+                  value: "Total Triterpenes (Asiaticoside, Madecassoside)",
+                },
+                {
+                  "@type": "PropertyValue",
+                  name: "Harvest Method",
+                  value: "100% Wild-harvested",
+                },
+                {
+                  "@type": "PropertyValue",
+                  name: "Quality Testing",
+                  value: "HPLC batch-verified",
+                },
+                {
+                  "@type": "PropertyValue",
+                  name: "Packaging",
+                  value: "50 kg export-ready polypropylene bales",
+                },
+              ],
             }),
           }}
         />

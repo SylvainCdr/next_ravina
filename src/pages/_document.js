@@ -4,39 +4,20 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-    const lang = ctx.pathname && ctx.pathname.startsWith("/fr") ? "fr" : "en";
-    const path = ctx.pathname === "/" ? "" : ctx.pathname || "";
-    const url = `https://gasikara-plants.com${path}`;
-    return { ...initialProps, lang, url };
+    const asPath = ctx.asPath || "";
+    const lang = asPath.startsWith("/fr") ? "fr" : "en";
+    return { ...initialProps, lang };
   }
 
   render() {
-    const { lang, url } = this.props;
+    const { lang } = this.props;
     return (
       <Html lang={lang}>
         <Head>
-          {/* Meta Tags for SEO */}
+          {/* Favicon */}
+          <link rel="icon" href="/assets/gmp-logo.jpg" />
 
-          <meta
-            name="description"
-            content="Gasikara Medicinal Plants — Wild-harvested Centella asiatica dried leaves from Madagascar. High Total Triterpene content, HPLC verified."
-          />
-          <meta
-            name="keywords"
-            content="Centella asiatica Madagascar supplier, wild-harvested Centella asiatica dried leaves, high triterpene Centella asiatica bulk, asiaticoside madecassoside raw material, ethical botanical sourcing Madagascar"
-          />
-          <meta name="author" content="Gasikara Medicinal Plants" />
-          <meta name="robots" content="index, follow" />
-
-          <meta property="og:url" content={url} />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:locale"
-            content={lang === "fr" ? "fr_FR" : "en_US"}
-          />
-          <meta property="og:site_name" content="Gasikara Medicinal Plants" />
-
-          {/* Organization structured data (JSON-LD) for rich results */}
+          {/* Données structurées globales (Organization) */}
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -59,32 +40,25 @@ class MyDocument extends Document {
             }}
           />
 
-          {/* Favicon */}
-          <link rel="icon" href="/assets/gmp-logo.jpg" />
+          {/* Polices externes optimisées (Roboto + Poppins) */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+          />
 
-          {/*  External Stylesheets */}
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-          />
-          <link
-            href="https://fonts.cdnfonts.com/css/quicksand"
-            rel="stylesheet"
-          />
+          {/* FontAwesome */}
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           />
-          <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
-
-          <link
-            href="https://fonts.cdnfonts.com/css/poppins"
-            rel="stylesheet"
-          />
         </Head>
         <body>
-          {/* Google Tag Manager (noscript) */}
-
           <Main />
           <NextScript />
         </body>

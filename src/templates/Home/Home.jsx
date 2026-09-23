@@ -12,15 +12,15 @@ export default function Home({ lang = "en" }) {
       <Head>
         <title>
           {isFr
-            ? "Fournisseur de Centella Asiatica Madagascar | Gasikara Medicinal Plants"
-            : "Centella Asiatica Madagascar Supplier | Gasikara Medicinal Plants"}
+            ? "Fournisseur & Exportateur Centella Asiatica Madagascar | Gasikara Medicinal Plants"
+            : "Centella Asiatica Madagascar Supplier & Bulk Exporter | Gasikara Medicinal Plants"}
         </title>
         <meta
           name="description"
           content={
             isFr
-              ? "Gasikara Medicinal Plants exporte des feuilles séchées de Centella asiatica 100% sauvages de Madagascar — forte teneur en triterpènes totaux, vérifiée par HPLC, chaîne d'approvisionnement fiable."
-              : "Gasikara Medicinal Plants exports 100% wild-harvested Centella asiatica dried leaves from Madagascar — high Total Triterpene content, HPLC verified, reliable supply chain."
+              ? "Fournisseur et exportateur B2B de feuilles séchées de Centella asiatica (Gotu Kola) 100% sauvages de Madagascar. Teneur élevée en triterpènes totaux vérifiée par HPLC."
+              : "B2B supplier and bulk exporter of 100% wild-harvested Centella asiatica (Gotu Kola) dried leaves from Madagascar. High Total Triterpene content, HPLC verified."
           }
         />
         <link
@@ -47,23 +47,53 @@ export default function Home({ lang = "en" }) {
           href="https://gasikara-plants.com/"
         />
         <meta
+          property="og:url"
+          content={
+            isFr
+              ? "https://gasikara-plants.com/fr"
+              : "https://gasikara-plants.com/"
+          }
+        />
+        <meta property="og:type" content="website" />
+        <meta
           property="og:title"
           content={
             isFr
-              ? "Centella Asiatica sauvage de Madagascar"
-              : "Wild-Harvested Centella Asiatica from Madagascar"
+              ? "Fournisseur Centella Asiatica Madagascar | Feuilles Sauvages Séchées"
+              : "Centella Asiatica Madagascar Supplier | Wild-Harvested Dried Leaves"
           }
         />
         <meta
           property="og:description"
           content={
             isFr
-              ? "Feuilles de Centella asiatica 100% sauvages, vérifiées par HPLC — de Madagascar vers le monde."
-              : "100% wild-harvested Centella asiatica leaves, HPLC verified — from Madagascar to the world."
+              ? "Exportateur direct de Centella asiatica sauvage de Madagascar. Forte teneur en triterpènes, traçabilité et analyses HPLC par lot."
+              : "Direct exporter of wild-harvested Centella asiatica from Madagascar. High triterpene content, traceability and batch-tested HPLC analysis."
           }
         />
         <meta
           property="og:image"
+          content="https://gasikara-plants.com/assets/gmp-logo.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content={
+            isFr
+              ? "Fournisseur Centella Asiatica Madagascar | Gasikara Medicinal Plants"
+              : "Centella Asiatica Madagascar Supplier | Gasikara Medicinal Plants"
+          }
+        />
+        <meta
+          name="twitter:description"
+          content={
+            isFr
+              ? "Feuilles séchées de Centella asiatica sauvages de Madagascar, vérifiées par HPLC pour industries pharma et cosmétique."
+              : "Wild Centella asiatica dried leaves from Madagascar, HPLC verified for pharma and cosmetic industries."
+          }
+        />
+        <meta
+          name="twitter:image"
           content="https://gasikara-plants.com/assets/gmp-logo.jpg"
         />
       </Head>
@@ -163,11 +193,11 @@ export default function Home({ lang = "en" }) {
       {/* WHY US */}
       <Reveal as="section" className={styles.partnerSection}>
         <div className={styles.partnerContent}>
-          <h1>
+          <h2>
             {isFr
               ? "Pourquoi Gasikara Medicinal Plants"
               : "Why Gasikara Medicinal Plants"}
-          </h1>
+          </h2>
           <p>
             {isFr
               ? "La Centella asiatica sauvage de Madagascar est mondialement reconnue pour son profil phytochimique supérieur. Nous combinons cet avantage naturel à un contrôle qualité rigoureux et documenté — de la récolte à la livraison."
@@ -177,7 +207,7 @@ export default function Home({ lang = "en" }) {
           <div className={styles.partnerGrid}>
             <div className={styles.partnerCard}>
               <span>🔬</span>
-              <h2>{isFr ? "Forte Teneur en TTT" : "High TTT Content"}</h2>
+              <h3>{isFr ? "Forte Teneur en TTT" : "High TTT Content"}</h3>
               <p>
                 {isFr
                   ? "Teneur constamment élevée en triterpènes totaux — asiaticoside et madecassoside — vérifiée par analyse HPLC interne sur chaque lot."
@@ -186,7 +216,7 @@ export default function Home({ lang = "en" }) {
             </div>
             <div className={styles.partnerCard}>
               <span>🌿</span>
-              <h2>{isFr ? "100% Sauvage" : "100% Wild-Harvested"}</h2>
+              <h3>{isFr ? "100% Sauvage" : "100% Wild-Harvested"}</h3>
               <p>
                 {isFr
                   ? "Provenance exclusive de la flore sauvage de Madagascar. Les sols et le climat uniques de l'île produisent naturellement des feuilles puissantes, expédition après expédition."
@@ -195,11 +225,11 @@ export default function Home({ lang = "en" }) {
             </div>
             <div className={styles.partnerCard}>
               <span>🤝</span>
-              <h2>
+              <h3>
                 {isFr
                   ? "Chaîne d'Approvisionnement Éthique"
                   : "Ethical Supply Chain"}
-              </h2>
+              </h3>
               <p>
                 {isFr
                   ? "Un réseau dense de cueilleurs formés — principalement des femmes des communautés rurales — sélectionnés et supervisés par nos équipes de terrain depuis de nombreuses années."
@@ -219,10 +249,12 @@ export default function Home({ lang = "en" }) {
 
       {/* KEY NUMBERS */}
       <Reveal as="section" className={styles.capacitySection}>
-        <h1>{isFr ? "Notre Envergure" : "Our Scale"}</h1>
+        <h2>{isFr ? "Notre Envergure" : "Our Scale"}</h2>
         <div className={styles.capacityGrid}>
           <div className={styles.capacityCard}>
-            <h2>{isFr ? "200+ Tonnes / An" : "200+ Tons / Year"}</h2>
+            <p className={styles.metricValue}>
+              {isFr ? "200+ Tonnes / An" : "200+ Tons / Year"}
+            </p>
             <p>
               {isFr
                 ? "Feuilles séchées de Centella asiatica exportées annuellement."
@@ -230,7 +262,9 @@ export default function Home({ lang = "en" }) {
             </p>
           </div>
           <div className={styles.capacityCard}>
-            <h2>{isFr ? "4 500+ Cueilleurs" : "4,500+ Pickers"}</h2>
+            <p className={styles.metricValue}>
+              {isFr ? "4 500+ Cueilleurs" : "4,500+ Pickers"}
+            </p>
             <p>
               {isFr
                 ? "Réseau de récolte formé dans les régions d'approvisionnement de Madagascar."
@@ -238,7 +272,9 @@ export default function Home({ lang = "en" }) {
             </p>
           </div>
           <div className={styles.capacityCard}>
-            <h2>{isFr ? "Balles de 50 kg" : "50 kg Bales"}</h2>
+            <p className={styles.metricValue}>
+              {isFr ? "Balles de 50 kg" : "50 kg Bales"}
+            </p>
             <p>
               {isFr
                 ? "Balles de polypropylène prêtes à l'export, optimisées pour le fret maritime."
@@ -246,7 +282,9 @@ export default function Home({ lang = "en" }) {
             </p>
           </div>
           <div className={styles.capacityCard}>
-            <h2>{isFr ? "Vérifié HPLC" : "HPLC Verified"}</h2>
+            <p className={styles.metricValue}>
+              {isFr ? "Vérifié HPLC" : "HPLC Verified"}
+            </p>
             <p>
               {isFr
                 ? "Analyse en laboratoire interne à chaque étape critique de la production."
@@ -263,11 +301,11 @@ export default function Home({ lang = "en" }) {
             <span className={styles.badge}>
               {isFr ? "Notre Expertise" : "Our Expertise"}
             </span>
-            <h1>
+            <h2>
               {isFr
                 ? "Votre Fournisseur de Confiance en Centella Asiatica"
                 : "Your Trusted Centella Asiatica Supplier"}
-            </h1>
+            </h2>
             <p>
               {isFr
                 ? "De la plante sauvage aux feuilles séchées prêtes à l'export, nous contrôlons chaque étape de la chaîne d'approvisionnement de Centella asiatica à Madagascar. Nous expédions notre produit vérifié HPLC à des clients dans le monde entier, au service des industries pharmaceutique, cosmétique et nutraceutique."
@@ -297,16 +335,16 @@ export default function Home({ lang = "en" }) {
 
       {/* FINAL CTA */}
       <Reveal as="section" className={styles.section4}>
-        <h1>
+        <h2 className={styles.sectionTitle}>
           {isFr
             ? "Un Seul Produit. Une Qualité Sans Compromis."
             : "One Product. Uncompromised Quality."}
-        </h1>
-        <h2>
+        </h2>
+        <p className={styles.sectionSubtitle}>
           {isFr
             ? "Nous ne rivalisons pas sur le volume. Nous rivalisons sur l'excellence biochimique — et nous l'appuyons par des données."
             : "We do not compete on volume. We compete on biochemical excellence — and we back it with data."}
-        </h2>
+        </p>
         <button
           className={styles.ctaButton}
           onClick={() => router.push(isFr ? "/fr/contact" : "/contact")}

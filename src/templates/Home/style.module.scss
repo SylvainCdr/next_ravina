@@ -307,7 +307,8 @@
       max-width: 1200px;
       width: 100%;
 
-      h1 {
+      h1,
+      h2 {
         font-size: 3rem;
         color: var(--col3);
         margin-bottom: 1.5rem;
@@ -348,7 +349,8 @@
         margin-bottom: 1rem;
       }
 
-      h2 {
+      h2,
+      h3 {
         color: var(--col5);
         font-size: 1.3rem;
         font-weight: 600;
@@ -385,7 +387,8 @@
     text-align: center;
     background: linear-gradient(120deg, var(--col5) 0%, var(--col4) 100%);
 
-    h1 {
+    h1,
+    h2 {
       font-size: 2.8rem;
       color: var(--col3);
       font-weight: 700;
@@ -430,7 +433,8 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
       }
 
-      h2 {
+      h2,
+      .metricValue {
         font-size: 1.8rem;
         color: var(--col3);
         margin-bottom: 0.8rem;
@@ -483,7 +487,8 @@
         letter-spacing: 0.5px;
       }
 
-      h1 {
+      h1,
+      h2 {
         font-size: 2.4rem;
         color: var(--col3);
         font-weight: 700;
@@ -561,11 +566,20 @@
       linear-gradient(rgba(58, 59, 58, 0.579), rgba(34, 56, 34, 0.9)),
       url("/assets/new/image11.jpg") center/cover no-repeat;
 
-    h1 {
+    h1,
+    h2.sectionTitle {
       font-size: 2.8rem;
       color: var(--col7);
       margin-bottom: 1.2rem;
       font-weight: 800;
+    }
+
+    .sectionSubtitle {
+      color: var(--col2);
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
     }
 
     h2 {
@@ -712,7 +726,8 @@
       padding: 4rem 1.2rem;
     }
 
-    .capacitySection h1 {
+    .capacitySection h1,
+    .capacitySection h2 {
       font-size: 1.9rem;
     }
 
@@ -725,7 +740,8 @@
       padding: 1.5rem 1rem;
     }
 
-    .capacityCard h2 {
+    .capacityCard h2,
+    .capacityCard .metricValue {
       font-size: 1.4rem;
     }
 
@@ -733,7 +749,8 @@
       padding: 5rem 1.2rem;
     }
 
-    .section4 h1 {
+    .section4 h1,
+    .section4 h2.sectionTitle {
       font-size: 2rem;
     }
 
